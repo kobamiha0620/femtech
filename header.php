@@ -63,7 +63,21 @@
 					<figure class="logo"></figure>
 					<p>生理、PMS、セクシャルな問題など自分のカラダについて、たった1人で悩んでいる皆さんへ。大切なのは、「知る」「共有する」こと。このフェムテックtvは、自分のカラダについての“知らなかった”をなくすためのフェムテック情報共有サイトです。毎日をイキイキと、自分らしく過ごすために。正しい情報を知って、話して、整える輪を広め、悩める女性がいなくなる世の中を目指します。</p>
 				</div>
-
+				
+				<div class="newHeader__drawer--doctor">
+					<p class="newHeader__drawer--doctor-ttl">Doctor</p>
+					<div class="newHeader__drawer--doctor-intro">
+						<div class="newHeader__drawer--doctor-introimg">池田先生</div>
+						<p class="newHeader__drawer--doctor-name">池田 裕美枝 （いけだ ゆみえ）</p>
+					</div>
+					<div class="newHeader__drawer--doctor-resume"> 
+					<p>・医師（京都大学大学院医学研究科社会健康医学系専攻健康情報学分野博士課程）</p>
+					<p>・NPO法人女性医療ネットワーク副理事長</p>
+					<p>・京都大学リプロダクティブヘルス＆ライツライトユニット代表</p>
+					<p>・ソーシャルワークプラットフォームKYOTO SCOPE事務局代表</p>
+					</div>
+					<p class="newHeader__drawer--doctor-txt">京都大学医学部卒業後、産婦人科として勤務。現在、博士課程にて女性の社会的孤立や月経前症候群による社会的インパクトなどを研究している。</p>
+				</div>
 
 				<ul class="newHeader__drawer--otherlink">
 					<li><a href="/company-information/">会社概要</a></li>
