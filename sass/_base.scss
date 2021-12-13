@@ -1,0 +1,174 @@
+$BP: 749px;
+$BP_PC: 1120px;
+
+//COLOR
+$BG: #FAFAFA; //背景色
+$BC: #F3E8F4; //紫
+$CR: #262626; //文字色
+$HeadC: #737373;
+$CR2: #838383; //文字色2
+$PINK: #DFA7A7;
+$DPINK: #d17b7b;
+$UB: #D0D0D0;
+$GRAY : #b2b2b2;
+
+//font-sizeb2b2b2
+$PC_FONT: 17px;
+$PC_FONT_TTL: 28px;
+$SP_FONT: 12px;
+$SP_FONT_TTL: 20px;
+
+$PC_FONT_BIG: 47px;
+$SP_FONT_BIG: 32px;
+
+//PC幅
+$PC_W: 1120px;
+$PC_M:  672px;
+$PC_S:  396px;
+$PC_BB: 56px;
+$PC_BS: 24px;
+
+html { scroll-behavior: smooth;}
+li{
+    list-style-type: none;
+}
+//カテゴリー
+.cat-data{
+    font-family: 'Roboto', sans-serif;
+    margin: 0 6px 3px 0;
+    padding: 5px 7px 5px;
+    display: inline-block;
+    color: #FFF;
+    line-height: 1;
+    white-space: nowrap;
+    &.cate-echoice{
+        //Editorschoice
+        background-color: #444;
+    }
+    &.cate-pms{
+        //PMS
+        background-color: #F0A9A5;
+    }
+    &.cate-femtech{
+        //FEMTECH
+        background-color: #57BA9D;
+    }
+    &.cate-news{
+        //NEWS
+        background-color: #FF868B;
+    }
+    &.cate-mens{
+        //MENS
+        background-color: #6BBBC9;
+    }
+    &.cate-well{
+        //SEXIall wellness
+        background-color: #968DB0;
+    }
+    &.cate-resarch{
+        //FEMTECH BEAUTY & market research
+        background-color: #E3A053;
+    }
+    &.cate-aoki{
+        //月と運気の話
+        background-color: #5297D5;
+    }
+    &.cate-kokoro{
+        //月と運気の話
+        background-color: #5297D5;
+    }
+    &.cate-personf{
+        //月と運気の話
+        background-color: #5297D5;
+    }
+    &.cate-serial{
+        //連載
+        background-color: #5297D5;
+    }
+
+  }
+.cate{
+    &__date{
+        font-size: 13px;
+        flex-shrink: 1;
+        display: inline-block;
+        margin: 0 14px 0 10px;
+    }
+    &__author{
+        font-size: 13px;
+        flex-shrink: 1;
+        display: inline-block;
+    }
+}
+.articles__blc{
+    .cate-serial{
+        display: none;
+    }
+    .cate-echoice{
+        display: none;
+    }
+    .uncategorized{
+        display: none;
+    }
+}
+.single__fv--index{
+    .cate-serial{
+        display: none;
+    }
+    .cate-echoice{
+        display: none;
+    }
+    .uncategorized{
+        display: none;
+    }
+}
+.slide__cate{
+    .cate-serial{
+        display: none;
+    }
+    .cate-echoice{
+        display: none;
+    }
+    .uncategorized{
+        display: none;
+    }
+}
+
+/* SP 画面サイズが748px以下 */
+@media screen and (max-width: $BP) {
+    .pc{
+        display: none;
+    }
+    .sp{
+        display: block;
+    }
+
+    .index__inner{
+        padding: 0 5%;
+    }
+    .cate{
+        &__date{
+            font-size: 10px;
+            margin: 0 3px 4px 0;
+            padding: 1px 2px 1px;
+        }
+        &__author{
+            font-size: 8px;
+        }
+    }
+    .cat-data{
+        font-size: 12px;
+    }
+}
+
+/* PC 画面サイズが750px以上 */
+@media screen and (min-width: $BP+1) {
+    .pc{
+        display: block;
+    }
+    .sp{
+        display: none;
+    }
+
+}
+

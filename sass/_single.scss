@@ -1,0 +1,699 @@
+
+/* 記事ページ --------------------------------------------------------------- */
+.single {
+
+    .cate__date{
+        color: #b2b2b2;
+        font-size: 18px;
+    }
+    .cate__author{
+        color: #b2b2b2;
+        font-size: 15px;
+    }
+    &__contentsinner{
+        img{
+            max-width: 100%;
+            height: auto;
+            display: inline-block;
+            margin: 0;
+            display: block;
+        }
+ 
+        p{
+            font-size: 17px;
+            color: $CR;
+            line-height: 1.65;
+            margin-bottom: 1.5em;
+            a{
+                color: $PINK;
+            }
+        }
+        h2{
+            font-size: 24px;
+            line-height: 1.3;
+            margin: 70px 0 1.5em;
+        }
+        h3{
+            font-size: 24px;
+            line-height: 1.3;
+            margin: 30px 0 10px;
+        }
+        h4{
+            font-size: 20px;
+            line-height: 1.3;
+            margin: 20px 0 10px;
+        }
+        .s2, .s3{
+            display: inline-block;
+            line-height: 1.5;
+            margin: 0;
+        }
+        .s1{
+            display: inline-block;
+            line-height: 1.5;
+            margin: 0; 
+        }
+        .img{
+            margin: 0 0 5px;
+        }
+
+    }
+    &__topimg{
+        width: 100%;
+        height: 324px;
+        img{
+            width: 100%;
+            height: 324px;
+            object-fit: cover;
+        }
+    }
+    &__linkto{
+        display: flex;
+        justify-content: center;
+        a{
+            text-decoration: none;
+            color: $CR;
+            font-size: 16px;
+            margin: 36px 46px;
+        }
+    }
+    &__fv{
+        &--index{
+            margin: 0 0 18px;
+        }
+        &--ttl{
+            font-size: 24px;
+            margin: 0 0 26px;
+            line-height: 1.2;
+        }
+        &--cate{
+            font-size: 16px;
+            margin: 0 0 46px 0;
+            li{
+                display: inline-block;
+                margin: 0 14px 0 0;
+                a{
+                    color: #808080;
+                    text-decoration: none;
+                }
+            }
+        }
+        &--catewrap{
+            margin: 38px 0 0;
+        }
+    }
+    &__sns{
+        margin: 24px 0 62px;
+        overflow: hidden;
+        li{
+            float: left;
+            margin: 0 32px 0 0;
+            a{
+                text-indent: -9999px;
+                white-space: nowrap;
+                display: inline-block;
+                width: 38px;
+                height: 38px;
+            }
+        }
+        &--fb{
+            background: url('images/singleicon_fb.png') no-repeat;
+            background-size: 100% auto;
+        }
+        &--tw{
+            background: url('images/singleicon_tw.png') no-repeat;
+            background-size: 100% auto;
+        }
+        &--in{
+            background: url('images/singleicon_line.png') no-repeat;
+            background-size: 100% auto;
+        }
+    }
+    &__come{
+        border-bottom: solid 1px #404040;
+        &--ttl{
+            font-size: 17px;
+            line-height: 1;
+            font-weight: normal;
+            border-top: solid 1px #404040;
+            padding: 12px 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+        &--ttlicon{
+            font-size: 14px;
+        }
+        &--con{
+            padding: 20px 0 30px;
+            display: none;
+        }
+    }
+    &__author{
+        border: solid 1px #c7c7c7;
+        padding: 20px;
+        margin: 110px 0;
+        overflow: hidden;
+        &--img{
+            width: 198px;
+            height: 198px;
+            margin: 0 20px 0 0;
+            display: inline-block;
+            float: left;
+            img{
+                width: 198px;
+                height: 198px;
+                object-fit: cover;
+                margin: 0;
+            }
+
+        }
+        span{
+            font-size: 20px;
+            line-height: 1.5;
+            span{
+                font-size: 17px;
+                line-height: 1.3;
+            }
+        }
+    }
+}
+
+#js-comment{
+    .single__come--ttlicon{
+        transform:rotate(0deg);
+        transition: 0.5s ease;
+    }
+    &.active{
+        .single__come--ttlicon{
+            transform:rotate(180deg);
+            transition: 0.5s ease;
+
+        }
+    }
+}
+
+
+div#toc_container{
+    border: none!important;
+    width: 100%;
+    margin: 80px 0;
+    padding: 50px 30px;
+    .toc_title{
+        font-size: 29px;
+        text-align: center;
+        border-bottom: solid 1px #000;
+        padding-bottom: 20px!important;
+        margin-bottom: 30px;
+    }
+    .toc_list{
+
+        li{
+            a{
+                padding: 15px 0 7px;
+                border-bottom: dashed 1px #d1d1d1;
+                display: inline-block;
+                &::before{
+                    content: "● ";
+                }
+            }
+        }
+        ul{
+            li{
+                a{
+                    &::before{
+                        content: "";
+
+                    }
+                }
+            }
+        }
+    }
+
+}
+#comments{
+    font-size: 17px!important;
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+//コメントフォームについて -------------------------------------------------------
+
+.comment-area{
+    margin: 0 0 70px;
+}
+.comment_meta{
+    display: flex;
+    align-items: flex-end;
+    margin: 0 11px 22px 0;
+
+    .author{
+        display: inline-block;
+        font-size: 17px;
+        font-weight: bold;
+        margin: 0 11px 0 0;
+    }
+    .post_date{
+        display: inline-block;
+
+        color:#b2b2b2;
+        font-size: 15px;
+    }
+
+}
+.comment_text{
+    p{
+        font-size: 17px;
+        line-height: 1.4;
+    }
+
+}
+.commets-list{
+    li{
+        padding: 30px 0;
+        border-top: solid 1px #b2b2b2;
+
+    }
+}
+.comment-form-comment{
+    margin: 0 0 35px;
+    textarea{
+        width: 100%;
+        height: 260px;
+        border-radius: 7px;
+        padding: 15px;
+        line-height: 1.4;
+        border: solid 1px #404040;
+
+        &:focus{
+            border: solid 2px $PINK;
+            outline: none;
+            padding: 14px;
+        }
+        &::placeholder{
+            font-size: 15px;
+            color: #b2b2b2;
+            font-weight: normal;
+        }
+    }
+    &::placeholder{
+        font-size: 15px;
+        color: #b2b2b2;
+        font-weight: normal;
+    }
+
+}
+.comment-form-url{ display:none; }
+.comment-notes{
+    color: $CR2!important;
+    font-size: 15px!important;
+}
+#commentform{
+    label{
+        display: block;
+    }
+}
+.comment-form-author{
+    margin: 0 0 35px;
+    label{
+        line-height: 1.5;
+    }
+}
+.comment-form-cookies-consent{
+    display: flex;
+    margin: 0 0 35px;
+    align-items: center;
+    input[type=checkbox]{
+        width: 28px;
+        height: 28px;
+        border: solid 1px #404040;
+        margin: 0 10px 0 0;
+        background: #FFF;
+        &:checked{
+            background: $PINK;
+        }
+    }
+}
+.form-submit{
+    width: 40%;
+    input{
+        padding: 10px 20px;
+        border: solid 1px #404040;
+        background: #FFF;
+        border-radius: 5px;
+        display: inline-block;
+        width: 100%;
+        font-size: 15px;
+        color: $CR;
+
+        &:hover{
+            border: solid 1px $PINK;
+            background: $PINK;
+            color: #FFF;
+        }
+    }
+}
+.comment-note{
+    color: $CR;
+    font-size: 17px;
+    line-height: 1.4;
+}
+.comment-form-email{
+    margin: 0 0 35px;
+    label{
+        line-height: 1.5;
+ 
+    }
+    input{
+        width: 100%;
+        border-radius: 7px;
+        padding: 9px 15px;
+        line-height: 1.4;
+        border: solid 1px #404040;
+    }
+}
+.comment-form-author{
+    input{
+        width: 100%;
+        border-radius: 7px;
+        padding: 9px 15px;
+        line-height: 1.4;
+        border: solid 1px #404040;
+    }
+}
+#commentform{
+    margin: 0 0 58px;
+
+    input{
+        &:focus{
+            border: solid 2px $PINK;
+            outline: none;
+            padding: 8px 14px;
+        }
+        &::placeholder{
+            font-size: 15px;
+            color: #b2b2b2;
+            font-weight: normal;
+        }
+    }
+}
+
+
+
+/* SP 画面サイズ*/
+@media screen and (max-width: $BP) {
+    div#toc_container{
+        margin: 45px 0;
+        padding: 36px 20px;
+        .toc_title{
+            font-size: 16px;
+            padding-bottom: 16px!important;
+            margin-bottom: 20px;
+        }
+        .toc_list{
+            li{
+                a{
+                    font-size: 12px;
+                    padding: 15px 0 7px;
+                    border-bottom: dashed 1px #d1d1d1;
+                    display: inline-block;
+                }
+            }
+        }
+    
+    }
+    .single {
+        // img{
+        //     max-width: 100%;
+        //     height: auto;
+        // }
+
+        &__linkto{
+
+            a{
+                display: inline-block;
+                font-size: 12px!important;
+                margin: 32px 28px;
+                line-height: 1.4;
+ 
+            }
+        }
+        .cate__date{
+            font-size: 12px;
+            margin: 0 6px 0 2px;
+        }
+        .cate__author{
+            font-size: 10px;
+        }
+        &--index{
+
+        }
+
+        &__contents{
+            padding: 0 5%;
+            img{
+                margin: 10px 0;
+            }
+            p{
+                font-size: 16px;
+            }
+            h1{
+                font-size: 18px;
+                line-height: 1.4;
+            }
+            h2{
+                font-size: 18px;
+                line-height: 1.3;
+                margin: 40px 0 14px;
+            }
+            h3{
+                font-size: 16px;
+                line-height: 1.3;
+                margin: 30px 0 10px;
+            }
+            h4{
+                font-size: 16px;
+                line-height: 1.3;
+                margin: 20px 0 10px;
+            }
+            .s1, .s2, .s3{
+                display: inline-block;
+                line-height: 1.5;
+                margin: 5px 0;
+            }
+        }
+        &__topimg{
+            width: 100%;
+            height: 50vw;
+            img{
+                width: 100%;
+                height: 50vw;
+                object-fit: cover;
+            }
+        }
+        &__linkto{
+            a{
+                font-size: 10px;
+                margin: 32px 10px;
+            }
+        }
+        &__fv{
+            padding: 0 5%;
+            &--index{
+                margin: 0 0 8px;
+            }
+            &--ttl{
+                font-size: 20px;
+                margin: 0 0 10px;
+            }
+            &--cate{
+                font-size: 14px;
+                line-height: 1.2;
+                margin: 0 0 20px;
+                li{
+                    margin: 0 8px 0 0;
+                }
+            }
+            &--catewrap{
+                margin: 30px 0 0;
+            }
+            .cat-data{
+            }
+
+        }
+        &__sns{
+            margin: 6px 0 36px;
+            li{
+                margin: 0 23px 0 0;
+                a{
+                    width: 28px;
+                    height: 28px;
+                }
+            }
+        }
+        &__come{
+            &--ttl{
+                font-size: 16px;
+                padding: 6px 10px;
+            }
+            &--ttlicon{
+                font-size: 12px;
+
+            }
+            &--con{
+                padding: 10px 0 20px;
+            }
+        }
+        &__author{
+            padding: 16px;
+            margin: 46px 0 70px;
+            overflow: hidden;
+            display: block;
+            &--img{
+                width: 100px;
+                height: 100px;
+                margin: 0 10px 5px 0;
+                display: inline-block;
+                float: left;
+                img{
+                    width: 100px;
+                    height: 100px;
+                    object-fit: cover;
+                    margin: 0;
+                }
+            }
+            span{
+                font-size: 14px;
+                margin-bottom: 13px;
+                line-height: 1.5;
+                span{
+                    font-size: 10px;
+                }
+            }
+
+        }
+    }
+    #comments{
+        font-size: 15px!important;
+        margin: 10px 0 0;
+    }
+//コメントフォームについて -------------------------------------------------------
+
+.comment-area{
+    margin: 0 0 40px;
+}
+.comment_meta{
+
+    margin: 0 0 13px 0;
+    .author{
+        font-size: 13px;
+        margin-right: 10px
+    }
+    .post_date{ 
+        font-size: 9px;
+    }
+
+}
+.comment_text{
+    p{
+        font-size: 13px;
+    }
+
+}
+.commets-list{
+    li{
+        padding: 15px 0;
+    }
+}
+.comment-form-comment{
+    margin: 0 0 22px;
+    textarea{
+        height: 130px;
+        border-radius: 4px;
+        padding: 10px;
+        &:focus{
+            padding: 9px;
+        }
+        &::placeholder{
+            font-size: 13px;
+        }
+    }
+    &::placeholder{
+        font-size: 13px;
+    }
+
+}
+.comment-form-url{ display:none; }
+.comment-notes{
+    font-size: 11px!important;
+}
+
+.comment-form-author{
+    margin: 0 0 22px;
+}
+.comment-form-cookies-consent{
+    margin: 0 0 22px;
+    input[type=checkbox]{
+        width: 18px;
+        height: 18px;
+        margin: 0 10px 0 0;
+    }
+    label{
+        font-size: 13px;
+    }
+}
+.form-submit{
+    width: 100%;
+    input{
+        padding: 10px 20px;
+        border-radius: 4px;
+        width: 100%;
+        font-size: 13px;
+    }
+}
+.comment-note{
+    font-size: 11px;
+}
+.comment-form-email{
+    margin: 0 0 22px;
+    input{
+        border-radius: 4px;
+        padding: 9px 15px;
+    }
+}
+.comment-form-author{
+    input{
+        border-radius: 4px;
+        padding: 9px 15px;
+    }
+}
+#commentform{
+    margin: 0 0 33px;
+    input{
+        &:focus{
+            padding: 8px 14px;
+        }
+        &::placeholder{
+            font-size: 13px;
+        }
+    }
+}
+
+}
+
+/* PC 画面サイズ*/
+@media screen and (min-width: $BP+1) {
+    .single {
+
+    }
+
+}
+
+
+#reply-title{
+    display: none!important;
+}

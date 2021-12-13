@@ -1,0 +1,563 @@
+/* Page.php --------------------------------------------------------------- */
+#page{
+    margin-bottom: 80px;
+
+}
+
+//会社概要などの記事
+.privacy, .company-information{
+    .contents-wrapper{
+        display: block;
+    }
+}
+#infoPage{
+    margin: 30px 0;
+    .page__fv{
+        margin: 0 0 50px;
+    }
+    //メディア関係者の皆様へ
+    .infoPage-ad{
+        p{
+            font-size: 17px;
+            line-height: 1.4;
+            margin: 0 0 24px;
+        }
+    }
+    //お問い合わせ
+    .infoPage-contact{
+        p{
+            line-height: 1.4;
+            
+        }
+    }
+    //プライバシーポリシー
+    .infoPage-privacy{
+        p{
+            font-size: 17px;
+            line-height: 2;
+            margin: 0 0 24px;            
+        }
+    }
+    //会社概要『
+    .infoPage-company{
+        p{
+            font-size: 17px;
+            line-height: 2;
+            margin: 0 0 24px;            
+        }
+    }
+    .wpcf7-form{
+        width: 100%;
+        label{
+            br{
+                display: none;
+            }
+        }
+        p{
+            display: block;
+            margin: 0 0 35px;
+            width: 100%;
+        }
+        input[type="text"], input[type="email"]{
+            width: 100%;
+            padding: 9px 15px;
+            font-size: 18px;
+            outline: none;
+            border-radius: 7px;
+            border: solid 1px #404040;
+            &:focus{
+                border: solid 2px $PINK;
+                padding: 8px 14px;
+            }
+        }
+        .wpcf7-submit{
+            width: 40%;
+            padding: 10px 20px;
+            background: #FFF;
+            border-radius: 7px;
+            outline: none;
+            border: solid 1px #404040;
+            font-size: 16px;
+            letter-spacing: 0.1em;
+            &:hover{
+                background: $PINK;
+                color: #FFF;
+                border: solid 1px $PINK;
+
+            }
+        }
+        textarea{
+            width: 100%;
+            padding: 9px 15px;
+            font-size: 18px;
+            outline: none;
+            border-radius: 7px;
+            border: solid 1px #404040;
+            &:focus{
+                border: solid 2px $PINK;
+                padding: 8px 14px;
+            }   
+        }
+        span{
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
+// ランキング記事
+#rankingall{
+    //サイド用の抜粋部分
+    .sideConlist__exc{
+        display: none;
+    }
+    //ランキングイメージ部分
+    .sideConlist__img{
+        &::after{
+            display: none;
+        }
+    }
+    .articles__ttl{
+        margin-top: 0;
+    }
+    .sideConlist{
+        li{
+            margin: 0 0 20px;
+        }
+        &__inner{
+            align-items: center;
+        }
+        &__img{
+            width: 200px;
+            height: 133px;
+            img{
+                width: 200px;
+                height: 133px;
+                object-fit: cover;
+                margin: 0;
+            }
+        }
+        .cat-data{
+            color: #fff;
+            font-size: $SP_FONT; 
+            margin: 0 6px 0 0;
+            padding: 5px 8px 4px;
+            display: inline-block;
+            line-height: 1;
+        }
+        &__authors{
+            &--date{
+                font-size: 15px;
+                color: $GRAY;
+                margin: 0 12px 0 0; 
+                display: inline-block;
+            }
+            &--name{
+                color: $GRAY;
+                font-size: 13px;
+                display: inline-block;
+            }
+            &.pageblc{
+                display: block;  
+            }
+            &.sideblc{
+                display: none;
+            }
+        }
+        &__blc{
+            flex: 1;
+            &.pageblc{
+                display: flex;  
+                flex-wrap: wrap;
+            }
+        }
+        .categoryw{
+            display: block;
+            display: inline-block;
+        }
+    }
+    .page_excerpt{
+        font-size: $PC_FONT;
+        line-height: 1.6;
+        color: $CR;
+        margin: 10px 0;
+    }
+    .cat-data{
+        &.cate-echoice{
+            display: none!important;
+        }
+        &.cate-serial{
+            display: none!important;
+        }
+    }
+
+}
+
+//最新記事
+#latestAll{
+    .articles__ttl{
+        margin-top: 0;
+    }
+    .articles{
+        &__img{
+            width: 200px;
+            height: 133px;
+            img{
+                width: 200px;
+                height: 133px;
+                object-fit: cover;
+                margin: 0;
+            }
+        }
+    }
+}
+.page {
+    .cate__date{
+        color: $CR;
+        font-style: 18px;
+    }
+    .cate__author{
+        color: $CR;
+        font-size: 15px;
+    }
+    &__ttl{
+        display: flex;
+        align-items: flex-end;
+        color: $CR;
+        font-weight: normal;
+        margin: 0 0 26px!important;
+        &--en{
+            font-size: 40px;
+            font-family: 'Yu Mincho Light', 'YuMincho', 'Yu Mincho', '游明朝体', 'Yu Mincho Light', 'YuMincho', 'Yu Mincho', '游明朝体', 'Noto Serif JP', serif !important;
+            display: inline-block;
+            margin: 0 14px 0 0;
+        }
+        &--jp{
+            font-size: 18px;
+            display: inline-block;
+            padding-bottom: 4px;
+        }
+    }
+    &__contentsinner{
+        img{
+            max-width: 100%;
+            height: auto;
+            display: inline-block;
+            margin: 0;
+            display: block;
+        }
+        p{
+            margin-bottom: 0;
+            line-height: 1.5;
+
+            span{
+                display: inline-block;
+                margin: 0 0 1.5em;
+                line-height: 1.5;
+            }
+        }
+        p.p1{
+            font-size: 17px;
+            color: $CR;
+            line-height: 1.65;
+            margin-bottom: 1.5em;
+
+            a{
+                color: $PINK;
+            }
+        }
+        h2{
+            font-size: 24px;
+            line-height: 1.3;
+            margin: 70px 0 20px;
+        }
+        h3{
+            font-size: 24px;
+            line-height: 1.3;
+            margin: 30px 0 10px;
+        }
+        h4{
+            font-size: 20px;
+            line-height: 1.3;
+            margin: 20px 0 10px;
+        }
+        .s1{
+            
+        }
+    }
+    &__ranking{
+
+    }
+}
+.comment-notes{
+    color: $CR2!important;
+    font-size: 15px!important;
+}
+#commentform{
+    label{
+        display: block;
+    }
+}
+div#toc_container{
+    border: none!important;
+    width: 100%;
+    margin: 80px 0;
+    padding: 50px 30px;
+    .toc_title{
+        font-size: 29px;
+        text-align: center;
+        border-bottom: solid 1px #000;
+        padding-bottom: 20px!important;
+        margin-bottom: 30px;
+    }
+    .toc_list{
+
+        li{
+            a{
+                padding: 15px 0 7px;
+                border-bottom: dashed 1px #d1d1d1;
+                display: inline-block;
+                &::before{
+                    content: "● ";
+                }
+            }
+        }
+        ul{
+            li{
+                a{
+                    &::before{
+                        content: "";
+
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* SP 画面サイズ*/
+@media screen and (max-width: $BP) {
+    div#toc_container{
+        margin: 45px 0;
+        padding: 36px 20px;
+        .toc_title{
+            font-size: 16px;
+            padding-bottom: 16px!important;
+            margin-bottom: 20px;
+        }
+        .toc_list{
+            li{
+                a{
+                    font-size: 12px;
+                    padding: 15px 0 7px;
+                    border-bottom: dashed 1px #d1d1d1;
+                    display: inline-block;
+                }
+            }
+        }
+    
+    }
+    .page {
+
+        .cate__date{
+            font-style: 10px;
+            margin: 0 12px 0 8px;
+        }
+        .cate__author{
+            font-size: 8px;
+        }
+        &__contents{
+            padding: 0 5%;
+            img{
+                margin: 10px 0;
+            }
+            p{
+                font-size: 12px;
+            }
+            h2{
+                font-size: 16px;
+                line-height: 1.3;
+                margin: 40px 0 14px;
+            }
+            h3{
+                font-size: 16px;
+                line-height: 1.3;
+                margin: 30px 0 10px;
+            }
+            h4{
+                font-size: 14px;
+                line-height: 1.3;
+                margin: 20px 0 10px;
+            }
+        }
+        &__ttl{
+            margin: 0 0 26px;
+            &--en{
+                font-size: 27px;
+                margin: 0 6px 0 0;
+            }
+            &--jp{
+                font-size: 11px;
+            }
+        }
+    }
+    #infoPage{
+        width: 100%; 
+        margin: 30px 0;
+        .page__fv{
+            margin: 0 0 30px;
+        }
+        //メディア関係者の皆様へ
+        .infoPage-ad{
+            p{
+                font-size: 16px;
+                line-height: 1.5;
+                margin: 0 0 16px;
+            }
+        }
+        //プライバシーポリシー
+        .infoPage-privacy{
+            p{
+                font-size: 14px;
+                line-height: 1.8;
+                margin: 0 0 18px;            
+            }
+        }
+        //会社概要『
+        .infoPage-company{
+            p{
+                font-size: 14px;
+                line-height: 1.8;
+                margin: 0 0 18px;              
+            }
+        }
+        .wpcf7-form{
+            p{
+                margin: 0 0 25px;
+            }
+            input[type="text"], input[type="email"]{
+                padding: 9px 15px;
+                font-size: 14px;
+                border-radius: 4px;
+                &:focus{
+                    padding: 8px 14px;
+                }
+            }
+            .wpcf7-submit{
+                width: 100%;
+                padding: 10px 20px;
+                border-radius: 4px;
+                font-size: 14px;
+            }
+            textarea{
+                padding: 9px 15px;
+                font-size: 141zpx;
+                border-radius: 4px;
+                &:focus{
+                    border: solid 2px $PINK;
+                    padding: 8px 14px;
+                }   
+            }
+
+        }
+    }
+    #rankingall{
+        .sideConlist__exc{
+            display: block;
+            font-size: 11px;
+            line-height: 1.5;
+            color: $CR;
+            margin: 0;
+
+        }
+        .articles__ttl{
+        }
+        .sideConlist{
+            li{
+                margin: 0 0 20px;
+            }
+            &__inner{
+                align-items: top;
+            }
+            &__img{
+                width: 135px;
+                height: 90px;
+                margin-right: 13px;
+                img{
+                    width: 135px;
+                    height: 90px;
+                    object-fit: cover;
+                    margin: 0;
+                }
+            }
+            .cat-data{
+                margin: 0 6px 0 0;
+                display: inline-block;
+                line-height: 1;
+            }
+            &__authors{
+                &--date{
+                    font-size: 9px;
+                    margin: 0 6px 0 0; 
+                }
+                &--name{
+                    font-size: 8px;
+                }
+                &.pageblc{
+                    display: none; 
+                }
+                &.sideblc{
+                    display: block;
+                }
+            }
+            &__blc{
+                &.pageblc{
+                    display: flex;  
+                    flex-wrap: wrap;
+                }
+                .cat-data{
+                    margin-bottom: 7px;
+                }
+            }
+            .categoryw{
+                display: inline-block;
+            }
+            
+        }
+        .page_excerpt{
+            display: none;
+        }
+    
+    }
+
+    //最新記事
+    #latestAll{
+        .articles__ttl{
+        }
+        .articles{
+            &__img{
+                width: 135px;
+                height:  90px;
+                img{
+                    width: 135px;
+                    height: 90px;
+                    object-fit: cover;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+/* PC 画面サイズ*/
+@media screen and (min-width: $BP+1) {
+    .page {
+
+    }
+}
+
+
+#reply-title{
+    display: none!important;
+}

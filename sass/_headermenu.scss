@@ -1,0 +1,907 @@
+body.home {
+  #newHeader__cate {
+    .homeTtl {
+      a {
+        color: $PINK;
+      }
+    }
+  }
+}
+
+body.category-pms {
+  #newHeader__cate {
+    .ttlPms {
+      a {
+        color: $PINK;
+      }
+    }
+  }
+}
+
+body.category-femtech {
+  #newHeader__cate {
+    .ttlFem {
+      a {
+        color: $PINK;
+      }
+    }
+  }
+}
+body.category-news {
+  #newHeader__cate {
+    .ttlNews {
+      a {
+        color: $PINK;
+      }
+    }
+  }
+}
+body.category-mens {
+  #newHeader__cate {
+
+    .ttlMens {
+      a {
+        color: $PINK;
+      }
+    }
+  }
+}
+
+body.category-well {
+  #newHeader__cate {
+
+    .ttlSexw {
+      a {
+        color: $PINK;
+      }
+    }
+  }
+}
+
+body.category-beauty {
+  #newHeader__cate {
+
+    .ttlBeauty {
+      a {
+        color: $PINK; 
+      }
+    }
+  }
+}
+body.category-serial {
+  #newHeader__cate {
+    .ttlSerial {
+      a {
+        color: $PINK;
+      }
+    }
+  }
+}
+
+
+body.category-resarch {
+  #newHeader__cate {
+
+    .ttlResearch {
+      a {
+        color: $PINK; 
+      }
+    }
+  }
+}
+body.category-kokoro {
+  #newHeader__cate {
+    .ttlSerial {
+      a {
+        color: $PINK;
+      }
+    }
+  }
+}
+body.category-aoki {
+  #newHeader__cate {
+    .ttlSerial {
+      a {
+        color: $PINK;
+      }
+    }
+  }
+}
+body.category-personf {
+  #newHeader__cate {
+    .ttlSerial {
+      a {
+        color: $PINK;
+      }
+    }
+  }
+}
+
+body.page-pms {
+  #newHeader__cate {
+    .ttlPms {
+      a {
+        color: $PINK;
+      }
+    }
+  }
+}
+
+body.page-femtech {
+  #newHeader__cate {
+    .ttlFem {
+      a {
+        color: $PINK;
+      }
+    }
+  }
+}
+body.page-news {
+  #newHeader__cate {
+    .ttlNews {
+      a {
+        color: $PINK;
+      }
+    }
+  }
+}
+body.page-mens {
+  #newHeader__cate {
+
+    .ttlMens {
+      a {
+        color: $PINK;
+      }
+    }
+  }
+}
+
+body.page-well {
+  #newHeader__cate {
+
+    .ttlSexw {
+      a {
+        color: $PINK;
+      }
+    }
+  }
+}
+
+body.page-beauty {
+  #newHeader__cate {
+
+    .ttlBeauty {
+      a {
+        color: $PINK; 
+      }
+    }
+  }
+}
+body.page-serial {
+  #newHeader__cate {
+    .ttlSerial {
+      a {
+        color: $PINK;
+      }
+    }
+  }
+}
+body.page-kokoro {
+  #newHeader__cate {
+    .ttlSerial {
+      a {
+        color: $PINK;
+      }
+    }
+  }
+}
+body.page-aoki {
+  #newHeader__cate {
+    .ttlSerial {
+      a {
+        color: $PINK;
+      }
+    }
+  }
+}
+body.page-personf {
+  #newHeader__cate {
+    .ttlSerial {
+      a {
+        color: $PINK;
+      }
+    }
+  }
+}
+body.page-resarch {
+  #newHeader__cate {
+
+    .ttlResearch {
+      a {
+        color: $PINK; 
+      }
+    }
+  }
+}
+
+/* ヘッダー --------------------------------------------------------------- */
+.newHeader {
+  &__inner {}
+
+  &__logo {
+    text-align: center;
+    position: relative;
+    padding: 52px 0 14px;
+
+    a {
+      background: url('images/logo.png') no-repeat;
+      display: inline-block;
+      background-size: 100% auto;
+      width: calc(540px/2);
+      height: calc(84px /2);
+      white-space: nowrap;
+      text-indent: -9999px;
+    }
+  }
+
+  &__cate {
+    &--wrapper{
+      margin: 0 0 0 24px;
+
+    }
+  }
+
+  &__wrapper {
+    background: #FFF;
+    width: 100%;
+  }
+
+
+  &__contents {
+    display: flex;
+    align-items: center;
+    align-items: bottom;
+    justify-content: space-between;
+    position: relative;
+    max-width: $PC_W;
+    margin: 0 auto;
+    &--right {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+
+}
+
+
+#newHeader__cate {
+  .menu {
+    font-family: 'Yu Mincho Light', 'YuMincho', 'Yu Mincho', '游明朝体', 'Yu Mincho Light', 'YuMincho', 'Yu Mincho', '游明朝体', 'Noto Serif JP', serif !important;
+    color: $PINK;
+    display: flex;
+
+    li {
+      list-style: none;
+      font-size: 16px;
+      margin: 0 32px 0 0;
+      padding: 0 !important;
+    }
+
+    a {
+      padding: $PC_BS 0;
+      display: inline-block;
+      text-decoration: none;
+      color: #444444;
+      white-space: nowrap;
+      &:hover{
+        color: $PINK;
+        opacity: 1.0;
+      }
+    }
+  }
+}
+
+#js-newHeader {
+  position: relative;
+
+  &.fixed {
+    position: fixed;
+    top: 0;
+    border-bottom: solid 1px $UB;
+    width: 100%;
+    z-index: 2;
+  }
+}
+
+// ドロワーメニュー ----------------------------------------------------------------
+
+.drawer--left .drawer-nav {
+  box-sizing: border-box;
+}
+.drawer-overlay{
+  z-index: 4!important;
+
+}
+.drawer-nav{
+  z-index: 5!important;
+  background: #F3E8F4;
+}
+.drawer-menu {
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  li {
+    width: 100%;
+    padding: 0;
+
+    a {
+      padding: 10px 0;
+      display: block;
+      text-decoration: none;
+      color: #444;
+      font-size: 20px;
+      font-family: 'Yu Mincho Light', 'YuMincho', 'Yu Mincho', '游明朝体', 'Yu Mincho Light', 'YuMincho', 'Yu Mincho', '游明朝体', 'Noto Serif JP', serif !important;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.hamburger {
+  width: 16px;
+  height: 16px;
+}
+
+.newHeader {
+  &__contents{
+    z-index: 1;
+  }
+  &__drawer {
+    &--inner {
+      padding: 138px $PC_BB $PC_BB;
+      overflow: hidden;
+      background: #F3E8F4;
+    }
+
+    &--sns {
+      padding: 46px 0 85px;
+      display: flex;
+      justify-content: center;
+
+      li {
+        margin-right: 0;
+        width: 28px;
+        &:first-child{
+          margin-right: 26px;
+        }
+      }
+
+      a {
+        display: block;
+        width: 28px;
+        height: 28px;
+        text-indent: -9999px;
+        white-space: nowrap;
+      }
+    }
+
+    &--snsfb {
+      background: url('images/icon_fb.png') no-repeat;
+      background-size: 100% auto;
+    }
+
+    &--snstw {
+      background: url('images/icon_tw.png') no-repeat;
+      background-size: 100% auto;
+    }
+
+    &--snsin {
+      background: url('images/icon_insta.png') no-repeat;
+      background-size: 100% auto;
+    }
+
+    &--about {
+      font-size: 15px;
+      line-height: 1.8;
+      border-top: solid 1px #000;
+      border-bottom: solid 1px #000;
+      padding: 30px 0;
+      text-align: center; 
+      .logo {
+        background: url('images/logo.png') no-repeat;
+        background-size: 100% auto;
+        width: 157px;
+        display: inline-block;
+        height: 25px;
+        font-size: 0;
+        line-height: 0;
+        margin: 0 auto 8px;
+        text-align: center;
+      }
+      p{
+        text-align-last: left;
+      }
+    }
+
+    &--otherlink {
+      overflow: hidden;
+      margin: 40px 0 0;
+
+      li {
+        width: 50%;
+        float: left;
+
+        &:nth-child(2n) {
+          margin-bottom: 20px;
+        }
+
+        &:first-child {
+          margin-bottom: 20px;
+        }
+
+        a {
+          font-size: 15px;
+          text-decoration: none;
+          color: #000;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+$drawWP: calc($PC_BB * 9);
+
+.drawer-hamburger {
+  position: relative !important;
+  width: 16px !important;
+  padding: 24px !important;
+}
+
+.drawer-open {
+  .drawer-nav {
+    width: $drawWP !important;
+  }
+
+  .drawer-hamburger {
+    position: absolute !important;
+    left: 0 !important;
+    top: 30px !important;
+    padding: 24px !important;
+  }
+
+  .hamburger__line--1 {
+    transform: rotate(45deg);
+    top: 20px;
+    width: 100%;
+
+  }
+
+  .hamburger__line--2 {
+    width: 0;
+    left: 50%;
+  }
+
+  .hamburger__line--3 {
+    transform: rotate(-45deg);
+    top: 20px;
+    width: 100%;
+
+  }
+
+  .hamburger {
+    width: 32px !important;
+    ;
+    height: 32px !important;
+    ;
+  }
+
+  .hamburger__line {
+    height: 3px !important;
+  }
+
+  #navopen {
+    display: block;
+  }
+
+  #navclose {
+    display: none;
+  }
+}
+
+.drawer-close {
+  .drawer-hamburger {
+    position: relative !important;
+    width: 16px !important;
+    padding: 24px !important;
+  }
+
+  .drawer--left {
+    left: -$drawWP !important;
+  }
+
+  .drawer-nav {
+    width: -$drawWP !important;
+  }
+
+  .hamburger {
+    display: block;
+    width: 16px !important;
+    ;
+    height: 17px !important;
+    ;
+    position: relative;
+  }
+
+  .hamburger__line {
+    height: 1px;
+  }
+
+  #navopen {
+    display: none;
+  }
+
+  #navclose {
+    display: block;
+  }
+}
+
+//ハンバーガーメニュー
+.hamburger__line {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: #3E3A39;
+  transition: all .6s;
+  height: 1px;
+  border-radius: 3px !important;
+}
+
+.hamburger__line--1 {
+  top: 0;
+}
+
+.hamburger__line--2 {
+  top: 8px;
+}
+
+.hamburger__line--3 {
+  bottom: 0;
+}
+
+/* 表示された時用のCSS */
+
+
+@media screen and (max-width: $BP) {
+  .adjpadding{
+    padding-top: 100px;
+  }
+  /* ヘッダー --------------------------------------------------------------- */
+  .newHeader {
+    &__spnav {
+      padding: 10px 18px 6px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      overflow-y: hidden; 
+
+      &--search {
+        background: url('images/spicon_search.png') no-repeat;
+        background-size: 100% auto;
+        text-indent: -9999px;
+        white-space: nowrap;
+        width: 25px;
+        height: 25px;
+        display: inline-block;
+      }
+
+      &--btn {
+        position: relative;
+        width: 22px;
+        height: 22px;
+      }
+    }
+
+    &__inner {
+      position: relative;
+    }
+
+    &__logo {
+      padding: 0;
+      display: inline-block;
+
+      a {
+        display: inline-block;
+        background-size: 100% auto;
+        width: 133px;
+        height: 21px;
+      }
+    }
+
+    &__cate {
+      &--wrapper{
+        margin: 0;
+  
+      }
+    }
+
+    &__wrapper {
+      width: 100%;
+    }
+
+    &__search {
+      display: none;
+    }
+
+    &__contents {
+      max-width: auto;
+      &--right {
+        align-items: center;
+      }
+    }
+
+
+  }
+  .newHeader{
+    &__drawer{
+      &--inner{
+        position: relative;
+        overflow-y: scroll!important;
+        padding: $PC_BB 17px 17px;
+      }
+      &--sns{
+        padding: 8px 8px 36px;
+        li{
+          width: 26px;
+        }
+        a{
+          width: 26px;
+          height: 26px;
+        }
+      }
+
+      &--about{
+        line-height: 1.8;
+        padding: $PC_BS 8px;
+        .logo{
+          width: 157px;
+          display: inline-block;
+          height: 25px;
+          font-size: 0;
+          line-height: 0;
+          margin: 0 0 8px;
+        }
+        p{
+          font-size: 12px;
+        }
+      }
+      &--otherlink{
+        margin: 0;
+          padding: 25px 8px 0;
+          li{
+            width: 50%;
+            &:nth-child(2n){
+              margin-bottom: 15px;
+            }
+            &:first-child{
+              margin-bottom: 15px;
+            }
+            a{
+              font-size: 12px;
+
+            }
+          }
+      }
+    }
+  }
+  #newHeader__cate {
+    .menu {
+      li {
+        list-style: none;
+        font-size: 13px;
+        margin: 0 22px 0 0;
+
+      }
+
+      a {
+        padding: 12px 0;
+        white-space: nowrap;
+
+      }
+    }
+  }
+
+  .newHeader__wrapper {
+    overflow-x: scroll;
+    padding: 0 20px 0;
+  //   -ms-overflow-style: none;
+  //   scrollbar-width: none;
+  //   &::-webkit-scrollbar {
+  //     display:none;
+  // }
+  // scrollbar-color: transparent transparent;
+  // scrollbar-width: 0px;
+  // scroll-behavior: smooth;
+  // scroll-snap-type: x mandatory;
+
+    &::-webkit-scrollbar {
+      height: 5px;
+    }
+    &::-webkit-scrollbar-track {
+    }
+    &::-webkit-scrollbar-track {
+      background: #EEE;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: $PINK;
+      border-radius: 5px;
+    }
+  }
+
+  // ドロワーメニュー
+
+  .drawer-menu {
+    padding: 8px!important;
+    li {
+      width: 100%;
+      display: block;
+      padding: 0;
+      a {
+        padding: 14px 0;
+        font-size: 20px;
+      }
+    }
+  }
+  .drawer-hamburger {
+    padding: 0 !important;
+  }
+
+  #navopen {
+    display: block;
+  }
+  #navclose {
+    display: none!important;
+  }
+  $drawSp: 100vw;
+
+  .drawer-open {
+    .drawer-nav {
+      width: $drawSp !important;
+    }
+    .drawer-hamburger {
+      display: none;
+      top:0!important; 
+      left: 0!important;     
+    }
+    #navSpclose{
+      display: none;
+    }
+
+  }
+
+  .drawer-close {
+    .drawer-nav {
+      width: $drawSp !important;
+      left: -$drawSp!important;
+    }
+
+    .drawer-hamburger {
+      padding: 0 !important;
+      display: none;
+      
+    }
+    #navSpclose{
+      display: block;
+    }
+
+  }
+  #header{
+
+    .newHeader__inner{
+      background: #FFF;
+
+      border-bottom: solid 1px $UB;
+    }
+  }
+  .spNav{
+    width: 100%;
+    overflow: hidden;
+    z-index: 3;
+    transform: translate3d(0, 0, 0);
+    position: fixed;
+    top: 0;
+    border-bottom: solid 1px $UB;
+    background: #FFF;
+
+  }
+  .newHeader__spnav{
+  }
+}
+
+/* PC 画面サイズが750px以上 */
+@media screen and (min-width: $BP+1) {
+  .newHeader{
+    &__pcbtn{
+      background: url('images/spicon_search.png') no-repeat;
+      background-size: 25px 25px;
+      background-position: center;
+      text-indent: -9999px;
+      white-space: nowrap;
+      width: 25px;
+      height: 25px;
+      display: inline-block;
+      border: none;
+      outline: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      cursor: pointer;
+      padding: 20px;
+      &:hover{
+        opacity: 0.7;
+      }
+    }
+    &__search{
+      padding: 50px;
+      &--blc{
+        z-index: 0;
+        position: absolute;
+        top: -300px;
+        right:0;
+        background: #FFF;
+        border: solid 1px #D0D0D0;
+        border-top: none;
+        transition: 0.5s ease;
+        box-shadow: 5px 5px 5px 0px rgba(70, 70, 75, .2);
+        animation-duration: 1.2s;
+        animation-name: fadeOut;
+        &.active{
+          top: 64px;
+          transition: 0.5s ease;
+          animation-duration: 1.2s;
+          animation-name: fadeIn;
+        }
+      }
+    }
+
+  }
+
+
+}
+
+
+@keyframes fadeIn {
+  0% {
+      opacity:0;
+  }
+  90%{
+    opacity:0;
+
+  }
+  100% {
+      opacity:1;
+  }
+}
+
+
+@keyframes fadeOut {
+  0% {
+      opacity:1;
+  }
+  90%{
+    opacity:0;
+
+  }
+  100% {
+      opacity:0;
+  }
+}
+
+.drawer-nav{
+  overflow: auto;
+}

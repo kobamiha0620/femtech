@@ -1,0 +1,213 @@
+//メニュー表示の出しわけ
+.header {
+    &__menu {
+        width: 100px;
+        height: 100px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: block;
+        z-index: 9999;
+        background: none;
+        &__line {
+            height: 30px;
+            margin-top: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            cursor: pointer;
+            width: 42px;
+            text-align: right;
+            span {
+                margin: 0 auto;
+                width: 42px;
+                height: 2px;
+                display: block;
+                transition: 0.6s;
+                background: #bfa696;
+                position: absolute;
+                &:first-child {
+                    top: 0;
+                }
+                &:last-child {
+                    top: 14px;
+                    width: 30px;
+                    right: 0;
+                    text-align: right;
+                }
+            }
+            &.is-active {
+                width: 36px;
+                height: 30px;
+                span {
+                    height: 1px;
+
+                    transition: 0.6s;
+                    background: #FFF;
+                    &:first-child {
+                        transform: rotate(45deg);
+                        top: 50%;
+                        width: 36px;
+                    }
+                    &:last-child {
+                        transform: rotate(-45deg);
+                        top: 50%;
+                        width: 36px;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+.navi {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba($color: #a47f6c, $alpha: 0.8);
+    color: #fff;
+    position: fixed;
+    z-index: 100;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    &__wrap {
+        list-style-type: none;
+        text-align: center;
+        padding-left: 0;
+        padding: 60px 0;
+        li {
+            a {
+                text-decoration: none;
+                color: #fff;
+                display: block;
+                letter-spacing: 0.05em;
+            }
+        }
+    }
+    &__top{
+        a{
+            padding: 0 0 50px 0;
+            font-size: 3rem;
+        }
+    }
+    &__others{
+        a{
+            padding: 10px 0;
+            font-size: 5.4rem;
+        }
+    }
+    &-enter,
+    &-leave-to {
+        opacity: 0;
+    }
+    &-enter-to,
+    &-leave {
+        opacity: 1;
+    }
+    &-enter-active,
+    &-leave-active {
+        transition: 0.6s;
+    }
+}
+
+.content__main--img {
+    height: 630px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* imgのみ */
+  .mainVisual {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 90;
+    -webkit-animation: anime 9s 0s infinite;
+    animation: anime 9s 0s infinite;
+    &:nth-of-type(2) {
+        -webkit-animation-delay: 6s;
+        animation-delay: 6s;
+      }
+      &:nth-of-type(3) {
+        -webkit-animation-delay: 3s;
+        animation-delay: 3s;
+      }
+  }
+
+
+/* ふわっとアニメーション */
+@keyframes anime {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    35% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+      z-index: 9;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+// タイピング
+.typing {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+}
+.typing span {
+  display: inline-block;
+  width: 12ch;
+  color: $CR;
+  overflow: hidden;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  text-align: right;
+  font-weight: 400;
+  font-size: 2.5rem;
+  border-right: 2px solid transparent;
+  animation: typing 3s steps(23), caret 0.3s steps(1) infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes caret {
+  50% {
+    border-right-color: currentColor;
+  }
+}
+
+/* SP 画面サイズが768px以下 */
+@media screen and (max-width: $BP) {
+    .content__main--img {
+        height: 133vw;
+      }
+
+}
+
+/* PC 画面サイズが769px以上 */
+
+@media screen and (min-width: $BP+1) {
+  .typing .hello {
+    display: none; 
+  }
+}
