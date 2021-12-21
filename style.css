@@ -3126,6 +3126,454 @@ li {
     box-sizing: border-box;
   }
 }
+#consultation {
+  background: white;
+  background: linear-gradient(180deg, white 0%, white 9%, #f4eaf5 100%);
+  padding-bottom: 45px;
+}
+#consultation input[type=submit] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+#consultation input[type=text] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+#consultation .consultation__top--ttl span {
+  white-space: nowrap;
+  text-indent: -9999px;
+  background: url("images/img_consal.png") no-repeat;
+  background-size: 100% auto;
+  width: 413px;
+  height: 291px;
+  margin: 48px auto;
+  display: block;
+}
+#consultation .consultation__top--subttl span {
+  white-space: nowrap;
+  text-indent: -9999px;
+  background: url("images/subttl_consaltation.png") no-repeat;
+  background-size: 100% auto;
+  width: 345px;
+  height: 22px;
+  margin: 0 auto 33px;
+  display: block;
+}
+#consultation .consultation__top--txt {
+  font-size: 13px;
+  line-height: 1.65;
+  margin: 0 75px 30px;
+  letter-spacing: -0.05em;
+}
+#consultation .consultation__btm {
+  padding: 0 80px;
+}
+#consultation .consultation__btm--list {
+  display: flex;
+  margin: 0 0 26px;
+}
+#consultation .consultation__btm--list li {
+  width: 100%;
+  margin-right: 22px;
+}
+#consultation .consultation__btm--list li:last-child {
+  margin-right: 0;
+}
+#consultation .consultation__btm--blc {
+  margin: 0 0 26px;
+}
+#consultation .consultation__btm--ttl {
+  font-size: 14px;
+}
+#consultation .consultation__btm textarea {
+  padding: 8px 10px;
+  width: 100%;
+  border: solid 1px #404040;
+  border-radius: 5px;
+  height: 130px;
+  line-height: 1.5;
+}
+#consultation .consultation__btm textarea::placeholder {
+  color: #b2b2b2;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.5;
+}
+#consultation .consultation__btm input {
+  border-radius: 5px;
+  padding: 8px 10px;
+  width: 100%;
+  border: solid 1px #404040;
+}
+#consultation .consultation__btm input::placeholder {
+  color: #b2b2b2;
+  font-size: 13px;
+}
+#consultation .consultation__btm--btn input {
+  background: #ad6cbd;
+  border: #ad6cbd;
+  color: #FFF;
+  letter-spacing: 0.1em;
+  font-size: 13px;
+}
+#consultation .consultation__btm span {
+  font-size: 12px;
+  display: block;
+  padding: 5px 0;
+}
+#consultation .consultation__btm select {
+  /* styling */
+  padding: 8px 10px;
+  width: 100%;
+  border: thin solid #404040;
+  border-radius: 5px;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: linear-gradient(45deg, transparent 0%, #FFF 0%), linear-gradient(135deg, #FFF 0%, transparent 0%), linear-gradient(to right, #d7bade, #d7bade);
+  background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), 100% 0;
+  background-size: 0 0, 0 0, 2.5em 2.5em;
+  background-repeat: no-repeat;
+  font-size: 13px;
+  background-color: #FFF;
+}
+#consultation select.is-empty {
+  color: #b2b2b2;
+}
+#consultation select:invalid {
+  color: #b2b2b2;
+}
+#consultation input[type=number]::-webkit-outer-spin-button,
+#consultation input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#consultation input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#cononayami .cononayami__list {
+  border: solid 1px #b2b2b2;
+  margin: 10px 0 30px;
+}
+#cononayami .cononayami__list--ttl {
+  background: #d7bade;
+  display: inline-block;
+  width: 200px;
+  white-space: nowrap;
+  padding: 10px;
+  border-bottom: solid 1px #FFF;
+}
+#cononayami .cononayami__list--ttl + p {
+  padding: 10px;
+  border-bottom: solid 1px #b2b2b2;
+  display: block;
+  width: calc(100% - 200px);
+}
+#cononayami .cononayami__list li {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+}
+#cononayami .cononayami__list li:last-child .cononayami__list--ttl {
+  border-bottom: none;
+}
+#cononayami .cononayami__list li:last-child .cononayami__list--ttl + p {
+  border-bottom: none;
+}
+#cononayami .cononayami__list--btn {
+  display: flex;
+  align-items: flex-end;
+}
+#cononayami .cononayami__list--btn input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 8px 10px;
+  border-radius: 5px;
+  font-size: 13px;
+  line-height: 1.1;
+}
+#cononayami .cononayami__list--btnpre {
+  line-height: 1.1;
+  margin: 0 10px 0 0;
+}
+#cononayami .cononayami__list--btnpre input {
+  border: solid 1px #b2b2b2;
+  width: 120px;
+}
+#cononayami .cononayami__list--btnsubmit {
+  line-height: 1.1;
+}
+#cononayami .cononayami__list--btnsubmit input {
+  background: #ad6cbd;
+  border: #ad6cbd 1px solid;
+  color: #FFF;
+  width: 300px;
+  letter-spacing: 0.1em;
+}
+
+.wpcf7-form-control-wrap {
+  position: relative;
+}
+
+.wpcf7-form-control-wrap:after {
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: 20px;
+  width: 9px;
+  height: 9px;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  transform: translateY(-50%) rotate(-135deg);
+  font-size: 20px;
+  pointer-events: none;
+}
+
+.wpcf7-response-output {
+  padding: 10px 20px;
+  margin: 0 80px !important;
+  font-size: 14px;
+  border: none;
+  margin: 0;
+  color: #444;
+  border: solid 2px #dc3232;
+  background: #FFF;
+  font-weight: bold;
+  text-align: center;
+}
+
+h2.confirm {
+  font-weight: normal;
+  display: block;
+  margin: 30px 0 0;
+  font-size: 18px;
+}
+
+.thanks__ttl {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.thanks__txt1 {
+  text-align: center;
+  line-height: 1.5;
+  margin: 20px 0;
+}
+
+.thanks__txt2 {
+  margin-top: 20px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 749px) {
+  h2.confirm {
+    margin: 30px 5% 0;
+  }
+
+  .thanks__ttl {
+    font-size: 18px;
+    margin: 30px 0;
+  }
+
+  .thanks__txt1 {
+    margin: 20px 0;
+    text-align-last: left;
+  }
+
+  .thanks__txt2 {
+    margin-top: 20px;
+    text-align-last: left;
+    line-height: 1.5;
+  }
+
+  #consultation {
+    padding-bottom: 4%;
+  }
+  #consultation .consultation__top--ttl {
+    margin: 7.2% 5.4% 0 6%;
+  }
+  #consultation .consultation__top--ttl span {
+    width: 100%;
+    padding: 76.4% 0 0;
+    height: 0;
+    margin: 0 0 6%;
+  }
+  #consultation .consultation__top--subttl {
+    margin: 0 12.6% 4.8%;
+  }
+  #consultation .consultation__top--subttl span {
+    width: 100%;
+    height: 0;
+    padding-top: 6.4%;
+    margin: 0;
+  }
+  #consultation .consultation__top--txt {
+    font-size: 10px;
+    line-height: 1.65;
+    margin: 0 4.8% 13%;
+    letter-spacing: 0em;
+  }
+  #consultation .consultation__btm {
+    padding: 0 5%;
+  }
+  #consultation .consultation__btm--list {
+    display: block;
+  }
+  #consultation .consultation__btm--list li {
+    width: 100%;
+    margin-right: 0;
+    margin: 0 0 6%;
+  }
+  #consultation .consultation__btm--blc {
+    margin: 0 0 6%;
+  }
+  #consultation .consultation__btm--ttl {
+    font-size: 13px;
+  }
+  #consultation .consultation__btm textarea {
+    padding: 8px 10px;
+    width: 100%;
+    height: 130px;
+  }
+  #consultation .consultation__btm textarea::placeholder {
+    color: #b2b2b2;
+    font-size: 13px;
+    font-weight: normal;
+  }
+  #consultation .consultation__btm input {
+    border-radius: 5px;
+    padding: 8px 10px;
+    width: 100%;
+    border: solid 1px #404040;
+  }
+  #consultation .consultation__btm input::placeholder {
+    color: #b2b2b2;
+    font-size: 13px;
+  }
+  #consultation .consultation__btm--btn input {
+    background: #ad6cbd;
+    border: #ad6cbd;
+    color: #FFF;
+    letter-spacing: 0.1em;
+    font-size: 13px;
+  }
+  #consultation .consultation__btm span {
+    font-size: 12px;
+    display: block;
+    padding: 5px 0;
+  }
+  #consultation .consultation__btm select {
+    /* styling */
+    width: 100%;
+    border: thin solid #404040;
+    border-radius: 5px;
+    padding: 8px 10px;
+    margin: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: linear-gradient(45deg, transparent 0%, #FFF 0%), linear-gradient(135deg, #FFF 0%, transparent 0%), linear-gradient(to right, #d7bade, #d7bade);
+    background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), 100% 0;
+    background-size: 0 0, 0 0, 2.5em 2.5em;
+    background-repeat: no-repeat;
+    font-size: 13px;
+    background-color: #FFF;
+    line-height: 1;
+  }
+  #consultation select.is-empty {
+    color: #b2b2b2;
+  }
+  #consultation select:invalid {
+    color: #b2b2b2;
+  }
+
+  #cononayami .cononayami__list {
+    border: none;
+    margin: 10px 5% 20px;
+  }
+  #cononayami .cononayami__list--ttl {
+    width: 100%;
+    white-space: wrap;
+    padding: 10px;
+  }
+  #cononayami .cononayami__list--ttl + p {
+    padding: 10px;
+    width: 100%;
+    border: none;
+  }
+  #cononayami .cononayami__list li {
+    display: block;
+    width: 100%;
+    margin: 0 0 10px;
+    border: solid 1px #b2b2b2;
+  }
+  #cononayami .cononayami__list li:last-child .cononayami__list--ttl {
+    border-bottom: none;
+  }
+  #cononayami .cononayami__list li:last-child .cononayami__list--ttl + p {
+    border-bottom: none;
+  }
+  #cononayami .cononayami__list--btn {
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 5%;
+  }
+  #cononayami .cononayami__list--btn input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    line-height: 1.1;
+  }
+  #cononayami .cononayami__list--btnpre {
+    width: 35%;
+    line-height: 1.1;
+    margin: 0 0 0;
+  }
+  #cononayami .cononayami__list--btnpre input {
+    width: 100%;
+  }
+  #cononayami .cononayami__list--btnsubmit {
+    width: 60%;
+  }
+  #cononayami .cononayami__list--btnsubmit input {
+    width: 100%;
+  }
+
+  .wpcf7-form-control-wrap {
+    position: relative;
+  }
+
+  .wpcf7-form-control-wrap:after {
+    content: "";
+    position: absolute;
+    right: 12px;
+    top: 20px;
+    width: 9px;
+    height: 9px;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    transform: translateY(-50%) rotate(-135deg);
+    font-size: 20px;
+    pointer-events: none;
+  }
+
+  .wpcf7-response-output {
+    padding: 10px 20px;
+    margin: 0 !important;
+    font-size: 14px;
+    margin: 0;
+  }
+}
 /* 共通サイズ */
 body {
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
@@ -3454,6 +3902,14 @@ input[type=search]:focus {
 
 /* スマホサイズ ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 @media screen and (max-width: 749px) {
+  .drawer-nav {
+    display: none;
+  }
+
+  .drawer-open .drawer-overlay {
+    display: none;
+  }
+
   #footer {
     margin-top: 60px;
   }

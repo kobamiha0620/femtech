@@ -149,6 +149,18 @@
       <?php get_template_part('template_parts/insta'); ?>
   </div>
 
+  <!-- コンタクトフォームの追加 -->
+  <div id="consultation" class="consultation">
+    <div class="consultation__top">
+        <h2 class="consultation__top--ttl"><span>あなたの体とこころのお悩み募集</span></h2>
+        <p class="consultation__top--subttl"><span>あなたが日頃感じている悩みを教えてください。</span></p>
+        <p class="consultation__top--txt">採用されたお悩みは、匿名で記事に使用させていただく場合がございます。<br>すべてのお悩みに回答はいたしかねますので、あらかじめご了承ください。</p>
+      </div>
+    <?php echo do_shortcode('[contact-form-7 id="3519" title="あなたの体とこころのお悩み募集"]'); ?>
+  </div>
+  <!-- コンタクトフォームの追加 -->
+
+
 
   <div class="index__inner"><!-- SP用padding Blc -->
     <div class="sp">
@@ -161,6 +173,7 @@
         </section>
     </div>
   </div><!-- index__inner -->
+
 
 
   </div><!--end contents-->
