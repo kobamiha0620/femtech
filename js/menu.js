@@ -255,21 +255,44 @@ jQuery( function( $ ) {
 		let targetblc = $('#js-pcsearchblc');
 
 		if($(e.target).is('#js-search')) {
-			console.log('1');
 			if(targetblc.hasClass('active')){
 				targetblc.removeClass('active');
 			}else{
 				targetblc.addClass('active');
 			}
 		}else if(!$(e.target).is('.newHeader__search, .search-form, .search-field, .search-submit, #js-pcsearchblc')){
-			console.log('2');
 			if(targetblc.hasClass('active')){
 				targetblc.removeClass('active');
 			}
 		}
 	});
 
+	$('.drawer-nav').css('display', 'block');
 	$( '.drawer' ).drawer();
+
+
+	//あなたの体とこころお悩み募集
+	$('#consultation select').addClass('is-empty');
+	// $('form').attr('autocomplete', 'off');
+	// $('.wpcf7-form').attr('name', 'resettxt');
+	// document.resettxt.reset();
+	// let textForm = document.getElementById("onayamiTxt");
+	// textForm.value = '';
+
+	$('#consultation select').each(function(){
+		// $('#consultation select').find('option:selected').prop('selected', false);
+		$(this).on('focus, change', function(){
+			if ($(this).val() !== ""){
+			  $(this).removeClass('is-empty');
+			} else {
+			  $(this).addClass('is-empty');
+			}
+		  });
+	});
+
+	
+
+
 
 });
 

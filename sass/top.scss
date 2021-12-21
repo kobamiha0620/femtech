@@ -184,21 +184,11 @@
     .slick-dots{
         bottom: -30px;
     }
-    .slick-slider{
-
-    }
     .slide{
         width: 100vw!important;
         margin-bottom: 34px;
         display: block;
-        &__txtblc{
 
-        }
-        &__wrap{
-            &--link{
-
-            }
-        }
         &__txtwrap{
             margin: 0 0 4px 0;
         }
@@ -344,5 +334,6 @@
     #js-newest{
         padding-top: 40px;
     }
+
 }
 
