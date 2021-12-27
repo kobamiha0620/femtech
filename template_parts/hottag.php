@@ -1,4 +1,4 @@
-<div class="side__hottag" id="side__hottag">
+<div class="side__hottag">
     <div class="side__hottag--inner">
     <h2 class="side__ttl">
         <span class="side__ttl--en">HOT TAG</span>

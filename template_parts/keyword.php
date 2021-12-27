@@ -1,4 +1,4 @@
-<div class="side__keyword" id="side__keyword">
+<div class="side__keyword">
     <h2 class="side__ttl">
         <span class="side__ttl--en">KEYWORD</span>
         <span class="side__ttl--jp">キーワード</span>

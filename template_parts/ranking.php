@@ -1,19 +1,16 @@
-<div id="sideRanking01">
-<div class="side__ranking" id="side__ranking">
+<div class="side__ranking">
   <h2 class="side__ttl">
     <span class="side__ttl--en">RANKING</span>
     <span class="side__ttl--jp">人気の記事</span>
   </h2>
 
-  <section class="carousel" aria-label="Gallery" id="sideCarousel">
+  <section class="carousel" aria-label="Gallery">
     <div class="side__ranking--inner">
 
       <div class="carousel__viewport--wrapper">
-        <ol class="carousel__viewport" id="js-carCon">
+        <ol class="carousel__viewport">
 
-
-
-          <li id="carousel__slide1" tabindex="0" class="carousel__slide show">
+          <li tabindex="0" class="carousel__slide show">
             <!-- 全体ランキング -->
             <?php
               $arg = array (
@@ -73,22 +70,21 @@
       </div><!-- carousel__viewport--wrapper -->
 
       <aside class="carousel__navigation">
-        <div class="js-prevscroll carousel__navigation--prevscroll" id="js-prevscroll"></div>
-        <ol class="js-scrollArea carousel__navigation--list" id="js-scrollArea">
-          <li class="carousel__navigation-item active" id="carousel__navigation-home">ALL</li>
-          <li class="carousel__navigation-item carousel__navigation-pms" id="carousel__navigation-pms">PMS</li>
-          <li class="carousel__navigation-item carousel__navigation-fem" id="carousel__navigation-fem">FEMTECH</li>
-          <li class="carousel__navigation-item carousel__navigation-sex" id="carousel__navigation-sex">SEXUAL</li>
-          <li class="carousel__navigation-item carousel__navigation-serial" id="carousel__navigation-serial">連載</li>
-          <li class="carousel__navigation-item carousel__navigation-mens" id="carousel__navigation-mens">for MEN</li>
-          <li class="carousel__navigation-item carousel__navigation-resarch" id="carousel__navigation-resarch">RESEARCH</li>
+        <div class="js-prevscroll carousel__navigation--prevscroll"></div>
+        <ol class="js-scrollArea carousel__navigation--list"  >
+          <li class="carousel__navigation-item active">ALL</li>
+          <li class="carousel__navigation-item carousel__navigation-pms">PMS</li>
+          <li class="carousel__navigation-item carousel__navigation-fem">FEMTECH</li>
+          <li class="carousel__navigation-item carousel__navigation-sex">SEXUAL</li>
+          <li class="carousel__navigation-item carousel__navigation-serial">連載</li>
+          <li class="carousel__navigation-item carousel__navigation-mens">for MEN</li>
+          <li class="carousel__navigation-item carousel__navigation-resarch">RESEARCH</li>
 
         </ol>
-        <div class="js-nextscroll carousel__navigation--nextscroll" id="js-nextscroll"></div>
+        <div class="js-nextscroll carousel__navigation--nextscroll"></div>
       </aside>
 
     </div>
   </section>
 </div>
 
-</div>

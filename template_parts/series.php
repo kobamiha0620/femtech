@@ -1,4 +1,4 @@
-<div class="side__series" id="side__series">
+<div class="side__series">
     <h2 class="side__ttl">
         <span class="side__ttl--en">SERIES</span>
         <span class="side__ttl--jp">連載</span>

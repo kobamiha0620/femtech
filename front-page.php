@@ -156,7 +156,7 @@
         <p class="consultation__top--subttl"><span>あなたが日頃感じている悩みを教えてください。</span></p>
         <p class="consultation__top--txt">採用されたお悩みは、匿名で記事に使用させていただく場合がございます。<br>すべてのお悩みに回答はいたしかねますので、あらかじめご了承ください。</p>
       </div>
-    <?php echo do_shortcode('[contact-form-7 id="3519" title="あなたの体とこころのお悩み募集"]'); ?>
+      <?php echo do_shortcode('[contact-form-7 id="4274" title="あなたの体とこころのお悩み募集"]'); ?>
   </div>
   <!-- コンタクトフォームの追加 -->
 

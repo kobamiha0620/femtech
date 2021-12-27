@@ -2738,7 +2738,7 @@ body.page-resarch #newHeader__cate .ttlResearch a {
   display: inline-block;
 }
 
-#side__ranking {
+.side__ranking {
   position: relative;
 }
 
@@ -2973,7 +2973,7 @@ li {
   display: inline-block;
 }
 
-#side__ranking .wp-show-posts-image.wpsp-image-left {
+.side__ranking .wp-show-posts-image.wpsp-image-left {
   margin-right: 10px;
 }
 

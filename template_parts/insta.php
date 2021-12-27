@@ -1,4 +1,4 @@
-<div class="side__insta" id="side__insta">
+<div class="side__insta">
 <a href="https://www.instagram.com/femtechtv_official/" target="_blank" class="side__insta--link">
     <h2 class="side__insta--ttl">
         <span class="side__insta--ttltxt">INSTAGRAM</span>

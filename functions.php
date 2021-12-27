@@ -24,45 +24,11 @@ add_theme_support( 'html5', array( 'search-form' ) );
 // register_nav_menus()：複数のナビゲーションメニューを登録（及び有効化）
 
 
-
-
-
-/* css & js 読み込み */
-function drawer() {
-
-	wp_enqueue_style( 'my-drawer-style', 'https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/css/drawer.min.css', array(), '3.2.1' );
-	wp_enqueue_style( 'my-font-awesome-style', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), '4.7.0' );
-	wp_enqueue_script( 'my-scroll-js', 'https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js', array( 'jquery' ), '5.1.3', true );
-	wp_enqueue_script( 'my-drawer-js', 'https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/js/drawer.min.js', array( 'my-scroll-js' ), '3.2.1', true );
-}
-add_action( 'wp_enqueue_scripts', 'drawer' );
-
-
 function add_my_scripts() {
   //WordPress 本体の jQuery を登録解除
   wp_deregister_script( 'jquery');
-  //jQuery を CDN から読み込む
-  wp_enqueue_script( 'jquery',
-    '//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js',
-    array(),
-    '3.3.1',
-    false //</body> 終了タグの前で読み込み
-  );
 
-  wp_enqueue_script(
-    'menu-script',
-    get_theme_file_uri( 'js/menu.js' , __FILE__ ),
-    array( 'jquery' ), //依存ファイルは上記の jquery
-    filemtime( get_theme_file_path( 'js/menu.js' , __FILE__ ) ),
-    array(),
-    true
-  );
-  wp_enqueue_script(
-    'slick.min',
-    get_template_directory_uri().'/slick/slick.min.js',
-    array(),
-    false
-  );
+
   wp_enqueue_style(
     'my-style',
     get_theme_file_uri( 'style.css' ),
@@ -70,8 +36,59 @@ function add_my_scripts() {
     filemtime( get_theme_file_path( 'style.css' ) )
   );
 
+    //jQuery を CDN から読み込む
+    wp_enqueue_script( 'jquery',
+    '//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js',
+    array(),
+    '3.4.1',
+    false //</body> 終了タグの前で読み込み
+  );
+
+
+  wp_enqueue_script(
+    'slick.min',
+    get_template_directory_uri().'/slick/slick.min.js',
+    array(),
+    false 
+  );
+
+	wp_enqueue_style(
+     'my-drawer-style',
+      'https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/css/drawer.min.css',
+      array(),
+      '3.2.1'
+     );
+	wp_enqueue_style(
+     'my-font-awesome-style',
+      'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
+      array(),
+      '4.7.0'
+     );
+	wp_enqueue_script(
+     'my-scroll-js',
+      'https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js',
+      array( 'jquery' ),
+      '5.1.3',
+      true
+     );
+	wp_enqueue_script(
+     'my-drawer-js',
+      'https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/js/drawer.min.js',
+      array( 'my-scroll-js' ),
+      '3.2.1',
+      true
+     );
+     wp_enqueue_script(
+      'menu-script',
+      get_theme_file_uri( 'js/menu.js' , __FILE__ ),
+      array( 'jquery' ), //依存ファイルは上記の jquery
+      filemtime( get_theme_file_path( 'js/menu.js' , __FILE__ ) ),
+      array(),
+      false
+    );
 }
 add_action('wp_enqueue_scripts', 'add_my_scripts');
+
 
 
 function custom_pagination_html( $template ) {
@@ -187,7 +204,7 @@ function my_wpp_custom_html( $mostpopular, $instance ){
         	$output .= '<div>' . esc_html( $custom_fields ) . '</div>';
         }
 
-        $output .= '</article></a></li>';   
+        $output .= '</div></article></a></li>';   
 	}
 	$output .= '</ol>';   
 	return $output;
@@ -307,66 +324,68 @@ function change_comment_cookies_text( $translated_text, $text, $domain ){
 	return $translated_text;
 }
 
-add_action('admin_menu', 'add_custom_fields');
-add_action('save_post', 'save_custom_fields');
+// add_action('admin_menu', 'add_custom_fields');
+// add_action('save_post', 'save_custom_fields');
  
-// 記事ページと固定ページでカスタムフィールドを表示
-function add_custom_fields() {
-  add_meta_box( 'my_sectionid', 'メタ設定', 'my_custom_fields', 'post');
-  add_meta_box( 'my_sectionid', 'メタ設定', 'my_custom_fields', 'page');
-}
+
+
+// // 記事ページと固定ページでカスタムフィールドを表示
+// function add_custom_fields() {
+//   add_meta_box( 'my_sectionid', 'メタ設定', 'my_custom_fields', 'post');
+//   add_meta_box( 'my_sectionid', 'メタ設定', 'my_custom_fields', 'page');
+// }
  
-function my_custom_fields() {
-  global $post;
-  $keywords = get_post_meta($post->ID,'keywords',true);
-  $description = get_post_meta($post->ID,'description',true);
+// function my_custom_fields() {
+//   global $post;
+//   $keywords = get_post_meta($post->ID,'keywords',true);
+//   $description = get_post_meta($post->ID,'description',true);
    
-  echo '<p>キーワード（半角カンマ区切り）<br>';
-  echo '<input type="text" name="keywords" value="'.esc_html($keywords).'" size="60"></p>';
+//   echo '<p>キーワード（半角カンマ区切り）<br>';
+//   echo '<input type="text" name="keywords" value="'.esc_html($keywords).'" size="60"></p>';
    
-  echo '<p>ページの説明（description）160文字以内<br>';
-  echo '<input type="text" style="width: 600px;height: 40px;" name="description" value="'.esc_html($description).'" maxlength="160"></p>';
-}
+//   echo '<p>ページの説明（description）160文字以内<br>';
+//   echo '<input type="text" style="width: 600px;height: 40px;" name="description" value="'.esc_html($description).'" maxlength="160"></p>';
+// }
  
-// カスタムフィールドの値を保存
-function save_custom_fields( $post_id ) {
-  if(!empty($_POST['keywords']))
-    update_post_meta($post_id, 'keywords', $_POST['keywords'] );
-  else delete_post_meta($post_id, 'keywords');
+// // カスタムフィールドの値を保存
+// function save_custom_fields( $post_id ) {
+//   if(!empty($_POST['keywords']))
+//     update_post_meta($post_id, 'keywords', $_POST['keywords'] );
+//   else delete_post_meta($post_id, 'keywords');
  
-  if(!empty($_POST['description']))
-    update_post_meta($post_id, 'description', $_POST['description'] );
-  else delete_post_meta($post_id, 'description');
-}
+//   if(!empty($_POST['description']))
+//     update_post_meta($post_id, 'description', $_POST['description'] );
+//   else delete_post_meta($post_id, 'description');
+// }
  
 
 
-//ウィジェットの追加
-if ( !function_exists( 'bj_register_sidebars' ) ) {
+// //ウィジェットの追加
+// if ( !function_exists( 'bj_register_sidebars' ) ) {
 
-	function bj_register_sidebars() {
+// 	function bj_register_sidebars() {
 
-		register_sidebar( array(
-			'id'            => 'sidebar_1', //ウィジェットのID
-			'name'          => 'サイドバー1', //ウィジェットの名前
-			'description'   => 'ウィジェットをドラッグして編集してください。', //ウィジェットの説明文
-			'before_widget' => '<div>', //ウィジェットを囲う開始タグ
-			'after_widget'  => '</div>', //ウィジェットを囲う終了タグ
-			'before_title'  => '<h4>', //タイトルを囲う開始タグ
-			'after_title'   => '</h4>', //タイトルを囲う終了タグ
-		) );
+// 		register_sidebar( array(
+// 			'id'            => 'sidebar_1', //ウィジェットのID
+// 			'name'          => 'サイドバー1', //ウィジェットの名前
+// 			'description'   => 'ウィジェットをドラッグして編集してください。', //ウィジェットの説明文
+// 			'before_widget' => '<div>', //ウィジェットを囲う開始タグ
+// 			'after_widget'  => '</div>', //ウィジェットを囲う終了タグ
+// 			'before_title'  => '<h4>', //タイトルを囲う開始タグ
+// 			'after_title'   => '</h4>', //タイトルを囲う終了タグ
+// 		) );
 
-		register_sidebar( array(
-			'id'            => 'sidebar_2', //ウィジェットのID
-			'name'          => 'サイドバー2', //ウィジェットの名前
-			'description'   => 'ウィジェットをドラッグして編集してください。', //ウィジェットの説明文
-			'before_widget' => '<div>', //ウィジェットを囲う開始タグ
-			'after_widget'  => '</div>', //ウィジェットを囲う終了タグ
-			'before_title'  => '<h4>', //タイトルを囲う開始タグ
-			'after_title'   => '</h4>', //タイトルを囲う終了タグ
-		) );
+// 		register_sidebar( array(
+// 			'id'            => 'sidebar_2', //ウィジェットのID
+// 			'name'          => 'サイドバー2', //ウィジェットの名前
+// 			'description'   => 'ウィジェットをドラッグして編集してください。', //ウィジェットの説明文
+// 			'before_widget' => '<div>', //ウィジェットを囲う開始タグ
+// 			'after_widget'  => '</div>', //ウィジェットを囲う終了タグ
+// 			'before_title'  => '<h4>', //タイトルを囲う開始タグ
+// 			'after_title'   => '</h4>', //タイトルを囲う終了タグ
+// 		) );
 
-	}
+// 	}
 
-	add_action( 'widgets_init', 'bj_register_sidebars' );
-}
+// 	add_action( 'widgets_init', 'bj_register_sidebars' );
+// }

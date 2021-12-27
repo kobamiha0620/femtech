@@ -15,7 +15,6 @@
 		integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<!--font-awesomeのスタイルシートの呼び出し-->
 
-	<?php wp_head(); ?>
 	  <!-- </div>end container -->
 
 	  <!-- TOPページのみ -->
@@ -26,7 +25,8 @@
 		<?php endif; ?>
 
 	<!--システム・プラグイン用-->
-	
+	<?php wp_head(); ?>
+
 </head>
 
 <body <?php body_class( ['drawer', 'drawer--left'] ) ; ?> style="background-color:#FFF; ">   
