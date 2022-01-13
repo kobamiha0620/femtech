@@ -6,7 +6,7 @@
     <ul class="side__keyword--link">
         <li class="cate-8"><a href="/category/pms/">PMSとは</a></li>
         <li class="cate-9"><a href="/category/femtech/ ">フェムテックとは</a></li>
-        <li class="cate-111"><a href="/category/well/">セクシャルウェルネスとは</a></li>
+        <li class="cate-111"><a href="/news146/">セクシャルウェルネスとは</a></li>
         <li class="cate-129"><a href="/category/aoki/">月と運気のはなし</a></li>
     </ul>
 </div>

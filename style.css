@@ -3206,6 +3206,7 @@ li {
   padding: 8px 10px;
   width: 100%;
   border: solid 1px #404040;
+  height: 36px;
 }
 #consultation .consultation__btm input::placeholder {
   color: #b2b2b2;
@@ -3226,6 +3227,7 @@ li {
 #consultation .consultation__btm select {
   /* styling */
   padding: 8px 10px;
+  height: 36px;
   width: 100%;
   border: thin solid #404040;
   border-radius: 5px;
@@ -3233,8 +3235,8 @@ li {
   -webkit-appearance: none;
   -moz-appearance: none;
   background-image: linear-gradient(45deg, transparent 0%, #FFF 0%), linear-gradient(135deg, #FFF 0%, transparent 0%), linear-gradient(to right, #d7bade, #d7bade);
-  background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), 100% 0;
-  background-size: 0 0, 0 0, 2.5em 2.5em;
+  background-position: calc(100% - 18px) calc(1em + 4px), calc(100% - 18px) calc(1em + 4px), 100% 0;
+  background-size: 0 0, 0 0, 36px 50px;
   background-repeat: no-repeat;
   font-size: 13px;
   background-color: #FFF;
@@ -3322,7 +3324,7 @@ li {
 .wpcf7-form-control-wrap:after {
   content: "";
   position: absolute;
-  right: 12px;
+  right: 14px;
   top: 20px;
   width: 9px;
   height: 9px;
@@ -3481,7 +3483,7 @@ h2.confirm {
     -moz-appearance: none;
     background-image: linear-gradient(45deg, transparent 0%, #FFF 0%), linear-gradient(135deg, #FFF 0%, transparent 0%), linear-gradient(to right, #d7bade, #d7bade);
     background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), 100% 0;
-    background-size: 0 0, 0 0, 2.5em 2.5em;
+    background-size: 0 0, 0 0, 36px 50px;
     background-repeat: no-repeat;
     font-size: 13px;
     background-color: #FFF;
@@ -3556,8 +3558,8 @@ h2.confirm {
   .wpcf7-form-control-wrap:after {
     content: "";
     position: absolute;
-    right: 12px;
-    top: 20px;
+    right: 14px;
+    top: 21px;
     width: 9px;
     height: 9px;
     border-top: 1px solid #fff;
