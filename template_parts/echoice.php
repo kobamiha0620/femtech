@@ -1,6 +1,6 @@
 <div class="articlesWrapper">
     <h2 class="articles__ttl">
-        <span class="articles__ttl--en">EDITOR'S CHOICE</span>
+        <span class="articles__ttl--en">RECOMMEND</span>
         <span class="articles__ttl--jp">おすすめ記事</span>
     </h2>
     <ul class="articles__list">

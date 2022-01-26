@@ -103,7 +103,7 @@
         <ul class="articles__list">
             <?php query_posts('post_type=post&posts_per_page=5'); ?>
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
+            
             <?php get_template_part('template_parts/newestArticle'); ?>
 
             <?php endwhile; else : ?>
@@ -111,13 +111,6 @@
         </ul>
 
         <a href="/latest-all/" class="articles__link">最新の記事を全て見る ＞</a>
-
-
-
-
-
-
-        
         
     </div> <!-- #js-newest -->
 
@@ -132,6 +125,8 @@
       <?php get_template_part('template_parts/ranking'); ?>
       <!-- HOT TAG -->
       <?php get_template_part('template_parts/hottag'); ?>
+    <!-- バナー設定 -->
+    <?php get_template_part('template_parts/bnrs'); ?>
       <!-- SERIES -->
       <?php get_template_part('template_parts/series'); ?>
   </div>
@@ -150,16 +145,8 @@
   </div>
 
   <!-- コンタクトフォームの追加 -->
-  <div id="consultation" class="consultation">
-    <div class="consultation__top">
-        <h2 class="consultation__top--ttl"><span>あなたの体とこころのお悩み募集</span></h2>
-        <p class="consultation__top--subttl"><span>あなたが日頃感じている悩みを教えてください。</span></p>
-        <p class="consultation__top--txt">採用されたお悩みは、匿名で記事に使用させていただく場合がございます。<br>すべてのお悩みに回答はいたしかねますので、あらかじめご了承ください。</p>
-      </div>
-      <?php echo do_shortcode('[contact-form-7 id="4274" title="あなたの体とこころのお悩み募集"]'); ?>
-  </div>
-  <!-- コンタクトフォームの追加 -->
 
+  <!-- コンタクトフォームの追加 -->
 
 
   <div class="index__inner"><!-- SP用padding Blc -->

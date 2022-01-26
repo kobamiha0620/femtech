@@ -11,6 +11,9 @@
     <!-- SERIES -->
     <?php get_template_part('template_parts/series'); ?>
 
+    <!-- バナー設定 -->
+    <?php get_template_part('template_parts/bnrs'); ?>
+
     <!-- HOT TAG -->
     <?php get_template_part('template_parts/hottag'); ?>
     

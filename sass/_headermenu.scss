@@ -1,11 +1,15 @@
 body.home {
   #newHeader__cate {
     .homeTtl {
+      display: none!important;
       a {
         color: $PINK;
+
       }
     }
+
   }
+
 }
 
 body.category-pms {
@@ -984,4 +988,10 @@ $drawWP: calc($PC_BB * 9);
 
 .drawer-nav{
   overflow: auto;
+}
+.menu{
+  .homeTtl{
+    display: none!important;
+
+  }
 }
