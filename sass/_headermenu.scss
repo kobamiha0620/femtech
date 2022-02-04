@@ -1,15 +1,33 @@
 body.home {
   #newHeader__cate {
     .homeTtl {
-      display: none!important;
+      display: none !important;
       a {
         color: $PINK;
-
       }
     }
-
   }
-
+}
+body.horoscope,
+body.aries,
+body.taurus,
+body.gemini,
+body.cancer,
+body.leo,
+body.virgo,
+body.libra,
+body.scorpio,
+body.sagittarius,
+body.capricorn,
+body.aquarius,
+body.pisces {
+  #newHeader__cate {
+    .ttlLuna {
+      a {
+        color: $PINK;
+      }
+    }
+  }
 }
 
 body.category-pms {
@@ -42,7 +60,6 @@ body.category-news {
 }
 body.category-mens {
   #newHeader__cate {
-
     .ttlMens {
       a {
         color: $PINK;
@@ -53,7 +70,6 @@ body.category-mens {
 
 body.category-well {
   #newHeader__cate {
-
     .ttlSexw {
       a {
         color: $PINK;
@@ -64,10 +80,9 @@ body.category-well {
 
 body.category-beauty {
   #newHeader__cate {
-
     .ttlBeauty {
       a {
-        color: $PINK; 
+        color: $PINK;
       }
     }
   }
@@ -82,13 +97,11 @@ body.category-serial {
   }
 }
 
-
 body.category-resarch {
   #newHeader__cate {
-
     .ttlResearch {
       a {
-        color: $PINK; 
+        color: $PINK;
       }
     }
   }
@@ -151,7 +164,6 @@ body.page-news {
 }
 body.page-mens {
   #newHeader__cate {
-
     .ttlMens {
       a {
         color: $PINK;
@@ -162,7 +174,6 @@ body.page-mens {
 
 body.page-well {
   #newHeader__cate {
-
     .ttlSexw {
       a {
         color: $PINK;
@@ -173,10 +184,9 @@ body.page-well {
 
 body.page-beauty {
   #newHeader__cate {
-
     .ttlBeauty {
       a {
-        color: $PINK; 
+        color: $PINK;
       }
     }
   }
@@ -219,10 +229,9 @@ body.page-personf {
 }
 body.page-resarch {
   #newHeader__cate {
-
     .ttlResearch {
       a {
-        color: $PINK; 
+        color: $PINK;
       }
     }
   }
@@ -230,7 +239,8 @@ body.page-resarch {
 
 /* ヘッダー --------------------------------------------------------------- */
 .newHeader {
-  &__inner {}
+  &__inner {
+  }
 
   &__logo {
     text-align: center;
@@ -238,28 +248,26 @@ body.page-resarch {
     padding: 52px 0 14px;
 
     a {
-      background: url('images/logo.png') no-repeat;
+      background: url("images/logo.png") no-repeat;
       display: inline-block;
       background-size: 100% auto;
-      width: calc(540px/2);
-      height: calc(84px /2);
+      width: calc(540px / 2);
+      height: calc(84px / 2);
       white-space: nowrap;
       text-indent: -9999px;
     }
   }
 
   &__cate {
-    &--wrapper{
+    &--wrapper {
       margin: 0 0 0 24px;
-
     }
   }
 
   &__wrapper {
-    background: #FFF;
+    background: #fff;
     width: 100%;
   }
-
 
   &__contents {
     display: flex;
@@ -274,14 +282,13 @@ body.page-resarch {
       align-items: center;
     }
   }
-
-
 }
-
 
 #newHeader__cate {
   .menu {
-    font-family: 'Yu Mincho Light', 'YuMincho', 'Yu Mincho', '游明朝体', 'Yu Mincho Light', 'YuMincho', 'Yu Mincho', '游明朝体', 'Noto Serif JP', serif !important;
+    font-family: "Yu Mincho Light", "YuMincho", "Yu Mincho", "游明朝体",
+      "Yu Mincho Light", "YuMincho", "Yu Mincho", "游明朝体", "Noto Serif JP",
+      serif !important;
     color: $PINK;
     display: flex;
 
@@ -298,9 +305,9 @@ body.page-resarch {
       text-decoration: none;
       color: #444444;
       white-space: nowrap;
-      &:hover{
+      &:hover {
         color: $PINK;
-        opacity: 1.0;
+        opacity: 1;
       }
     }
   }
@@ -323,13 +330,12 @@ body.page-resarch {
 .drawer--left .drawer-nav {
   box-sizing: border-box;
 }
-.drawer-overlay{
-  z-index: 4!important;
-
+.drawer-overlay {
+  z-index: 4 !important;
 }
-.drawer-nav{
-  z-index: 5!important;
-  background: #F3E8F4;
+.drawer-nav {
+  z-index: 5 !important;
+  background: #f3e8f4;
 }
 .drawer-menu {
   display: block;
@@ -345,7 +351,9 @@ body.page-resarch {
       text-decoration: none;
       color: #444;
       font-size: 20px;
-      font-family: 'Yu Mincho Light', 'YuMincho', 'Yu Mincho', '游明朝体', 'Yu Mincho Light', 'YuMincho', 'Yu Mincho', '游明朝体', 'Noto Serif JP', serif !important;
+      font-family: "Yu Mincho Light", "YuMincho", "Yu Mincho", "游明朝体",
+        "Yu Mincho Light", "YuMincho", "Yu Mincho", "游明朝体", "Noto Serif JP",
+        serif !important;
       &:hover {
         text-decoration: none;
       }
@@ -359,14 +367,14 @@ body.page-resarch {
 }
 
 .newHeader {
-  &__contents{
+  &__contents {
     z-index: 1;
   }
   &__drawer {
     &--inner {
       padding: 138px $PC_BB $PC_BB;
       overflow: hidden;
-      background: #F3E8F4;
+      background: #f3e8f4;
     }
 
     &--sns {
@@ -377,7 +385,7 @@ body.page-resarch {
       li {
         margin-right: 0;
         width: 28px;
-        &:first-child{
+        &:first-child {
           margin-right: 26px;
         }
       }
@@ -392,17 +400,17 @@ body.page-resarch {
     }
 
     &--snsfb {
-      background: url('images/icon_fb.png') no-repeat;
+      background: url("images/icon_fb.png") no-repeat;
       background-size: 100% auto;
     }
 
     &--snstw {
-      background: url('images/icon_tw.png') no-repeat;
+      background: url("images/icon_tw.png") no-repeat;
       background-size: 100% auto;
     }
 
     &--snsin {
-      background: url('images/icon_insta.png') no-repeat;
+      background: url("images/icon_insta.png") no-repeat;
       background-size: 100% auto;
     }
 
@@ -412,9 +420,9 @@ body.page-resarch {
       border-top: solid 1px #000;
       border-bottom: solid 1px #000;
       padding: 55px 0;
-      text-align: center; 
+      text-align: center;
       .logo {
-        background: url('images/logo.png') no-repeat;
+        background: url("images/logo.png") no-repeat;
         background-size: 100% auto;
         width: 157px;
         display: inline-block;
@@ -424,17 +432,17 @@ body.page-resarch {
         margin: 0 auto 8px;
         text-align: center;
       }
-      p{
+      p {
         text-align-last: left;
       }
     }
-    &--doctor{
+    &--doctor {
       border-bottom: solid 1px #000;
       padding: 55px 0;
-      &-ttl{
+      &-ttl {
         white-space: nowrap;
         text-indent: -9999px;
-        background: url('images/menu_ttl_doctor.png') no-repeat;
+        background: url("images/menu_ttl_doctor.png") no-repeat;
         background-size: 100% auto;
         display: block;
         width: 104px;
@@ -442,28 +450,28 @@ body.page-resarch {
         text-align: center;
         margin: 0 auto 20px;
       }
-      &-intro{
+      &-intro {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin: 0 0 32px;
       }
-      &-introimg{
+      &-introimg {
         white-space: nowrap;
         text-indent: -9999px;
-        background: url('images/img_profile_doctor.png') no-repeat;
+        background: url("images/img_profile_doctor.png") no-repeat;
         background-size: 100% auto;
         display: block;
         width: 120px;
         height: 120px;
         text-align: center;
       }
-      &-name{
+      &-name {
         font-size: 18px;
       }
-      &-resume{
+      &-resume {
         margin: 0 0 55px;
-        p{
+        p {
           font-size: 15px;
           text-indent: -1em;
           padding-left: 1em;
@@ -471,7 +479,7 @@ body.page-resarch {
           line-height: 1.4;
         }
       }
-      &-txt{
+      &-txt {
         font-size: 15px;
         line-height: 1.8;
       }
@@ -530,7 +538,6 @@ $drawWP: calc($PC_BB * 9);
     transform: rotate(45deg);
     top: 20px;
     width: 100%;
-
   }
 
   .hamburger__line--2 {
@@ -542,14 +549,11 @@ $drawWP: calc($PC_BB * 9);
     transform: rotate(-45deg);
     top: 20px;
     width: 100%;
-
   }
 
   .hamburger {
     width: 32px !important;
-    ;
     height: 32px !important;
-    ;
   }
 
   .hamburger__line {
@@ -583,9 +587,7 @@ $drawWP: calc($PC_BB * 9);
   .hamburger {
     display: block;
     width: 16px !important;
-    ;
     height: 17px !important;
-    ;
     position: relative;
   }
 
@@ -607,8 +609,8 @@ $drawWP: calc($PC_BB * 9);
   position: absolute;
   left: 0;
   width: 100%;
-  background-color: #3E3A39;
-  transition: all .6s;
+  background-color: #3e3a39;
+  transition: all 0.6s;
   height: 1px;
   border-radius: 3px !important;
 }
@@ -627,9 +629,8 @@ $drawWP: calc($PC_BB * 9);
 
 /* 表示された時用のCSS */
 
-
 @media screen and (max-width: $BP) {
-  .adjpadding{
+  .adjpadding {
     padding-top: 100px;
   }
   /* ヘッダー --------------------------------------------------------------- */
@@ -639,10 +640,10 @@ $drawWP: calc($PC_BB * 9);
       display: flex;
       justify-content: space-between;
       align-items: center;
-      overflow-y: hidden; 
+      overflow-y: hidden;
 
       &--search {
-        background: url('images/spicon_search.png') no-repeat;
+        background: url("images/spicon_search.png") no-repeat;
         background-size: 100% auto;
         text-indent: -9999px;
         white-space: nowrap;
@@ -675,9 +676,8 @@ $drawWP: calc($PC_BB * 9);
     }
 
     &__cate {
-      &--wrapper{
+      &--wrapper {
         margin: 0;
-  
       }
     }
 
@@ -695,31 +695,29 @@ $drawWP: calc($PC_BB * 9);
         align-items: center;
       }
     }
-
-
   }
-  .newHeader{
-    &__drawer{
-      &--inner{
+  .newHeader {
+    &__drawer {
+      &--inner {
         position: relative;
-        overflow-y: scroll!important;
+        overflow-y: scroll !important;
         padding: $PC_BB 17px 17px;
       }
-      &--sns{
+      &--sns {
         padding: 8px 8px 36px;
-        li{
+        li {
           width: 26px;
         }
-        a{
+        a {
           width: 26px;
           height: 26px;
         }
       }
 
-      &--about{
+      &--about {
         line-height: 1.8;
         padding: $PC_BS 8px;
-        .logo{
+        .logo {
           width: 157px;
           display: inline-block;
           height: 25px;
@@ -727,59 +725,58 @@ $drawWP: calc($PC_BB * 9);
           line-height: 0;
           margin: 0 0 8px;
         }
-        p{
+        p {
           font-size: 12px;
         }
       }
-      &--doctor{
+      &--doctor {
         border-bottom: solid 1px #000;
         padding: 24px 8px;
-        &-ttl{
+        &-ttl {
           width: 74px;
           height: 16px;
           margin: 0 auto 18px;
         }
-        &-intro{
+        &-intro {
           justify-content: center;
           margin: 0 0 32px;
         }
-        &-introimg{
+        &-introimg {
           width: 85px;
           height: 85px;
           margin: 0 18px 0 0;
         }
-        &-name{
+        &-name {
           font-size: 14px;
         }
-        &-resume{
+        &-resume {
           margin: 0 0 24px;
-          p{
+          p {
             font-size: 12px;
             margin: 0 0 7px;
             line-height: 1.4;
           }
         }
-        &-txt{
+        &-txt {
           font-size: 12px;
           line-height: 1.8;
         }
       }
-      &--otherlink{
+      &--otherlink {
         margin: 0;
-          padding: 25px 8px 0;
-          li{
-            width: 50%;
-            &:nth-child(2n){
-              margin-bottom: 15px;
-            }
-            &:first-child{
-              margin-bottom: 15px;
-            }
-            a{
-              font-size: 12px;
-
-            }
+        padding: 25px 8px 0;
+        li {
+          width: 50%;
+          &:nth-child(2n) {
+            margin-bottom: 15px;
           }
+          &:first-child {
+            margin-bottom: 15px;
+          }
+          a {
+            font-size: 12px;
+          }
+        }
       }
     }
   }
@@ -789,13 +786,11 @@ $drawWP: calc($PC_BB * 9);
         list-style: none;
         font-size: 13px;
         margin: 0 22px 0 0;
-
       }
 
       a {
         padding: 12px 0;
         white-space: nowrap;
-
       }
     }
   }
@@ -803,15 +798,15 @@ $drawWP: calc($PC_BB * 9);
   .newHeader__wrapper {
     overflow-x: scroll;
     padding: 0 20px 0;
-  //   -ms-overflow-style: none;
-  //   scrollbar-width: none;
-  //   &::-webkit-scrollbar {
-  //     display:none;
-  // }
-  // scrollbar-color: transparent transparent;
-  // scrollbar-width: 0px;
-  // scroll-behavior: smooth;
-  // scroll-snap-type: x mandatory;
+    //   -ms-overflow-style: none;
+    //   scrollbar-width: none;
+    //   &::-webkit-scrollbar {
+    //     display:none;
+    // }
+    // scrollbar-color: transparent transparent;
+    // scrollbar-width: 0px;
+    // scroll-behavior: smooth;
+    // scroll-snap-type: x mandatory;
 
     &::-webkit-scrollbar {
       height: 5px;
@@ -819,7 +814,7 @@ $drawWP: calc($PC_BB * 9);
     &::-webkit-scrollbar-track {
     }
     &::-webkit-scrollbar-track {
-      background: #EEE;
+      background: #eee;
     }
     &::-webkit-scrollbar-thumb {
       background: $PINK;
@@ -830,7 +825,7 @@ $drawWP: calc($PC_BB * 9);
   // ドロワーメニュー
 
   .drawer-menu {
-    padding: 8px!important;
+    padding: 8px !important;
     li {
       width: 100%;
       display: block;
@@ -849,7 +844,7 @@ $drawWP: calc($PC_BB * 9);
     display: block;
   }
   #navclose {
-    display: none!important;
+    display: none !important;
   }
   $drawSp: 100vw;
 
@@ -859,40 +854,36 @@ $drawWP: calc($PC_BB * 9);
     }
     .drawer-hamburger {
       display: none;
-      top:0!important; 
-      left: 0!important;     
+      top: 0 !important;
+      left: 0 !important;
     }
-    #navSpclose{
+    #navSpclose {
       display: none;
     }
-
   }
 
   .drawer-close {
     .drawer-nav {
       width: $drawSp !important;
-      left: -$drawSp!important;
+      left: -$drawSp !important;
     }
 
     .drawer-hamburger {
       padding: 0 !important;
       display: none;
-      
     }
-    #navSpclose{
+    #navSpclose {
       display: block;
     }
-
   }
-  #header{
-
-    .newHeader__inner{
-      background: #FFF;
+  #header {
+    .newHeader__inner {
+      background: #fff;
 
       border-bottom: solid 1px $UB;
     }
   }
-  .spNav{
+  .spNav {
     width: 100%;
     overflow: hidden;
     z-index: 3;
@@ -900,18 +891,17 @@ $drawWP: calc($PC_BB * 9);
     position: fixed;
     top: 0;
     border-bottom: solid 1px $UB;
-    background: #FFF;
-
+    background: #fff;
   }
-  .newHeader__spnav{
+  .newHeader__spnav {
   }
 }
 
 /* PC 画面サイズが750px以上 */
 @media screen and (min-width: $BP+1) {
-  .newHeader{
-    &__pcbtn{
-      background: url('images/spicon_search.png') no-repeat;
+  .newHeader {
+    &__pcbtn {
+      background: url("images/spicon_search.png") no-repeat;
       background-size: 25px 25px;
       background-position: center;
       text-indent: -9999px;
@@ -926,25 +916,25 @@ $drawWP: calc($PC_BB * 9);
       appearance: none;
       cursor: pointer;
       padding: 20px;
-      &:hover{
+      &:hover {
         opacity: 0.7;
       }
     }
-    &__search{
+    &__search {
       padding: 50px;
-      &--blc{
+      &--blc {
         z-index: 0;
         position: absolute;
         top: -300px;
-        right:0;
-        background: #FFF;
-        border: solid 1px #D0D0D0;
+        right: 0;
+        background: #fff;
+        border: solid 1px #d0d0d0;
         border-top: none;
         transition: 0.5s ease;
-        box-shadow: 5px 5px 5px 0px rgba(70, 70, 75, .2);
+        box-shadow: 5px 5px 5px 0px rgba(70, 70, 75, 0.2);
         animation-duration: 1.2s;
         animation-name: fadeOut;
-        &.active{
+        &.active {
           top: 64px;
           transition: 0.5s ease;
           animation-duration: 1.2s;
@@ -952,46 +942,38 @@ $drawWP: calc($PC_BB * 9);
         }
       }
     }
-
   }
-
-
 }
-
 
 @keyframes fadeIn {
   0% {
-      opacity:0;
+    opacity: 0;
   }
-  90%{
-    opacity:0;
-
+  90% {
+    opacity: 0;
   }
   100% {
-      opacity:1;
+    opacity: 1;
   }
 }
-
 
 @keyframes fadeOut {
   0% {
-      opacity:1;
+    opacity: 1;
   }
-  90%{
-    opacity:0;
-
+  90% {
+    opacity: 0;
   }
   100% {
-      opacity:0;
+    opacity: 0;
   }
 }
 
-.drawer-nav{
+.drawer-nav {
   overflow: auto;
 }
-.menu{
-  .homeTtl{
-    display: none!important;
-
+.menu {
+  .homeTtl {
+    display: none !important;
   }
 }

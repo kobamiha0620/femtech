@@ -324,68 +324,15 @@ function change_comment_cookies_text( $translated_text, $text, $domain ){
 	return $translated_text;
 }
 
-// add_action('admin_menu', 'add_custom_fields');
-// add_action('save_post', 'save_custom_fields');
- 
-
-
-// // 記事ページと固定ページでカスタムフィールドを表示
-// function add_custom_fields() {
-//   add_meta_box( 'my_sectionid', 'メタ設定', 'my_custom_fields', 'post');
-//   add_meta_box( 'my_sectionid', 'メタ設定', 'my_custom_fields', 'page');
-// }
- 
-// function my_custom_fields() {
-//   global $post;
-//   $keywords = get_post_meta($post->ID,'keywords',true);
-//   $description = get_post_meta($post->ID,'description',true);
-   
-//   echo '<p>キーワード（半角カンマ区切り）<br>';
-//   echo '<input type="text" name="keywords" value="'.esc_html($keywords).'" size="60"></p>';
-   
-//   echo '<p>ページの説明（description）160文字以内<br>';
-//   echo '<input type="text" style="width: 600px;height: 40px;" name="description" value="'.esc_html($description).'" maxlength="160"></p>';
-// }
- 
-// // カスタムフィールドの値を保存
-// function save_custom_fields( $post_id ) {
-//   if(!empty($_POST['keywords']))
-//     update_post_meta($post_id, 'keywords', $_POST['keywords'] );
-//   else delete_post_meta($post_id, 'keywords');
- 
-//   if(!empty($_POST['description']))
-//     update_post_meta($post_id, 'description', $_POST['description'] );
-//   else delete_post_meta($post_id, 'description');
-// }
- 
-
-
-// //ウィジェットの追加
-// if ( !function_exists( 'bj_register_sidebars' ) ) {
-
-// 	function bj_register_sidebars() {
-
-// 		register_sidebar( array(
-// 			'id'            => 'sidebar_1', //ウィジェットのID
-// 			'name'          => 'サイドバー1', //ウィジェットの名前
-// 			'description'   => 'ウィジェットをドラッグして編集してください。', //ウィジェットの説明文
-// 			'before_widget' => '<div>', //ウィジェットを囲う開始タグ
-// 			'after_widget'  => '</div>', //ウィジェットを囲う終了タグ
-// 			'before_title'  => '<h4>', //タイトルを囲う開始タグ
-// 			'after_title'   => '</h4>', //タイトルを囲う終了タグ
-// 		) );
-
-// 		register_sidebar( array(
-// 			'id'            => 'sidebar_2', //ウィジェットのID
-// 			'name'          => 'サイドバー2', //ウィジェットの名前
-// 			'description'   => 'ウィジェットをドラッグして編集してください。', //ウィジェットの説明文
-// 			'before_widget' => '<div>', //ウィジェットを囲う開始タグ
-// 			'after_widget'  => '</div>', //ウィジェットを囲う終了タグ
-// 			'before_title'  => '<h4>', //タイトルを囲う開始タグ
-// 			'after_title'   => '</h4>', //タイトルを囲う終了タグ
-// 		) );
-
-// 	}
-
-// 	add_action( 'widgets_init', 'bj_register_sidebars' );
-// }
+// 固定ページの親子関係を判定する関数
+function page_is_ancestor_of($slug){
+  global $post;
+  $page = get_page_by_path($slug);
+  $result = false;
+  if(isset($page)){
+      foreach ((array)$post->ancestors as $ancestor) {
+        if($ancestor == $page->ID){ $result = true; }
+      }
+  }
+  return $result;
+}
