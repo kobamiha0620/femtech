@@ -1,6 +1,9 @@
 <div class="page__luna--fv">
     <img src="https://femtech.tv/wp-content/uploads/2022/01/fv_runa.png" alt="月野ねこまんまの月占い ルナスコープ" width="100%">
+
     <p class="page__luna--ttl">太陽星座が私たちを導く道標だとしたら、月星座は本来の自分へ還る場所。人生には休息も必要です。柔らな月灯りのように、月星座の導きがあたたかく癒してくれるはず。</p>
+    <a href="/news162/" target="_blank" class="catephp__link" rel="noopener">月星座についてもっと詳しく</a>
+
 </div>
 <div class="page__luna--intro">
     <p class="page__luna--intro-ttl">まずは自分の月星座を調べてみましょう。<br>「月星座」で検索すると簡単に調べられるので、試してみて。</p>

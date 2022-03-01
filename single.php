@@ -58,8 +58,88 @@
       <div class="single__contents">
         <!--本文取得-->
         <div class="single__contentsinner">
-        <?php the_content(); ?>
+          <?php the_content(); ?>
+          <div class="epicShop">
+              <div class="epicShop__wrapper">
+
+              <?php if(get_field('product_img')): ?>
+                <ul class="epicShop__list">
+                <li>
+                <?php
+                  // カスタムフィールドの値を取得
+                  $img_field = get_field('product_img');
+                  if($img_field){	
+                  // 画像・キャプションを出力
+                  ?>
+                <img src="<?php echo esc_url($img_field['url']) ?>" alt="<?php echo esc_attr($img_field['alt']) ?>"
+                  width="100%">
+                <?php } ?>
+              </li>
+
+
+              <?php if(get_field('product_img02')): ?>
+              <li>
+                <?php
+                  // カスタムフィールドの値を取得
+                  $img_field = get_field('product_img02');
+                  if($img_field){	
+                  // 画像・キャプションを出力
+                  ?>
+                <img src="<?php echo esc_url($img_field['url']) ?>" alt="<?php echo esc_attr($img_field['alt']) ?>"
+                  width="100%">
+                <?php } ?>
+              </li>
+              <?php endif; ?>
+
+
+              <?php if(get_field('product_img03')): ?>
+              <li>
+                <?php
+                  // カスタムフィールドの値を取得
+                  $img_field = get_field('product_img03');
+                  if($img_field){	
+                  // 画像・キャプションを出力
+                  ?>
+                <img src="<?php echo esc_url($img_field['url']) ?>" alt="<?php echo esc_attr($img_field['alt']) ?>"
+                  width="100%">
+                <?php } ?>
+              </li>
+              <?php endif; ?>
+              </ul>
+
+              <?php endif; ?>
+              
+              <?php if(get_field('product_name')): ?>
+                <div class="epicShop__blc">
+                <p class="epicShop__name"> 
+                  <span>ITEM</span>
+                  <b><?php the_field('product_name'); ?> </b>
+                </p>
+                <?php if(get_field('product_info')): ?>
+                  <p class="epicShop__info"><?php the_field('product_info'); ?></p>
+                <?php endif; ?>
+
+                <?php if(get_field('product_price')): ?>
+                  <p class="epicShop__price"><?php the_field('product_price'); ?></p>
+                <?php endif; ?>
+                </div>
+              <?php endif; ?>
+            </div><!-- epicShop__wrapper -->
+
+            <?php if(get_field('product_shopinfo')): ?>
+              <span class="epicShop__shopInfo"><?php the_field('product_shopinfo'); ?></span>
+            <?php endif; ?>
+            <?php if(get_field('product_shoplink')): ?>
+              <span class="epicShop__shoplink"><?php the_field('product_shoplink'); ?></span>
+            <?php endif; ?>
+          </div>
+
+
         </div>
+
+
+
+
         <!--タグ取得-->
         <section class="single__fv--catewrap">
           <ul class="single__fv--cate">
@@ -83,10 +163,11 @@
         <ul class="single__sns">
           <li><a href="http://www.facebook.com/share.php?u=<?php echo get_the_permalink(); ?>" target="_blank"
               class="single__sns--fb">Facebook</a></li>
-          <li><a href="https://twitter.com/share?url=<?php echo get_the_permalink();?>&text=<?php echo get_the_title();?>" target="_blank"
-              class="single__sns--tw">Twitter</a></li>
-          <li><a href="https://social-plugins.line.me/lineit/share?url=<?php echo get_the_permalink(); ?>" target="_blank"
-              class="single__sns--in">LINE</a></li>
+          <li><a
+              href="https://twitter.com/share?url=<?php echo get_the_permalink();?>&text=<?php echo get_the_title();?>"
+              target="_blank" class="single__sns--tw">Twitter</a></li>
+          <li><a href="https://social-plugins.line.me/lineit/share?url=<?php echo get_the_permalink(); ?>"
+              target="_blank" class="single__sns--in">LINE</a></li>
         </ul>
 
         <!-- コメント部分 -->
@@ -100,7 +181,9 @@
 
 
 
-          <?php comments_template(); ?>
+            <?php comments_template(); ?>
+
+
           </div>
 
 
@@ -108,18 +191,24 @@
         </section>
         <!-- コメント部分 -->
 
+  <!-- EDITOR'S PICK ------------------------------------------------->
+  <div class="single__epick">
+  <?php get_template_part('/template_parts/epick'); ?>
+  </div>
+  <!-- EDITOR'S PICK ------------------------------------------------->
+
 
         <!-- おすすめ -->
         <section id="recomArticle" class="articlesWrapper">
           <div class="articles" id="articles">
             <h2 class="articles__ttl">今、あなたにおすすめ</h2>
             <ul class="articles__list">
-            <?php  get_template_part('template_parts/recommendArticle');?>
-            
-          
-          
-          
-          </ul>
+              <?php  get_template_part('template_parts/recommendArticle');?>
+
+
+
+
+            </ul>
           </div><!-- articles -->
         </section><!-- recomArticle -->
         <!-- おすすめ -->
@@ -141,7 +230,8 @@
 
   <?php endif; ?>
 
-  <div class="index__inner"><!-- SP用padding Blc -->
+  <div class="index__inner">
+    <!-- SP用padding Blc -->
 
 
     <!-- 最新記事 -->
@@ -175,17 +265,20 @@
     </section>
     <!-- 最新記事 -->
 
-  </div>  <!--end index__inner-->
+  </div>
+  <!--end index__inner-->
 
 
-  </div><!--end contents-->
+</div>
+<!--end contents-->
 
 
 
 
-  <div class="pc"><?php get_sidebar(); ?></div>
+<div class="pc"><?php get_sidebar(); ?></div>
 
-  </div><!--end container-->
+</div>
+<!--end container-->
 
 
-  <?php get_footer(); ?>
+<?php get_footer(); ?>

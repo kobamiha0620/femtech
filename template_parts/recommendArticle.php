@@ -34,18 +34,15 @@ if($the_query -> have_posts()) :?>
         <div class="articles__blc">
 
             <!--カテゴリ-->
-            <?php if (has_category()): ?>
-                <!-- if (!is_category() && has_category()): ?> -->  
             
             <?php if (has_category()): ?>
-                    <?php $postcat = get_the_category(); for($i = 0; count($postcat) > $i; $i++){
-                        $postName = $postcat[$i]->name;
-                        $postId = $postcat[$i]->slug;?>
-                        <p class="cat-data cate-<?php echo $postId; ?>"><?php echo $postName; ?></p>
-                    <?php } ?>
-                <?php endif; ?>
+                <?php $postcat = get_the_category(); for($i = 0; count($postcat) > $i; $i++){
+                    $postName = $postcat[$i]->name;
+                    $postId = $postcat[$i]->slug;?>
+                    <p class="cat-data cate-<?php echo $postId; ?>"><?php echo $postName; ?></p>
+                <?php } ?>
             <?php endif; ?>
-            
+        
                 <div class="articles__ex">
                 <!--投稿日を表示-->
                 <span class="articles__date">

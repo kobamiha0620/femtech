@@ -85,6 +85,7 @@
     }
     &--img {
       margin: 0 22px 0 0;
+      min-width: 122px;
       img {
         width: 122px;
         height: 83px;
@@ -94,6 +95,8 @@
     &--img02 {
       background: #fafafa;
       margin: 0 22px 0 0;
+      min-width: 122px;
+
       img {
         width: 122px;
         height: 83px;
@@ -317,10 +320,14 @@
   &__img {
     margin: 0 22px 0 0;
     position: relative;
+    width: 122px;
+    height: 83px;
+    min-width: 122px;
     img {
       width: 122px;
       height: 83px;
       object-fit: cover;
+      width: 100%;
     }
   }
   &__inner {

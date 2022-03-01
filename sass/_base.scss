@@ -85,7 +85,10 @@ li{
         //連載
         background-color: #5297D5;
     }
-
+    &.cate-pick{
+        //EditorsPick
+        background-color: #737373;
+    }
   }
 .cate{
     &__date{

@@ -243,11 +243,11 @@ if(function_exists('wpp_get_views')){
 function excludeCate() {
   global $excludeCategory01;
   //4=news, 174= EDITOR’s CHOICE, Uncategorized =1, beauty =7,
-  $excludeCategory01 = '1, 4, 7, 174';
+  $excludeCategory01 = '1, 4, 7, 174, 178';
 
   global $excludeCategory02;
   //4=news, 174= EDITOR’s CHOICE, Uncategorized =1, 今月のFな人　＝173 月と運気の話=8 ここrの処方箋172
-  $excludeCategory02 = '1, 4, 7, 174, 8, 172, 173';
+  $excludeCategory02 = '1, 4, 7, 174, 8, 172, 173, 178';
 }
 add_action( 'after_setup_theme', 'excludeCate' );
 

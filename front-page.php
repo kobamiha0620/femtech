@@ -15,11 +15,10 @@
         'post_status' => 'publish', //公開済みのページのみ取得
         'orderby' => 'rand', // 表示順の基準
         'posts_per_page' => 5, // 表示件数の指定
-
+        'cat' => -278, //EditorsPickを除外 -278へ変更
         'date_query' => array(
           'after' => $duration,
           // 'after' => '2021-9-1',
-
           'inclusive' => true //afterとbeforeに指定した日を含めるかどうか
        )
   
@@ -101,13 +100,16 @@
         </h2>
 
         <ul class="articles__list">
-            <?php query_posts('post_type=post&posts_per_page=5'); ?>
+            <!-- //EditorsPickを除外 -->
+            <?php query_posts('post_type=post&posts_per_page=5&cat=-278'); ?>
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             
             <?php get_template_part('template_parts/newestArticle'); ?>
 
             <?php endwhile; else : ?>
             <?php endif; ?>
+
+            
         </ul>
 
         <a href="/latest-all/" class="articles__link">最新の記事を全て見る ＞</a>
@@ -118,6 +120,11 @@
   </div><!-- index__inner -->
 
 
+  <!-- EDITOR'S PICK ------------------------------------------------->
+    <?php get_template_part('/template_parts/epick'); ?>
+  <!-- EDITOR'S PICK ------------------------------------------------->
+
+  
   <div class="sp">
       <!-- KEYWORD -->
       <?php get_template_part('template_parts/keyword'); ?>
@@ -130,6 +137,9 @@
       <!-- SERIES -->
       <?php get_template_part('template_parts/series'); ?>
   </div>
+
+
+
 
 
   <!-- EDITOR'S CHOICE ------------------------------------------------->

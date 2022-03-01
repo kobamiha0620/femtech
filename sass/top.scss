@@ -93,7 +93,8 @@
             height: 90px;
             flex: 1;
             margin: 0 13px 0 0;
-
+            display: block;
+            min-width:  135px;
             img{
                 width: 135px;
                 height: 90px;
@@ -112,7 +113,8 @@
                     .articles__img{
                         width: 200px;
                         height: 133px;
-        
+
+                        min-width: 200px;
                         img{
                             width: 200px;
                             height: 133px;
@@ -131,7 +133,8 @@
             font-size: $PC_FONT;
             color: $CR;
             line-height: 1.6;
-
+            display: inline-block;
+            word-break: break-all;
         }
         &__date{
             color: $GRAY;
@@ -191,6 +194,7 @@
 
         &__txtwrap{
             margin: 0 0 4px 0;
+
         }
         &__white{
             bottom: -2px;
@@ -252,6 +256,7 @@
                         .articles__img{
                             width: 100%;
                             height: 56vw;
+                            min-width: 100%;
                             img{
                                 width: 100%;
                                 height: 100%;
@@ -272,6 +277,9 @@
                 }
                 .cat-data{
                     margin-right: 10px;
+                }
+                &--link{
+                    display: block;
                 }
             }
             

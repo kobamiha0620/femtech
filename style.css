@@ -145,6 +145,9 @@ li {
 .cat-data.cate-serial {
   background-color: #5297D5;
 }
+.cat-data.cate-pick {
+  background-color: #737373;
+}
 
 .cate__date {
   font-size: 13px;
@@ -480,7 +483,7 @@ li {
 }
 .page .pageSubttl {
   font-weight: bold;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.6;
 }
 .page .pageTxt {
@@ -686,7 +689,7 @@ div#toc_container .toc_list ul li a::before {
     display: block;
   }
   .page .pageSubttl {
-    font-size: 16px;
+    font-size: 17px;
     margin: 0 0 3.7vw;
   }
   .page .pageTxt {
@@ -974,7 +977,8 @@ div#toc_container .toc_list ul li a::before {
   display: inline-block;
   width: 135px;
   height: 90px;
-  flex-shrink: 1;
+  flex: 1;
+  min-width: 135px;
 }
 .articles__list--img img {
   width: 100%;
@@ -982,6 +986,7 @@ div#toc_container .toc_list ul li a::before {
 }
 .articles__list li:first-child .articles__list--img {
   width: 200px;
+  min-width: 200px;
   height: 136px;
 }
 .articles__link {
@@ -2768,6 +2773,7 @@ body.page-resarch #newHeader__cate .ttlResearch a {
 }
 .side__series--img {
   margin: 0 22px 0 0;
+  min-width: 122px;
 }
 .side__series--img img {
   width: 122px;
@@ -2777,6 +2783,7 @@ body.page-resarch #newHeader__cate .ttlResearch a {
 .side__series--img02 {
   background: #fafafa;
   margin: 0 22px 0 0;
+  min-width: 122px;
 }
 .side__series--img02 img {
   width: 122px;
@@ -2960,11 +2967,15 @@ body.page-resarch #newHeader__cate .ttlResearch a {
 .sideConlist__img {
   margin: 0 22px 0 0;
   position: relative;
+  width: 122px;
+  height: 83px;
+  min-width: 122px;
 }
 .sideConlist__img img {
   width: 122px;
   height: 83px;
   object-fit: cover;
+  width: 100%;
 }
 .sideConlist__inner {
   display: flex;
@@ -3821,6 +3832,216 @@ h2.confirm {
     margin: 0 !important;
     font-size: 14px;
     margin: 0;
+  }
+}
+.epickSp__list {
+  display: none;
+}
+
+.single__epick {
+  margin-top: 80px;
+}
+
+.epick__list {
+  display: block;
+  margin-bottom: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.epick__list li {
+  width: 22%;
+  flex-shrink: 1;
+}
+.epick__list li a {
+  text-decoration: none;
+}
+.epick__img {
+  position: relative;
+  margin: 20px 0 18px;
+}
+.epick__img::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.epick__img img {
+  border-radius: 50%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  object-fit: cover;
+}
+.epick__txt {
+  text-align: center;
+  color: #262626;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+.epicShop__wrapper {
+  display: flex;
+}
+.epicShop__list {
+  width: 242px;
+  height: 242px;
+  margin: 0 30px 0 0;
+}
+.epicShop__list li img {
+  width: 242px;
+  height: 242px;
+  object-fit: cover;
+}
+.epicShop__list .slick-dots li button:before {
+  color: #cccccc;
+  opacity: 1;
+}
+.epicShop__list .slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #E4BEE8;
+}
+.epicShop__blc {
+  width: 400px;
+  flex-shrink: 1;
+}
+.epicShop__name {
+  font-size: 17px;
+  font-weight: bold;
+  margin: 0 0 24px;
+  color: #262626;
+  line-height: 1.5 !important;
+  align-items: start;
+  display: flex;
+}
+.epicShop__name span {
+  border: solid 1px #262626;
+  border-radius: 12px;
+  display: inline-block;
+  padding: 3px 10px 3px;
+  font-size: 12px !important;
+  line-height: 0.9 !important;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+.epicShop__name b {
+  margin-left: -60px;
+  display: inline-block;
+  padding-left: -60px;
+  text-indent: 65px;
+}
+.epicShop__info {
+  color: #262626;
+  font-size: 17px;
+  line-height: 1.8;
+}
+.epicShop__price {
+  margin: 30px 0 0 !important;
+  color: #808080 !important;
+  font-size: 17px;
+  line-height: 1.8;
+}
+.epicShop__shopInfo {
+  display: block;
+  line-height: 2;
+  color: #262626;
+  font-size: 17px;
+  margin: 100px 0 0;
+}
+.epicShop__shoplink {
+  display: block;
+  line-height: 2;
+  color: #D17B7B;
+  font-size: 17px;
+  margin: 0 0 0;
+}
+
+@media screen and (max-width: 749px) {
+  .single__epick {
+    margin-top: 60px;
+    margin: 0 -5%;
+  }
+
+  .epick__list {
+    display: none;
+  }
+
+  .epickSp__list {
+    display: block;
+    margin-bottom: 60px;
+    width: 100%;
+  }
+  .epickSp__list li a {
+    text-decoration: none;
+  }
+
+  .epick__img {
+    margin: 20px 4vw 18px;
+  }
+  .epick__txt {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .epicShop__wrapper {
+    display: block;
+  }
+  .epicShop__list {
+    width: 90vw;
+    height: 90vw;
+    margin: 0 0 0 0;
+    display: block;
+  }
+  .epicShop__list li img {
+    width: 90vw;
+    height: 90vw;
+    object-fit: cover;
+    margin: 0 !important;
+  }
+  .epicShop__blc {
+    width: 100%;
+    margin-top: 80px;
+  }
+  .epicShop__name {
+    font-size: 20px !important;
+    align-items: start;
+    display: flex;
+  }
+  .epicShop__name span {
+    border: solid 1px #262626;
+    border-radius: 12px;
+    display: inline-block;
+    padding: 3px 10px 3px;
+    font-size: 12px !important;
+    line-height: 0.9 !important;
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+  .epicShop__name b {
+    margin-left: -60px;
+    display: inline-block;
+    padding-left: -60px;
+    text-indent: 65px;
+  }
+  .epicShop__info {
+    color: #262626;
+    font-size: 13px;
+    line-height: 1.8;
+  }
+  .epicShop__price {
+    margin: 20px 0 0 !important;
+    font-size: 13px;
+  }
+  .epicShop__shopInfo {
+    font-size: 13px;
+    margin: 50px 0 0;
+  }
+  .epicShop__shoplink {
+    font-size: 13px;
   }
 }
 /* 共通サイズ */
