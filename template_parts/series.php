@@ -30,6 +30,31 @@
             
         </div><!--  /.side__series--blc -->
 
+        <!--------------------
+    　　 ----------------------
+        お悩み相談
+        ----------------------
+        -------------------->
+        <div class="side__series--blc">
+        <a href="/category/assistant/" class="side__series--link">
+                <!--画像を追加-->
+                <div class="side__series--img">
+                    <img src="https://femtech.tv/wp-content/uploads/2022/03/image_onayami2-1.jpg" alt="">
+                </div>
+
+                <div class="side__series--r">
+                    <!-- カテゴリslug名からカテゴリ情報の取得 -->
+
+                    <p class="cat-data cate-aoki">お悩み相談室</p>
+                    <p class="side__series--excerpt">産婦人科医 ゆみえ先生のお悩み相談室</p>
+
+                </div>
+            </a>
+            <p class="side__series--catelink"><a href="/category/aoki/">view All</a></p>
+            
+        </div><!--  /.side__series--blc -->
+
+
 
         <!--------------------
     　　 ----------------------

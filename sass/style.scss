@@ -246,6 +246,18 @@ button[type="submit"]{
   flex-shrink: 1;
   width: $PC_S;
   overflow: hidden;
+  .sidebar-inner{
+    background: $BG;
+    padding: 36px $PC_BS;
+  }
+  .sidebar__bnrs{
+    text-decoration: none;
+    display: block;
+    margin: 0 0 38px;
+    .catephp__link{
+      margin: 10px 0 0;
+    }
+  }
 }
 
 

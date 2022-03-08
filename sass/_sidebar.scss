@@ -1,7 +1,7 @@
 .side {
   &__keyword {
     background: $BG;
-    padding: 36px $PC_BS 34px;
+    padding: 0 0 34px;
 
     &--link {
       overflow: hidden;
@@ -59,7 +59,7 @@
 
   &__ranking {
     background: $BG;
-    padding: 34px $PC_BS;
+    padding: 34px 0;
 
     &--inner {
     }
@@ -69,7 +69,7 @@
   }
   &__series {
     background: $BG;
-    padding: 34px $PC_BS 10px;
+    padding: 34px 0 10px;
     .cat-data {
       font-size: 13px;
       margin: 0 0 5px 0;
@@ -127,7 +127,7 @@
   }
   &__hottag {
     background: $BG;
-    padding: 34px $PC_BS;
+    padding: 34px 0;
     &--inner {
       padding: 26px 0 8px;
       border-top: solid 1px #b5b5b5;
@@ -153,7 +153,7 @@
 
   &__insta {
     background: $BG;
-    padding: 34px $PC_BS;
+    padding: 34px 0;
     &--link {
       display: block;
       text-decoration: none;
@@ -192,7 +192,7 @@
   }
   &__bnrs {
     background: $BG;
-    padding: 34px $PC_BS;
+    padding: 34px 0;
     a {
       display: block;
       & + a {
@@ -342,6 +342,42 @@
 }
 .side__ranking {
   position: relative;
+}
+
+.editorsIntro{
+  padding-top: 30px;
+  .articles__ttl--en{
+    font-size: 30px;
+  }
+  .articles__ttl--jp{
+    font-size: 17px;
+    margin-left: 10px;
+  }
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    li{
+      min-width: 80px;
+      width: 80px;
+      img{
+        width: 100%;
+      }
+    }
+
+    &--name{
+      text-align: center;
+      font-size: 13px;
+      line-height: 1.6;
+      color: #262626;
+      margin: 16px 0 0;
+    }
+  }
+  &__txt{
+    font-size: 13px;
+    line-height: 1.6;
+    color: #262626;
+    margin: 26px 0 0;
+  }
 }
 
 @keyframes tonext {
@@ -999,6 +1035,37 @@ li {
         line-height: 0;
         box-sizing: border-box;
       }
+    }
+  }
+  .editorsIntro{
+    background: none;
+    margin: 20vw 0 0;
+    padding: 0;
+    .articles__ttl--en{
+      font-size: 30px;
+    }
+    .articles__ttl--jp{
+      font-size: 13px;
+    }
+    &__list{
+      width: 100%;
+      li{
+        min-width: 20.2vw;
+        width: 20.2vw;
+        img{
+          width: 100%;
+        }
+      }
+  
+      &--name{
+        margin-top: 2.6vw;
+        font-size:10px;
+      }
+    }
+    &__txt{
+      margin: 5.6vw 0 0;
+      font-size:10px;
+
     }
   }
 }

@@ -51,7 +51,7 @@
             flex: 1;
             flex-shrink: 1;
             margin: 0 13px 0 0;
-
+            min-width: 200px;
         }
         &__img{
             width: 200px;
@@ -192,7 +192,8 @@
                 margin: 0 0 19px 0;
                 box-shadow: 5px 5px 5px 0 rgb(66 66 66 / 30%);
                 border: none;
-
+                min-width: 100%;
+                font-size: 0;
             }
             &__img{
                 width: 100%;
