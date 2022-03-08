@@ -3905,31 +3905,73 @@ h2.confirm {
     margin: 0;
   }
 }
-.epickSp__list {
-  display: none;
-}
-
 .single__epick {
   margin-top: 80px;
 }
 
-.epick__list {
-  display: block;
-  margin-bottom: 60px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+.epick__list .slick-slide {
+  margin: 0;
+}
+.epick__list .slick-next {
+  width: 35px;
+  height: 69px;
+  right: 10px;
+  background: url("https://femtech.tv/wp-content/uploads/2022/03/next.png") no-repeat;
+  background-size: 100% auto;
+  top: 96px;
+  opacity: 0;
+  transition: ease 0.3s;
+}
+.epick__list .slick-next::before {
+  font-size: 0;
+  opacity: 1;
+  content: "";
+}
+.epick__list .slick-prev {
+  width: 35px;
+  height: 69px;
+  left: 10px;
+  z-index: 2;
+  opacity: 0;
+  transition: ease 0.3s;
+  background: url("https://femtech.tv/wp-content/uploads/2022/03/prev.png") no-repeat;
+  background-size: 100% auto;
+  top: 96px;
+}
+.epick__list .slick-prev::before {
+  font-size: 0;
+  opacity: 1;
+  content: "";
 }
 .epick__list li {
-  width: 22%;
-  flex-shrink: 1;
+  min-width: 25%;
+  width: 25%;
 }
 .epick__list li a {
   text-decoration: none;
+  display: block;
+}
+.epick__list:hover .slick-next {
+  opacity: 1;
+  transition: ease 0.3s;
+}
+.epick__list:hover .slick-prev {
+  opacity: 1;
+  transition: ease 0.3s;
+}
+.epick__list.pickAll {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  width: 100%;
+}
+.epick__list.pickAll li {
+  margin-bottom: 50px;
 }
 .epick__img {
   position: relative;
-  margin: 20px 0 18px;
+  margin: 20px 10px 18px;
 }
 .epick__img::before {
   content: "";
@@ -3951,8 +3993,17 @@ h2.confirm {
 .epick__txt {
   text-align: center;
   color: #262626;
-  font-size: 17px;
+  letter-spacing: -0.1;
+  font-size: 15px;
   line-height: 1.4;
+}
+.epick__linktxt {
+  text-align: center;
+  margin: 40px 0 80px;
+}
+.epick__linktxt a {
+  color: #444;
+  text-decoration: underline;
 }
 
 .epicShop__wrapper {
@@ -4037,25 +4088,41 @@ h2.confirm {
     margin: 0 -5%;
   }
 
-  .epick__list {
-    display: none;
+  .epick__linktxt {
+    margin: 40px 0 60px;
   }
-
-  .epickSp__list {
-    display: block;
-    margin-bottom: 60px;
-    width: 100%;
+  .epick__linktxt a {
+    font-size: 14px;
   }
-  .epickSp__list li a {
-    text-decoration: none;
-  }
-
   .epick__img {
     margin: 20px 4vw 18px;
   }
   .epick__txt {
     font-size: 12px;
     line-height: 1.4;
+  }
+  .epick__list {
+    display: block;
+    margin: 0 0 0;
+    width: 100%;
+  }
+  .epick__list .slick-slide {
+    margin: 0;
+  }
+  .epick__list li {
+    min-width: 33.33%;
+    width: 33.33%;
+  }
+  .epick__list li a {
+    text-decoration: none;
+  }
+  .epick__list.pickAll li {
+    min-width: 33.33%;
+    width: 33.33%;
+    margin-bottom: 30px;
+  }
+  .epick__list.pickAll li .epick__img {
+    margin: 10px;
   }
 
   .epicShop__wrapper {

@@ -1,28 +1,79 @@
 //category.php CSSスタイル
-.epickSp__list{
-    display: none;
-}
+
 .single__epick{
     margin-top: 80px;
 }
 .epick{
     &__list{
-        display: block;
-        margin-bottom: 60px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
+        .slick-slide {
+            margin: 0;
+        }
+        .slick-next {
+            width: 35px;
+            height: 69px;
+            right: 10px;
+            background: url('https://femtech.tv/wp-content/uploads/2022/03/next.png') no-repeat;
+            background-size: 100% auto;
+            top: 96px;
+            opacity: 0;
+            transition: ease 0.3s;
+            &::before{
+                font-size: 0;
+                opacity: 1;
+                content: "";
+            }
+        }
+        .slick-prev {
+            width: 35px;
+            height: 69px;
+            left: 10px;
+            z-index: 2;
+            opacity: 0;
+            transition: ease 0.3s;
+            background: url('https://femtech.tv/wp-content/uploads/2022/03/prev.png') no-repeat;
+            background-size: 100% auto;
+            top: 96px;
+            &::before{
+                font-size: 0;
+                opacity: 1;
+                content: "";
+            }
+        }
         li{
-            width: 22%;
-            flex-shrink: 1;
+            min-width: 25%;
+            width: 25%;
             a{
                 text-decoration: none;
+                display: block;
+            }
+        }
+        &:hover{
+            .slick-next{
+                opacity: 1;
+                transition: ease 0.3s;
+
+            }
+            .slick-prev {
+                opacity: 1;
+                transition: ease 0.3s;
+            }
+
+        }
+        &.pickAll{
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: start;
+            width: 100%;
+            li{
+                margin-bottom: 50px;
             }
         }
     }
+ 
     &__img{
         position: relative;
-        margin: 20px 0 18px;
+        margin: 20px 10px 18px;
         &::before{
             content: "";
             display: block;
@@ -44,10 +95,18 @@
     &__txt{
         text-align: center;
         color: #262626;
-        font-size: 17px;
+        letter-spacing: -0.1;
+        font-size: 15px;
         line-height: 1.4;
     }
-
+    &__linktxt{
+        text-align: center;
+        margin: 40px 0 80px;
+        a{
+            color: #444;
+            text-decoration: underline;
+        }
+    }
 }
 .epicShop{
     &__wrapper{
@@ -135,24 +194,15 @@
         margin-top: 60px;
         margin: 0 -5%;
     }
-    .epick__list{
-        display: none;
-    }
-    .epickSp{
-        &__list{
-            display: block;
-            margin-bottom: 60px;
-            width: 100%;
-            li{
-                a{
-                    text-decoration: none;
-                }
-            }
-        }
-    
-    }
+
     .epick{
 
+        &__linktxt{
+            margin: 40px 0 60px;
+            a{
+                font-size: 14px;
+            }
+        }
         &__img{
             margin: 20px 4vw 18px;
         }
@@ -160,7 +210,40 @@
             font-size: 12px;
             line-height: 1.4;
         }
+        &__list{
+            display: block;
+            margin: 0 0 0;
+            width: 100%;
+            .slick-slide {
+                margin: 0;
+            }
+            li{
+                min-width: 33.33%;
+                width:33.33%;
+                a{
+                    text-decoration: none;
+                }
+            }
+            &.pickAll{
+
+                li{
+                    min-width:33.33%;
+                    width:33.33%;
+                    margin-bottom: 30px;
+                    .epick__img{
+                        margin: 10px;
+                    }
+  
+
+                }
+    
+            }
+        }
+
+
+    
     }
+
     .epicShop{
         &__wrapper{
             display: block;

@@ -228,16 +228,28 @@ jQuery(function ($) {
 		dots: true // 画像下のドット（ページ送り）を表示
 	});
 
-	jQuery('.epickSp__list').slick({
+	jQuery('#epickList').slick({
 		autoplay: true, // 自動再生
 		autoplaySpeed: 3000, // 自動再生で切り替えをする時間
-		speed: 800, // 自動再生でスライドさせるスピード
-		arrows: false, // 左右の次へ、前へボタンを表示
+		speed: 200, // 自動再生でスライドさせるスピード
+		arrows: true, // 左右の次へ、前へボタンを表示
 		dots: false, // 画像下のドット（ページ送り）を表示
-		slidesToShow: 1,
+		slidesToShow: 4,
 		slidesToScroll: 1,
-		centerMode: true,
-		centerPadding: '25vw'
+		responsive: [{
+			breakpoint: 768,　
+			settings: {
+				autoplay: true, // 自動再生
+				autoplaySpeed: 3000, // 自動再生で切り替えをする時間
+				speed: 800, // 自動再生でスライドさせるスピード
+				arrows: false, // 左右の次へ、前へボタンを表示
+				dots: false, // 画像下のドット（ページ送り）を表示
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				centerMode: true,
+				centerPadding: '25vw'
+			 }
+		 }]
 	});
 
 	jQuery('.epicShop__list').slick({
