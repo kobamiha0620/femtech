@@ -17,13 +17,13 @@
 						<div>
 							<p class="footcont__sns--ttl fontM">Follow us</p>
 							<ul class="footcont__sns--link">
-								<!-- <li><a href=""><img
+								<!-- <li><a href="" target="_blank"><img
 											src="<?php echo get_template_directory_uri(); ?>/images/icon_fb.png"
 											alt="facebook"></a></li> -->
-								<li><a href="https://twitter.com/femtechtv_"><img
+								<li><a href="https://twitter.com/femtechtv_" target="_blank"><img
 											src="<?php echo get_template_directory_uri(); ?>/images/icon_tw.png"
 											alt="tweeter"></a></li>
-								<li><a href="https://www.instagram.com/femtechtv_official/"><img
+								<li><a href="https://www.instagram.com/femtechtv_official/" target="_blank"><img
 											src="<?php echo get_template_directory_uri(); ?>/images/icon_insta.png"
 											alt="instagram"></a></li>
 							</ul>
