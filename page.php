@@ -100,6 +100,14 @@
       </div>
       <?php endif; ?>
 
+
+
+
+      <?php if (is_page('horoscope/aries')): ?>
+        <?php get_template_part('template_parts/horoscope/introaries'); ?>
+      <?php endif; ?>
+
+
       <?php if(is_page('horoscope') || page_is_ancestor_of('horoscope')): ?>
 
       <!-- 著者紹介 -->
