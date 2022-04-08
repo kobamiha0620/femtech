@@ -136,7 +136,21 @@
 
 
         </div>
-
+        <?php
+$defaults = array(
+	'before'           => '<div class="single__newpage">',
+	'after'            => '</div>',
+	'link_before'      => '',
+	'link_after'       => '',
+	'next_or_number'   => 'next_and_number',
+	'separator'        => ' ',
+	'nextpagelink'     => '<span class="next">続きを読む</span>',
+	'previouspagelink' => '<span class="back">前に戻る</span>',
+	'pagelink'         => '%',
+	'echo'             => 1
+);
+wp_link_pages( $defaults );
+?>
 
 
 

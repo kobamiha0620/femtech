@@ -181,6 +181,36 @@
             }
         }
     }
+    &__newpage{
+        text-align: center;
+        margin: 4rem auto;
+        display: flex;
+        justify-content: center;
+        a{
+            text-decoration: none;
+            color: $DPINK;
+            display: inline-block;
+            border: solid 1px $DPINK;
+            max-width: 80%;
+            border-radius: 3rem;
+            width: 80%;
+            margin: 0 10px;
+            .next{
+                background: url('https://femtech.tv/wp-content/uploads/2022/04/arrow.png') no-repeat right 1rem center;
+                background-size: 0.7rem  0.7rem;
+                display: block;
+                padding: 1rem 0;
+
+            }
+            .back{
+                background: url('https://femtech.tv/wp-content/uploads/2022/04/arrowR.png') no-repeat left 1rem center;
+                background-size: 0.7rem  0.7rem;
+                display: block;
+                padding: 1rem 0;
+
+            }
+        }
+    }
 }
 
 #js-comment{
