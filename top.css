@@ -173,6 +173,9 @@ li {
 .articles__blc .uncategorized {
   display: none;
 }
+.articles__blc .cate-rssout {
+  display: none;
+}
 
 .single__fv--index .cate-serial {
   display: none;
@@ -183,6 +186,9 @@ li {
 .single__fv--index .uncategorized {
   display: none;
 }
+.single__fv--index .cate-rssout {
+  display: none;
+}
 
 .slide__cate .cate-serial {
   display: none;
@@ -191,6 +197,9 @@ li {
   display: none;
 }
 .slide__cate .uncategorized {
+  display: none;
+}
+.slide__cate .cate-rssout {
   display: none;
 }
 

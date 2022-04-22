@@ -116,6 +116,7 @@ function custom_wp_tag_cloud($args) {
  
 
 //記事のアクセス数を表示
+
 function getPostViews($postID){
   $count_key = 'post_views_count';
   $count = get_post_meta($postID, $count_key, true);
@@ -335,4 +336,22 @@ function page_is_ancestor_of($slug){
       }
   }
   return $result;
+}
+
+
+
+/*【出力カスタマイズ】SmartNews用のフィードを追加 */
+// SmartNews のフィードを追加
+add_action('init', function (){
+  add_feed('smartnews', function () { // SmartNews のフィードを追加
+    get_template_part('temp','smartnews'); // フィードのテンプレートにテーマファイル内の「temp-smartnews.php」を選択
+  });
+});
+// SmartNews のフィードの Content-type をカスタマイズ
+add_filter( 'feed_content_type', 'custom_feed_content_type', 10, 2);
+function custom_feed_content_type($content_type, $type){
+  if('smartnews' === $type ){
+    return feed_content_type('rss2');
+  }
+  return $content_type;
 }
