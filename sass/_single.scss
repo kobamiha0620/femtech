@@ -732,3 +732,20 @@ div#toc_container{
 #reply-title{
     display: none!important;
 }
+
+.toc_list{
+    li{
+        color: #d17b7b;
+
+    }
+    span{
+        display: block;
+        margin: 30px 0 5px;
+        display: flex;
+        &::before{
+            content: " - ";
+            color: #d17b7b;
+
+        }
+    }
+}
