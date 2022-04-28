@@ -1055,6 +1055,11 @@ div#toc_container .toc_list ul li a::before {
 .single__contentsinner p a {
   color: #DFA7A7;
 }
+.single__contentsinner h1 {
+  font-size: 24px;
+  margin: 0 0 26px;
+  line-height: 1.2;
+}
 .single__contentsinner h2 {
   font-size: 24px;
   line-height: 1.3;
