@@ -19,7 +19,7 @@
                       <?php $postcat = get_the_category(); for($i = 0; count($postcat) > $i; $i++){
                           $postName = $postcat[$i]->name;
                           $postId = $postcat[$i]->slug;?>
-                         <p class="cat-data cate-<?php echo $postId; ?>"><?php echo $postName; ?></p>
+                         <span class="cat-data cate-<?php echo $postId; ?>"><?php echo $postName; ?></span>
                         <?php } ?>
                     <?php endif; ?>
               

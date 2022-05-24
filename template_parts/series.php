@@ -21,7 +21,7 @@
                 <div class="side__series--r">
                     <!-- カテゴリslug名からカテゴリ情報の取得 -->
 
-                    <p class="cat-data cate-aoki">月と運気のはなし</p>
+                    <span class="cat-data cate-aoki">月と運気のはなし</span>
                     <p class="side__series--excerpt">青木良文さんによる、月のめぐりと共に歩む連載コラム。</p>
 
                 </div>
@@ -45,7 +45,7 @@
                 <div class="side__series--r">
                     <!-- カテゴリslug名からカテゴリ情報の取得 -->
 
-                    <p class="cat-data cate-aoki">お悩み相談室</p>
+                    <span class="cat-data cate-aoki">お悩み相談室</span>
                     <p class="side__series--excerpt">産婦人科医 ゆみえ先生のお悩み相談室</p>
 
                 </div>
@@ -71,7 +71,7 @@
                 <div class="side__series--r">
                     <!-- カテゴリslug名からカテゴリ情報の取得 -->
 
-                    <p class="cat-data cate-personf">今月のFな人</p>
+                    <span class="cat-data cate-personf">今月のFな人</span>
                     <p class="side__series--excerpt">旬な著名人が専門家にお悩み相談。対談形式でお届けします。</p>
 
                 </div>
@@ -98,7 +98,7 @@
                 <div class="side__series--r">
                     <!-- カテゴリslug名からカテゴリ情報の取得 -->
 
-                    <p class="cat-data cate-kokoro">ココロの処方箋</p>
+                    <span class="cat-data cate-kokoro">ココロの処方箋</span>
                     <p class="side__series--excerpt">メンタルケアの観点から紐解く、現代女性の心とカラダ。</p>
 
                 </div>

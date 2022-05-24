@@ -43,7 +43,7 @@
                     <!-- カテゴリslug名からカテゴリ情報の取得 -->
                     <?php $cat = get_category_by_slug( $categoryName );  ?>
 
-                    <p class="cat-data cate-<?php echo $categoryName; ?>"><?php echo $cat -> name; ?></p>
+                    <span class="cat-data cate-<?php echo $categoryName; ?>"><?php echo $cat -> name; ?></span>
                     <p class="side__series--excerpt"><?php echo mb_substr(get_the_title(), 0, 44); ?></p>
 
                 </div>
@@ -94,7 +94,7 @@
                     <!-- カテゴリslug名からカテゴリ情報の取得 -->
                     <?php $cat = get_category_by_slug( $categoryName );  ?>
 
-                    <p class="cat-data cate-<?php echo $categoryName; ?>"><?php echo $cat -> name; ?></p>
+                    <span class="cat-data cate-<?php echo $categoryName; ?>"><?php echo $cat -> name; ?></span>
 
                     <p class="side__series--excerpt">
 <?php
@@ -156,7 +156,7 @@
                     <!-- カテゴリslug名からカテゴリ情報の取得 -->
                     <?php $cat = get_category_by_slug( $categoryName );  ?>
 
-                    <p class="cat-data cate-<?php echo $categoryName; ?>"><?php echo $cat -> name; ?></p>
+                    <span class="cat-data cate-<?php echo $categoryName; ?>"><?php echo $cat -> name; ?></span>
                     <p class="side__series--excerpt">
 <?php
   if(mb_strlen($post->post_title)>57){

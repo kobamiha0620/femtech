@@ -35,7 +35,7 @@ li{
 //カテゴリー
 .cat-data{
     font-family: 'Roboto', sans-serif;
-    margin: 0 6px 3px 0;
+    margin: 0 6px 0 0;
     padding: 5px 7px 5px;
     display: inline-block;
     color: #FFF;
@@ -175,6 +175,7 @@ li{
     }
     .cat-data{
         font-size: 12px;
+        margin-bottom: 3px!important;
     }
 }
 

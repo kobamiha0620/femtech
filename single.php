@@ -28,7 +28,7 @@
           <?php $postcat = get_the_category(); for($i = 0; count($postcat) > $i; $i++){
 					$postName = $postcat[$i]->name;
 					$postId = $postcat[$i]->slug;?>
-          <p class="cat-data cate-<?php echo $postId; ?>"><?php echo $postName; ?></p> <?php } ?>
+          <span class="cat-data cate-<?php echo $postId; ?>"><?php echo $postName; ?></span> <?php } ?>
           <?php endif; ?>
 
           <!--投稿日を表示-->
@@ -135,23 +135,46 @@
           </div>
 
 
-        </div>
-        <?php
-$defaults = array(
-	'before'           => '<div class="single__newpage">',
-	'after'            => '</div>',
-	'link_before'      => '',
-	'link_after'       => '',
-	'next_or_number'   => 'next_and_number',
-	'separator'        => ' ',
-	'nextpagelink'     => '<span class="next">続きを読む</span>',
-	'previouspagelink' => '<span class="back">前に戻る</span>',
-	'pagelink'         => '%',
-	'echo'             => 1
-);
-wp_link_pages( $defaults );
-?>
+        
+      <section class="single__paging">          
+        <?php 
+                // $pageLink = get_post_meta( $post->ID, 'nextpagetext', true );
+        
+                // wp_link_pages( 'before=<p>&after=</p>&next_or_number=next&nextpagelink=$pageLink' ); 
+                
+                wp_link_pages( array(
+                  'before' => '<div class="split-page-nav">',
+                  'after' => '</div>',
+                  'link_before' => '',
+                  'link_after' => '',
+                  'next_or_number' => 'next_and_number',
+                  'nextpagelink'  => get_post_meta( $post->ID, 'nextpagetext', true ),    // カスタムフィールドのデータを渡す
+                  'echo' => 1,
+                )
+                );
+                
+                
+                ?>
+        </section>
+        <section class="single__btmpaging">
+          <?php
+          wp_link_pages( array(
+            'before' => '',
+            'after' => '',
+            'link_before' => '<span class="page-number_wraper"><span class="page-number">',
+            'link_after' => '</span></span>',
+            'next_or_number' => 'next_and_number',
+            // 'nextpagelink'  => get_post_meta( $post->ID, 'nextpagetext', true ),    // カスタムフィールドのデータを渡す
+            'nextpagelink'     => __( 'Next page' ),
+            'previouspagelink' => __( 'Previous page' ),
+            'pagelink'         => '%',        
+            'echo' => 1,
+          )
+          );
+          
+          ?>
 
+        </section>
 
 
         <!--タグ取得-->
@@ -191,9 +214,6 @@ wp_link_pages( $defaults );
 
           <div class="single__come--con" id="js-commCont">
             <?php //comment_form($args, $post_id); ?>
-
-
-
 
             <?php comments_template(); ?>
 

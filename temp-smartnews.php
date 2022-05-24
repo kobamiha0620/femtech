@@ -1,6 +1,8 @@
 
 
-<?php if(!in_category('rssout')) : ?>
+
+<?php if (!in_category(array('rssout','uncategorized'))) : ?>
+
 <?php
 // SmartNews用のFeedを出力
 // 基本情報の設定

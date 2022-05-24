@@ -73,7 +73,8 @@
     .cat-data {
       font-size: 13px;
       margin: 0 0 5px 0;
-      padding: 4px 7px 4px;
+      line-height: 1.6;
+      padding: 2px 7px;
     }
     &--blc {
       margin: 0 0 37px;
@@ -206,7 +207,8 @@
   .cat-data {
     font-size: 13px;
     margin: 0 0 7px 0;
-    padding: 4px 7px 4px;
+    padding: 2px 7px;
+    line-height: 1.6;
   }
   .categoryw {
     display: none;

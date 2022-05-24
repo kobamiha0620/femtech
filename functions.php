@@ -165,7 +165,9 @@ function my_wpp_custom_html( $mostpopular, $instance ){
     '<div class="sideConlist__blc">'. 
     '<div class="sideConlist__blc pageblc">';
     for($i = 0; count($get_the_category) > $i; $i++){
-      $output .= '<span class="cat-data cate-'. $get_the_category[$i]->slug .' categoryw">' . esc_html( $get_the_category[$i]->name) . '</span>' ;
+      if( $get_the_category[$i]->slug != 'rssout' && $get_the_category[$i]->slug != 'uncategorized') { //表示したくないカテゴリ
+          $output .= '<span class="cat-data cate-'. $get_the_category[$i]->slug .' categoryw">' . esc_html( $get_the_category[$i]->name) . '</span>' ;
+      }
     }
     $output .=   
     '<div class="sideConlist__authors pageblc"><p class="sideConlist__authors--date">' . esc_html( $date ) . '</p>' . 
@@ -237,20 +239,6 @@ if(function_exists('wpp_get_views')){
   },10,2);
       
 }
-
-
-
-//除外カテゴリの指定（消去予定）
-function excludeCate() {
-  global $excludeCategory01;
-  //4=news, 174= EDITOR’s CHOICE, Uncategorized =1, beauty =7,
-  $excludeCategory01 = '1, 4, 7, 174, 178';
-
-  global $excludeCategory02;
-  //4=news, 174= EDITOR’s CHOICE, Uncategorized =1, 今月のFな人　＝173 月と運気の話=8 ここrの処方箋172
-  $excludeCategory02 = '1, 4, 7, 174, 8, 172, 173, 178';
-}
-add_action( 'after_setup_theme', 'excludeCate' );
 
 
 // 管理画面にてphp書き込み
@@ -340,6 +328,48 @@ function page_is_ancestor_of($slug){
 
 
 
+
+
+
+
+//タイトルとナンバリングの設定。フィルタリング。
+add_filter( 'wp_link_pages_args', 'wp_link_pages_args_add_next_and_number' );
+function wp_link_pages_args_add_next_and_number( $args ) {
+  global $page, $numpages, $more, $pagenow;
+  
+      // 値が next_and_number でなければスルー
+      if ( $args['next_or_number'] !== 'next_and_number' ) {
+          return $args;
+      }
+   
+      // 連番ナビゲーションに変更
+      $args['next_or_number'] = 'number'; 
+      if ( !$more ) {
+          return $args;
+      }
+   
+      if($page-1) # there is a previous page
+      $args['before'] .= '<div class="prev-page-link">'.  _wp_link_page($page-1)
+          . $args['link_before']. $args['previouspagelink'] . $args['link_after'] . '</div>'
+      ;
+
+      
+
+      // 任意のテキストの次ページリンクを連番リンク前に挿入
+      if ( $page < $numpages && !empty( $args['nextpagelink'] ) ) {
+          // 改行コードで分割し配列化
+          $nextpage_text = explode( "\n", $args['nextpagelink'] );
+          // 配列からページ番号に対応するテキストを抽出
+          $nextpage_text = is_array( $nextpage_text ) && isset( $nextpage_text[ $page - 1 ] ) ? $nextpage_text[ $page - 1 ] : sprintf( __( '次のページ' ), $page + 1 );
+          $args['after'] .= '<div class="next-page-link">' . _wp_link_page( $page + 1 ) . '<span class="page-text"><span class="page-nextTxt">NEXT </span>' . $nextpage_text . '<span class="pagenext_arrow"></span></span></a></div>';
+      }
+
+
+
+      return $args;
+   }
+
+   
 /*【出力カスタマイズ】SmartNews用のフィードを追加 */
 // SmartNews のフィードを追加
 add_action('init', function (){
@@ -347,6 +377,8 @@ add_action('init', function (){
     get_template_part('temp','smartnews'); // フィードのテンプレートにテーマファイル内の「temp-smartnews.php」を選択
   });
 });
+
+
 // SmartNews のフィードの Content-type をカスタマイズ
 add_filter( 'feed_content_type', 'custom_feed_content_type', 10, 2);
 function custom_feed_content_type($content_type, $type){

@@ -105,7 +105,7 @@ li {
 
 .cat-data {
   font-family: "Roboto", sans-serif;
-  margin: 0 6px 3px 0;
+  margin: 0 6px 0 0;
   padding: 5px 7px 5px;
   display: inline-block;
   color: #FFF;
@@ -228,6 +228,7 @@ li {
 
   .cat-data {
     font-size: 12px;
+    margin-bottom: 3px !important;
   }
 }
 /* PC 画面サイズが750px以上 */
@@ -1075,7 +1076,8 @@ div#toc_container .toc_list ul li a::before {
   line-height: 1.3;
   margin: 20px 0 10px;
 }
-.single__contentsinner .s2, .single__contentsinner .s3 {
+.single__contentsinner .s2,
+.single__contentsinner .s3 {
   display: inline-block;
   line-height: 1.5;
   margin: 0;
@@ -1159,6 +1161,9 @@ div#toc_container .toc_list ul li a::before {
 }
 .single__come {
   border-bottom: solid 1px #404040;
+}
+.single__come #js-comment {
+  margin-bottom: 0;
 }
 .single__come--ttl {
   font-size: 17px;
@@ -1491,7 +1496,9 @@ div#toc_container .toc_list ul li a::before {
     line-height: 1.3;
     margin: 20px 0 10px;
   }
-  .single__contents .s1, .single__contents .s2, .single__contents .s3 {
+  .single__contents .s1,
+.single__contents .s2,
+.single__contents .s3 {
     display: inline-block;
     line-height: 1.5;
     margin: 5px 0;
@@ -1700,9 +1707,177 @@ div#toc_container .toc_list ul li a::before {
 }
 .toc_list span::before {
   content: " - ";
-  color: #d17b7b;
+  color: #666;
 }
 
+.single__paging {
+  line-height: 1;
+  margin: 50px auto 10px;
+  color: #444;
+}
+.single__paging .split-page-nav {
+  text-align: center;
+  margin: 0 auto;
+}
+.single__paging .pagenext_arrow {
+  background: url("https://femtech.tv/wp-content/uploads/2022/05/arrow_pager.png") no-repeat;
+  background-size: auto 100%;
+  width: 5px;
+  height: 10px;
+  display: block;
+  margin-left: 20px;
+}
+.single__paging .next-page-link {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 10%;
+  margin: 0 auto 15px;
+}
+.single__paging .next-page-link a {
+  text-decoration: none;
+}
+.single__paging .next-page-link a span:hover {
+  color: #e37d7f !important;
+  opacity: 1 !important;
+}
+.single__paging .next-page-link a span:hover .pagenext_arrow {
+  background: url("http://femtech.local/wp-content/uploads/2022/05/arrow_pager-hover2.png") no-repeat;
+  background-size: auto 100%;
+}
+.single__paging .next-page-link a:hover {
+  color: #e37d7f !important;
+  opacity: 1 !important;
+}
+.single__paging .page-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  color: #444;
+  background: #FFF;
+  border-bottom: dashed 1px #666;
+  padding: 5px;
+  max-width: 100%;
+  width: 100%;
+}
+.single__paging .page-text:hover {
+  color: #e37d7f !important;
+  opacity: 1 !important;
+  border-bottom: dashed 1px #e37d7f;
+}
+.single__paging .num_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.single__paging .pageWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0 50px;
+}
+.single__paging .post-nav-links {
+  display: none;
+}
+.single__paging .split-page-nav {
+  display: none;
+}
+.single__paging .page-nextTxt {
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+
+.single__btmpaging {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 80px;
+}
+.single__btmpaging .next-page-link, .single__btmpaging .prev-page-link {
+  display: inline-block;
+}
+.single__btmpaging .post-page-numbers {
+  display: inline-block;
+}
+.single__btmpaging .page-number {
+  font-size: 15px;
+  border-radius: 40px;
+  width: 30px;
+  max-width: 30px;
+  height: 30px;
+  max-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e37d7f;
+  background: #fff;
+  border: solid 1px #f3b7b8;
+  font-weight: normal;
+}
+.single__btmpaging .page-number_wraper {
+  display: inline-block;
+  margin: 0 5px;
+}
+.single__btmpaging .post-page-numbers.current .page-number {
+  color: #FFF;
+  background: #e37d7f;
+  border: none;
+}
+.single__btmpaging a {
+  text-decoration: none;
+}
+.single__btmpaging .prev-page-link, .single__btmpaging .next-page-link {
+  display: inline-block;
+}
+.single__btmpaging .prev-page-link .page-number, .single__btmpaging .next-page-link .page-number {
+  background: #FFF;
+  display: flex;
+  word-break: keep-all;
+  align-items: center;
+  border: none;
+}
+.single__btmpaging .prev-page-link a, .single__btmpaging .next-page-link a {
+  color: #e37d7f;
+  display: block;
+  margin: 0 5px;
+  font-weight: normal;
+  min-width: 6em;
+  background-color: #FFF;
+  display: flex;
+  word-break: keep-all;
+  align-items: center;
+  justify-content: center;
+  min-height: 30px;
+  border: solid 1px #f3b7b8;
+  border: none;
+}
+.single__btmpaging .next-page-link a {
+  background: url("http://femtech.local/wp-content/uploads/2022/05/arrow_pager-hover2.png") no-repeat right center;
+  background-size: 5px 10px;
+  padding-right: 10px;
+  margin-left: 20px;
+}
+.single__btmpaging .prev-page-link a {
+  background: url("http://femtech.local/wp-content/uploads/2022/05/arrow_pager-hover2prev.png") no-repeat left center;
+  background-size: 5px 10px;
+  padding-left: 10px;
+  margin-right: 20px;
+}
+.single__btmpaging .prev-page-link .page-number_wraper {
+  margin: 0;
+}
+.single__btmpaging .page-nextTxt {
+  display: none;
+}
+
+@media screen and (max-width: 749px) {
+  .next-page-link {
+    padding: 0 !important;
+    font-size: 14px;
+  }
+}
 .catephp__disc {
   margin: 0 0 90px;
 }
@@ -2822,7 +2997,8 @@ body.page-resarch #newHeader__cate .ttlResearch a {
 .side__series .cat-data {
   font-size: 13px;
   margin: 0 0 5px 0;
-  padding: 4px 7px 4px;
+  line-height: 1.6;
+  padding: 2px 7px;
 }
 .side__series--blc {
   margin: 0 0 37px;
@@ -2940,7 +3116,8 @@ body.page-resarch #newHeader__cate .ttlResearch a {
 .sideConlist .cat-data {
   font-size: 13px;
   margin: 0 0 7px 0;
-  padding: 4px 7px 4px;
+  padding: 2px 7px;
+  line-height: 1.6;
 }
 .sideConlist .categoryw {
   display: none;
