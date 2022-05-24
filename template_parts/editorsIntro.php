@@ -11,15 +11,22 @@
                 <p class="editorsIntro__list--name">Akiko</p>
             </li>
             <li>
-                <img src="https://femtech.tv/wp-content/uploads/2022/03/icon_saki.png" alt="Akiko">
+                <img src="https://femtech.tv/wp-content/uploads/2022/03/icon_saki.png" alt="Saki">
                 <p class="editorsIntro__list--name">Saki</p>
             </li>
             <li>
-                <img src="https://femtech.tv/wp-content/uploads/2022/03/icon_makiko.png" alt="Akiko">
+                <img src="https://femtech.tv/wp-content/uploads/2022/03/icon_makiko.png" alt="Makiko">
                 <p class="editorsIntro__list--name">Makiko</p>
             </li>
+
+        </ul>
+        <ul class="editorsIntro__listbtm editorsIntro__list">
             <li>
-                <img src="https://femtech.tv/wp-content/uploads/2022/03/icon_masako.png" alt="Akiko">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/icon_sakamoto.png" alt="Sayaka">
+                <p class="editorsIntro__list--name">Sayaka</p>
+            </li>
+            <li>
+                <img src="https://femtech.tv/wp-content/uploads/2022/03/icon_masako.png" alt="Masako">
                 <p class="editorsIntro__list--name">Masako</p>
             </li>
         </ul>

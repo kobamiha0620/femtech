@@ -385,8 +385,8 @@ body.page-resarch {
       li {
         margin-right: 0;
         width: 28px;
-        &:first-child {
-          margin-right: 26px;
+        &:nth-child(2n) {
+          margin:0 26px;
         }
       }
 
@@ -401,6 +401,10 @@ body.page-resarch {
 
     &--snsfb {
       background: url("images/icon_fb.png") no-repeat;
+      background-size: 100% auto;
+    }
+    &--snstk {
+      background: url("images/icon_tiktok.png") no-repeat;
       background-size: 100% auto;
     }
 

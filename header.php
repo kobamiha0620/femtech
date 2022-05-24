@@ -55,9 +55,10 @@
 				</button>
 
 				<ul class="newHeader__drawer--sns">
-					<!-- <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://femtech.tv" target="_blank" class="newHeader__drawer--snsfb">Facebook</a></li> -->
+				<li><a href="https://www.instagram.com/femtechtv_official/" target="_blank" class="newHeader__drawer--snsin">Instagram</a></li>
+
+					<li><a href="https://www.tiktok.com/@femtechtv_official" target="_blank" class="newHeader__drawer--snstk">Tiktok</a></li>
 					<li><a href="https://twitter.com/femtechtv_" target="_blank" class="newHeader__drawer--snstw">Twitter</a></li>
-					<li><a href="https://www.instagram.com/femtechtv_official/" target="_blank" class="newHeader__drawer--snsin">Instagram</a></li>
 				</ul>
 
 				<div class="newHeader__drawer--about">
