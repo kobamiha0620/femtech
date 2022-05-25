@@ -64,7 +64,7 @@
              <a href="/category/femcoto/" class="side__series--link">
                 <!--画像を追加-->
                 <div class="side__series--img02">
-                    <img src="https://femtech.tv/wp-content/uploads/2022/05/sideimg_femcoto.png" alt="">
+                    <img src="https://femtech.tv/wp-content/uploads/2022/05/sideimg_femcoto2.png" alt="">
                 </div>
 
                 <div class="side__series--r">
@@ -92,7 +92,7 @@
              <a href="/category/personf/" class="side__series--link">
                 <!--画像を追加-->
                 <div class="side__series--img02">
-                    <img src="https://femtech.tv/wp-content/uploads/2022/05/sideimg_personf.png" alt="">
+                    <img src="https://femtech.tv/wp-content/uploads/2022/05/sideimg_personf2.png" alt="">
                 </div>
 
                 <div class="side__series--r">
