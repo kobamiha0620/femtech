@@ -161,10 +161,11 @@
   <!-- EDITOR'S CHOICE ------------------------------------------------->
  
 
+  <!--
   <div class="sp">
-      <!-- INSTAGRAM -->
-      <?php get_template_part('template_parts/insta'); ?>
+  /* get_template_part('template_parts/insta'); */
   </div>
+  -->
 
   <!-- コンタクトフォームの追加 -->
 

@@ -1,7 +1,7 @@
 <div class="articlesWrapper">
-<div class="index__inner"><!-- SP用padding Blc -->
+  <div class="index__inner"><!-- SP用padding Blc -->
 
-    <h2 class="articles__ttl">
+    <h2 class="articles__ttl epicttl">
         <span class="articles__ttl--en">EDITOR's PICK</span>
         <span class="articles__ttl--jp">編集部員のお気に入り</span>
     </h2>
@@ -32,6 +32,6 @@
 
     </ul>
     <p class="epick__linktxt">
-    <a href="/page-pick/"> 編集部員のお気に入りを全て見る ></a>
+      <a href="/page-pick/"> 編集部員のお気に入りを全て見る ></a>
     </p>
 </div>

@@ -24,7 +24,7 @@
     <?php get_template_part('template_parts/hottag'); ?>
     
     <!-- INSTAGRAM -->
-    <?php get_template_part('template_parts/insta'); ?>
+    <!-- /* get_template_part('template_parts/insta'); */ -->
 
     <!-- Editor -->
     <?php get_template_part('template_parts/editorsIntro'); ?>

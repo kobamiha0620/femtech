@@ -54,11 +54,11 @@
   <!-- EDITOR'S CHOICE ------------------------------------------------->
 
 
-  <div class="sp">
-      <!-- INSTAGRAM -->
-      <?php get_template_part('template_parts/insta'); ?>
-  </div>
-
+    <!--
+    <div class="sp">
+    /* get_template_part('template_parts/insta'); */
+    </div>
+    -->
 
 
   </div><!--end contents-->

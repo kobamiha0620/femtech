@@ -140,13 +140,12 @@
   </div><!-- index__inner -->
   <!-- EDITOR'S CHOICE ------------------------------------------------->
 
-
+  
+  <!--
   <div class="sp">
-    <!-- INSTAGRAM -->
-    <?php get_template_part('template_parts/insta'); ?>
+  /* get_template_part('template_parts/insta'); */
   </div>
-
-
+  -->
 
 </div>
 <!--end contents-->

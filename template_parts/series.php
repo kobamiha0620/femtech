@@ -55,6 +55,33 @@
         </div><!--  /.side__series--blc -->
 
 
+        <!--------------------
+    　　 ----------------------
+        フェムコト
+        ----------------------
+        -------------------->
+        <div class="side__series--blc">
+             <a href="/category/femcoto/" class="side__series--link">
+                <!--画像を追加-->
+                <div class="side__series--img02">
+                    <img src="https://femtech.tv/wp-content/uploads/2022/05/sideimg_femcoto.png" alt="">
+                </div>
+
+                <div class="side__series--r">
+                    <!-- カテゴリslug名からカテゴリ情報の取得 -->
+
+                    <span class="cat-data cate-personf">フェムコト</span>
+                    <p class="side__series--excerpt">様々なライフスタイルを送る女性達とウェルビーイングを考える</p>
+
+                </div>
+            </a>
+            <p class="side__series--catelink"><a href="/category/femcoto/">view All</a></p>
+            
+        </div><!--  /.side__series--blc -->
+
+
+        
+
 
         <!--------------------
     　　 ----------------------
@@ -65,7 +92,7 @@
              <a href="/category/personf/" class="side__series--link">
                 <!--画像を追加-->
                 <div class="side__series--img02">
-                    <img src="https://femtech.tv/wp-content/uploads/2021/11/2e1f61e27566010d12d27314f2220acd-1.jpg" alt="">
+                    <img src="https://femtech.tv/wp-content/uploads/2022/05/sideimg_personf.png" alt="">
                 </div>
 
                 <div class="side__series--r">
@@ -83,29 +110,6 @@
 
 
 
-        <!--------------------
-    　　 ----------------------
-        やまなさんの記事
-        ----------------------
-        -------------------->
-        <div class="side__series--blc">
-             <a href="/category/kokoro/" class="side__series--link">
-                <!--画像を追加-->
-                <div class="side__series--img02">
-                    <img src="https://femtech.tv/wp-content/uploads/2021/11/5b20e9220284a5a2bf358f18630f0be1-2.jpg" alt="">
-                </div>
-
-                <div class="side__series--r">
-                    <!-- カテゴリslug名からカテゴリ情報の取得 -->
-
-                    <span class="cat-data cate-kokoro">ココロの処方箋</span>
-                    <p class="side__series--excerpt">メンタルケアの観点から紐解く、現代女性の心とカラダ。</p>
-
-                </div>
-            </a>
-            <p class="side__series--catelink"><a href="/category/kokoro/">view All</a></p>
-            
-        </div><!--  /.side__series--blc -->
 
 
 
