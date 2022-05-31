@@ -237,10 +237,13 @@
           <div class="articles" id="articles">
             <h2 class="articles__ttl">今、あなたにおすすめ</h2>
             <ul class="articles__list">
+
+            <?php if ( has_category( 'pick' ) ) : ?>
+              <?php  get_template_part('template_parts/recommendRandom');?>
+            <?php else: ?>
               <?php  get_template_part('template_parts/recommendArticle');?>
 
-
-
+            <?php endif; ?>
 
             </ul>
           </div><!-- articles -->
