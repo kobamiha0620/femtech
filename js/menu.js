@@ -1,75 +1,90 @@
 jQuery(function ($) {
 
-	// $(window).on('load resize', function(){
+	// ：旧PC用
+	// $(window).on('scroll', function () {
+	// 	var height = $(window).scrollTop();
+	// 	// var headSp = $('.spNav').height();
+	// 	var headH = $('#js-logo').height();
+	// 	var $head = $('#js-newHeader');
+	// 	var $contents = $('.adjpadding');
+	// 	var w = $(window).width();
+	// 	var x = 750;
+
+
+	// 	if (w < x) {
+	// 		//画面サイズが750px未満のときの処理
+	// 		// if($head.hasClass('fixed')){
+	// 		// 	$head.removeClass('fixed');
+	// 		// }else{
+	// 		// 	// $contents.css('padding-top', headSp + 'px');
+	// 		// 	$('.spNav').css('position', 'fixed');
+	// 		// }
+
+	// 	} else {
+	// 		if (height > headH) {
+	// 			$head.addClass('fixed');
+	// 			$contents.css('padding-top', headH + 'px');
+	// 		} else {
+	// 			$head.removeClass('fixed');
+	// 			$contents.css('padding-top', 0);
+	// 		}
+	// 	}
+
+	// });
+
+	// $(window).on('load resize', function () {
+	// 	var height = $(window).scrollTop();
+	// 	var headH = $('#js-logo').height();
+	// 	var $head = $('#js-newHeader');
+	// 	// var headSp = $('.spNav').height();
+	// 	var $contents = $('.adjpadding');
 	// 	var w = $(window).width();
 	// 	var x = 750;
 	// 	if (w < x) {
 	// 		//画面サイズが750px未満のときの処理
-
+	// 		if ($head.hasClass('fixed')) {
+	// 			$head.removeClass('fixed');
+	// 		} else {
+	// 			// $contents.css('padding-top', headSp + 'px');
+	// 			$('.spNav').css('position', 'fixed');
+	// 		}
 	// 	} else {
-
+	// 		$('.spNav').css('position', 'relative');
+	// 		if (height > headH) {
+	// 			$head.addClass('fixed');
+	// 			$contents.css('padding-top', headH + 'px');
+	// 		} else {
+	// 			$head.removeClass('fixed');
+	// 			$contents.css('padding-top', 0);
+	// 		}
 	// 	}
 	// });
 
 
-
+	// 新しいメニュー
 	$(window).on('scroll', function () {
-		var height = $(window).scrollTop();
-		// var headSp = $('.spNav').height();
-		var headH = $('#js-logo').height();
-		var $head = $('#js-newHeader');
-		var $contents = $('.adjpadding');
-		var w = $(window).width();
-		var x = 750;
+		const height = $(window).scrollTop();
+		// const headSp = $('.spNav').height();
+		const headH = $('#js-logo').height();
+		const $head = $('#js-spNav');
+		const $logo = $('#js-logo');
+		const headerTxt = $('#newHeader__cate');
+		const $contents = $('.adjpadding');
+		const w = $(window).width();
+		const x = 750;
 
-
-		if (w < x) {
-			//画面サイズが750px未満のときの処理
-			// if($head.hasClass('fixed')){
-			// 	$head.removeClass('fixed');
-			// }else{
-			// 	// $contents.css('padding-top', headSp + 'px');
-			// 	$('.spNav').css('position', 'fixed');
-			// }
-
+		if (height > headH) {
+			$head.addClass('fixed');
+			$logo.addClass('stac');
+			headerTxt.addClass('smallHeader');
+			$contents.css('padding-top', headH + 'px');
 		} else {
-			if (height > headH) {
-				$head.addClass('fixed');
-				$contents.css('padding-top', headH + 'px');
-			} else {
-				$head.removeClass('fixed');
-				$contents.css('padding-top', 0);
-			}
+			$head.removeClass('fixed');
+			$logo.removeClass('stac');
+			headerTxt.removeClass('smallHeader');
+			$contents.css('padding-top', 0);
 		}
 
-	});
-
-	$(window).on('load resize', function () {
-		var height = $(window).scrollTop();
-		var headH = $('#js-logo').height();
-		var $head = $('#js-newHeader');
-		// var headSp = $('.spNav').height();
-		var $contents = $('.adjpadding');
-		var w = $(window).width();
-		var x = 750;
-		if (w < x) {
-			//画面サイズが750px未満のときの処理
-			if ($head.hasClass('fixed')) {
-				$head.removeClass('fixed');
-			} else {
-				// $contents.css('padding-top', headSp + 'px');
-				$('.spNav').css('position', 'fixed');
-			}
-		} else {
-			$('.spNav').css('position', 'relative');
-			if (height > headH) {
-				$head.addClass('fixed');
-				$contents.css('padding-top', headH + 'px');
-			} else {
-				$head.removeClass('fixed');
-				$contents.css('padding-top', 0);
-			}
-		}
 	});
 
 	function sideBar() {
@@ -175,16 +190,27 @@ jQuery(function ($) {
 	function spSearch() {
 		let spbtn = $('#js-searchBtn');
 		let spBg = $('#js-searchBg');
+		let blc = $('#js-searchBlc');
 		let body = $('body');
 		spbtn.on('click', function () {
 			if (spBg.hasClass('hide')) {
 				spBg.removeClass('hide');
 				body.css('overflow', 'hidden');
+				blc.removeClass('hide');
 			} else {
 				spBg.addClass('hide');
+				blc.addClass('hide');
+
 				body.css('overflow', 'auto');
 			}
 		});
+		spBg.on('click', function(){
+			spBg.addClass('hide');
+			blc.addClass('hide');
+
+			body.css('overflow', 'auto');
+		});
+
 	}
 
 	spSearch();

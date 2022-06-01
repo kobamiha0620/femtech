@@ -169,7 +169,7 @@ input[type=search]{
     text-indent: -9999px;
     white-space: nowrap;
     display: inline-block;
-    background: url('images/icon_search.png') no-repeat 0 0;
+    background: url('images/spicon_search.png') no-repeat 0 0;
     width: 20px;
     height: 17px;
     background-size: 16px 17px;
@@ -554,3 +554,22 @@ button[type="submit"]{
   // .slick.slick-initialized{
   //   opacity: 1;
   // }
+
+
+  .drawer-hamburger{
+    padding: 0 16px!important;
+  }
+  .drawer-close .drawer-hamburger{
+    padding: 0 16px!important;
+  }
+
+  @media screen and (max-width: $BP) {
+    .drawer-hamburger{
+      padding: 0 16px 0 0!important;
+      margin-right: 16px;
+    } 
+    .drawer-close .drawer-hamburger{
+      padding: 0 16px 0 0!important;
+    }
+}
+

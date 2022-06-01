@@ -90,15 +90,15 @@
 	<!-- /.TOPのみ ----------------->
 
     <!-- 1周年記念バナー -->
-    <section class="sp"> 
-    <div class="index__inner"><!-- SP用padding Blc -->
+    <!-- <section class="sp"> 
+    <div class="index__inner">
 
       <a href="https://femtech.tv/news179/" class="sidebar__bnrs">
         <img src="https://femtech.tv/wp-content/uploads/2022/03/bnr_1st.jpg" alt="１周年記念" width="100%">
         <p class="catephp__link">1周年スペシャル対談はこちら</p>
       </a>
     </div>
-    </section>
+    </section> -->
     <!-- /.1周年記念バナー -->
 
 <div class="index__inner"><!-- SP用padding Blc -->

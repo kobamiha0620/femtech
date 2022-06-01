@@ -2,12 +2,14 @@ body.home {
   #newHeader__cate {
     .homeTtl {
       display: none !important;
+
       a {
         color: $PINK;
       }
     }
   }
 }
+
 body.horoscope,
 body.aries,
 body.taurus,
@@ -49,6 +51,7 @@ body.category-femtech {
     }
   }
 }
+
 body.category-news {
   #newHeader__cate {
     .ttlNews {
@@ -58,6 +61,7 @@ body.category-news {
     }
   }
 }
+
 body.category-mens {
   #newHeader__cate {
     .ttlMens {
@@ -87,6 +91,7 @@ body.category-beauty {
     }
   }
 }
+
 body.category-serial {
   #newHeader__cate {
     .ttlSerial {
@@ -106,6 +111,7 @@ body.category-resarch {
     }
   }
 }
+
 body.category-kokoro {
   #newHeader__cate {
     .ttlSerial {
@@ -115,6 +121,7 @@ body.category-kokoro {
     }
   }
 }
+
 body.category-aoki {
   #newHeader__cate {
     .ttlSerial {
@@ -124,6 +131,7 @@ body.category-aoki {
     }
   }
 }
+
 body.category-personf {
   #newHeader__cate {
     .ttlSerial {
@@ -153,6 +161,7 @@ body.page-femtech {
     }
   }
 }
+
 body.page-news {
   #newHeader__cate {
     .ttlNews {
@@ -162,6 +171,7 @@ body.page-news {
     }
   }
 }
+
 body.page-mens {
   #newHeader__cate {
     .ttlMens {
@@ -191,6 +201,7 @@ body.page-beauty {
     }
   }
 }
+
 body.page-serial {
   #newHeader__cate {
     .ttlSerial {
@@ -200,6 +211,7 @@ body.page-serial {
     }
   }
 }
+
 body.page-kokoro {
   #newHeader__cate {
     .ttlSerial {
@@ -209,6 +221,7 @@ body.page-kokoro {
     }
   }
 }
+
 body.page-aoki {
   #newHeader__cate {
     .ttlSerial {
@@ -218,6 +231,7 @@ body.page-aoki {
     }
   }
 }
+
 body.page-personf {
   #newHeader__cate {
     .ttlSerial {
@@ -227,6 +241,7 @@ body.page-personf {
     }
   }
 }
+
 body.page-resarch {
   #newHeader__cate {
     .ttlResearch {
@@ -239,8 +254,7 @@ body.page-resarch {
 
 /* ヘッダー --------------------------------------------------------------- */
 .newHeader {
-  &__inner {
-  }
+  &__inner {}
 
   &__logo {
     text-align: center;
@@ -277,6 +291,7 @@ body.page-resarch {
     position: relative;
     max-width: $PC_W;
     margin: 0 auto;
+
     &--right {
       display: flex;
       align-items: center;
@@ -305,6 +320,7 @@ body.page-resarch {
       text-decoration: none;
       color: #444444;
       white-space: nowrap;
+
       &:hover {
         color: $PINK;
         opacity: 1;
@@ -330,17 +346,21 @@ body.page-resarch {
 .drawer--left .drawer-nav {
   box-sizing: border-box;
 }
+
 .drawer-overlay {
   z-index: 4 !important;
 }
+
 .drawer-nav {
   z-index: 5 !important;
   background: #f3e8f4;
 }
+
 .drawer-menu {
   display: block;
   overflow: hidden;
   text-align: center;
+
   li {
     width: 100%;
     padding: 0;
@@ -354,6 +374,7 @@ body.page-resarch {
       font-family: "Yu Mincho Light", "YuMincho", "Yu Mincho", "游明朝体",
         "Yu Mincho Light", "YuMincho", "Yu Mincho", "游明朝体", "Noto Serif JP",
         serif !important;
+
       &:hover {
         text-decoration: none;
       }
@@ -370,6 +391,7 @@ body.page-resarch {
   &__contents {
     z-index: 1;
   }
+
   &__drawer {
     &--inner {
       padding: 138px $PC_BB $PC_BB;
@@ -385,8 +407,9 @@ body.page-resarch {
       li {
         margin-right: 0;
         width: 28px;
+
         &:nth-child(2n) {
-          margin:0 26px;
+          margin: 0 26px;
         }
       }
 
@@ -403,6 +426,7 @@ body.page-resarch {
       background: url("images/icon_fb.png") no-repeat;
       background-size: 100% auto;
     }
+
     &--snstk {
       background: url("images/icon_tiktok.png") no-repeat;
       background-size: 100% auto;
@@ -425,6 +449,7 @@ body.page-resarch {
       border-bottom: solid 1px #000;
       padding: 55px 0;
       text-align: center;
+
       .logo {
         background: url("images/logo.png") no-repeat;
         background-size: 100% auto;
@@ -436,13 +461,16 @@ body.page-resarch {
         margin: 0 auto 8px;
         text-align: center;
       }
+
       p {
         text-align-last: left;
       }
     }
+
     &--doctor {
       border-bottom: solid 1px #000;
       padding: 55px 0;
+
       &-ttl {
         white-space: nowrap;
         text-indent: -9999px;
@@ -454,12 +482,14 @@ body.page-resarch {
         text-align: center;
         margin: 0 auto 20px;
       }
+
       &-intro {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin: 0 0 32px;
       }
+
       &-introimg {
         white-space: nowrap;
         text-indent: -9999px;
@@ -470,11 +500,14 @@ body.page-resarch {
         height: 120px;
         text-align: center;
       }
+
       &-name {
         font-size: 18px;
       }
+
       &-resume {
         margin: 0 0 55px;
+
         p {
           font-size: 15px;
           text-indent: -1em;
@@ -483,11 +516,13 @@ body.page-resarch {
           line-height: 1.4;
         }
       }
+
       &-txt {
         font-size: 15px;
         line-height: 1.8;
       }
     }
+
     &--otherlink {
       overflow: hidden;
       margin: 55px 0 0;
@@ -637,6 +672,7 @@ $drawWP: calc($PC_BB * 9);
   .adjpadding {
     padding-top: 100px;
   }
+
   /* ヘッダー --------------------------------------------------------------- */
   .newHeader {
     &__spnav {
@@ -695,11 +731,13 @@ $drawWP: calc($PC_BB * 9);
 
     &__contents {
       max-width: auto;
+
       &--right {
         align-items: center;
       }
     }
   }
+
   .newHeader {
     &__drawer {
       &--inner {
@@ -707,11 +745,14 @@ $drawWP: calc($PC_BB * 9);
         overflow-y: scroll !important;
         padding: $PC_BB 17px 17px;
       }
+
       &--sns {
         padding: 8px 8px 36px;
+
         li {
           width: 26px;
         }
+
         a {
           width: 26px;
           height: 26px;
@@ -721,6 +762,7 @@ $drawWP: calc($PC_BB * 9);
       &--about {
         line-height: 1.8;
         padding: $PC_BS 8px;
+
         .logo {
           width: 157px;
           display: inline-block;
@@ -729,54 +771,68 @@ $drawWP: calc($PC_BB * 9);
           line-height: 0;
           margin: 0 0 8px;
         }
+
         p {
           font-size: 12px;
         }
       }
+
       &--doctor {
         border-bottom: solid 1px #000;
         padding: 24px 8px;
+
         &-ttl {
           width: 74px;
           height: 16px;
           margin: 0 auto 18px;
         }
+
         &-intro {
           justify-content: center;
           margin: 0 0 32px;
         }
+
         &-introimg {
           width: 85px;
           height: 85px;
           margin: 0 18px 0 0;
         }
+
         &-name {
           font-size: 14px;
         }
+
         &-resume {
           margin: 0 0 24px;
+
           p {
             font-size: 12px;
             margin: 0 0 7px;
             line-height: 1.4;
           }
         }
+
         &-txt {
           font-size: 12px;
           line-height: 1.8;
         }
       }
+
       &--otherlink {
         margin: 0;
         padding: 25px 8px 0;
+
         li {
           width: 50%;
+
           &:nth-child(2n) {
             margin-bottom: 15px;
           }
+
           &:first-child {
             margin-bottom: 15px;
           }
+
           a {
             font-size: 12px;
           }
@@ -784,6 +840,7 @@ $drawWP: calc($PC_BB * 9);
       }
     }
   }
+
   #newHeader__cate {
     .menu {
       li {
@@ -815,11 +872,13 @@ $drawWP: calc($PC_BB * 9);
     &::-webkit-scrollbar {
       height: 5px;
     }
-    &::-webkit-scrollbar-track {
-    }
+
+    &::-webkit-scrollbar-track {}
+
     &::-webkit-scrollbar-track {
       background: #eee;
     }
+
     &::-webkit-scrollbar-thumb {
       background: $PINK;
       border-radius: 5px;
@@ -830,16 +889,19 @@ $drawWP: calc($PC_BB * 9);
 
   .drawer-menu {
     padding: 8px !important;
+
     li {
       width: 100%;
       display: block;
       padding: 0;
+
       a {
         padding: 14px 0;
         font-size: 20px;
       }
     }
   }
+
   .drawer-hamburger {
     padding: 0 !important;
   }
@@ -847,20 +909,24 @@ $drawWP: calc($PC_BB * 9);
   #navopen {
     display: block;
   }
+
   #navclose {
     display: none !important;
   }
+
   $drawSp: 100vw;
 
   .drawer-open {
     .drawer-nav {
       width: $drawSp !important;
     }
+
     .drawer-hamburger {
       display: none;
       top: 0 !important;
       left: 0 !important;
     }
+
     #navSpclose {
       display: none;
     }
@@ -876,10 +942,12 @@ $drawWP: calc($PC_BB * 9);
       padding: 0 !important;
       display: none;
     }
+
     #navSpclose {
       display: block;
     }
   }
+
   #header {
     .newHeader__inner {
       background: #fff;
@@ -887,6 +955,7 @@ $drawWP: calc($PC_BB * 9);
       border-bottom: solid 1px $UB;
     }
   }
+
   .spNav {
     width: 100%;
     overflow: hidden;
@@ -897,8 +966,8 @@ $drawWP: calc($PC_BB * 9);
     border-bottom: solid 1px $UB;
     background: #fff;
   }
-  .newHeader__spnav {
-  }
+
+  .newHeader__spnav {}
 }
 
 /* PC 画面サイズが750px以上 */
@@ -920,12 +989,15 @@ $drawWP: calc($PC_BB * 9);
       appearance: none;
       cursor: pointer;
       padding: 20px;
+
       &:hover {
         opacity: 0.7;
       }
     }
+
     &__search {
       padding: 50px;
+
       &--blc {
         z-index: 0;
         position: absolute;
@@ -938,6 +1010,7 @@ $drawWP: calc($PC_BB * 9);
         box-shadow: 5px 5px 5px 0px rgba(70, 70, 75, 0.2);
         animation-duration: 1.2s;
         animation-name: fadeOut;
+
         &.active {
           top: 64px;
           transition: 0.5s ease;
@@ -953,9 +1026,11 @@ $drawWP: calc($PC_BB * 9);
   0% {
     opacity: 0;
   }
+
   90% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -965,9 +1040,11 @@ $drawWP: calc($PC_BB * 9);
   0% {
     opacity: 1;
   }
+
   90% {
     opacity: 0;
   }
+
   100% {
     opacity: 0;
   }
@@ -976,8 +1053,213 @@ $drawWP: calc($PC_BB * 9);
 .drawer-nav {
   overflow: auto;
 }
+
 .menu {
   .homeTtl {
     display: none !important;
   }
+}
+
+// 追記ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+/* ヘッダー --------------------------------------------------------------- */
+
+
+#newHeader__cate {
+  .menu {
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+.newHeader {
+  &__logo {
+    transition: ease 0.3s all;
+
+    a {
+      transition: ease 0.3s all;
+    }
+
+    &--wrapper {
+      display: flex;
+      align-items: center;
+
+    }
+
+    &.stac {
+      transition: ease 0.3s all;
+      padding: 24px 0 0;
+
+      a {
+        transition: ease 0.3s all;
+        width: calc(540px / 4);
+        height: calc(84px / 4);
+      }
+
+      @media screen and (max-width: $BP) {
+        padding-top: 0;
+      }
+
+    }
+  }
+
+  &__htop {
+    width: 100%;
+    max-width: $BP_PC;
+    margin: 0 auto;
+    position: relative;
+
+    .newHeader__pcbtn, .newHeader__spnav--search {
+      width: 22px;
+      height: 22px;
+      background-size: 100% auto;
+      padding: 0;
+      margin: 0 10px;
+    }
+
+    &--sns {
+      padding: 0;
+      display: flex;
+      overflow: visible;
+      justify-content: center;
+      align-items: center;
+
+      li {
+        margin-right: 0;
+        width: 22px;
+
+        &:nth-child(2n) {
+          margin: 0 10px;
+        }
+      }
+
+      a {
+        display: block;
+        width: 22;
+        height: 22px;
+        text-indent: -9999px;
+        white-space: nowrap;
+      }
+    }
+
+    &--rblcwrapper {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    &--rblc {
+      display: flex;
+      overflow: visible;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__spnav{
+    @media screen and (max-width: $BP) {
+      padding: 20px 5% 6px;
+    }
+  }
+}
+
+.spNav {
+  width: 100%;
+  z-index: 3;
+  transform: translate3d(0, 0, 0);
+  position: relative;
+  background: #fff;
+
+  .newHeader__htop--rblcwrapper {
+    padding: 64px 0 0;
+    transition: ease 0.3s all;
+
+    @media screen and (max-width: $BP) {
+      padding-top: 0;
+    }
+
+  }
+
+  &.fixed {
+    position: fixed;
+    top: 0;
+    border-bottom: solid 1px $UB;
+    width: 100%;
+    z-index: 2;
+
+    .newHeader__htop--rblcwrapper {
+      padding: 25px 0 0;
+      transition: ease 0.3s all;
+      @media screen and (max-width: $BP) {
+        padding-top: 0;
+      }
+
+      .newHeader__htop--sns {
+        a {
+          width: 21px;
+          width: 21px;
+          transition: ease 0.3s all;
+        }
+      }
+
+      .newHeader__pcbtn, .newHeader__spnav--search {
+        width: 21px;
+        width: 21px;
+        transition: ease 0.3s all;
+      }
+    }
+
+    #newHeader__cate {
+      .menu {
+        a {
+          padding: 10px 0;
+        }
+      }
+    }
+
+    .newHeader__contents {
+      margin-top: 10px;
+      @media screen and (max-width: $BP) {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.newHeader__search--blc {
+  transition: 0.5s ease;
+  animation-duration: 1.2s;
+  animation-name: fadeIn;
+
+  .newHeader__search {
+    padding: 20px 30px;
+  }
+
+  &.active {
+    transition: 0.5s ease;
+    animation-duration: 1.2s;
+    animation-name: fadeIn;
+    top: 0;
+  }
+
+  @media screen and (max-width: $BP) {}
+
+}
+
+.snsInsta {
+  background: url("images/icon_insta.png") no-repeat;
+  background-size: 100% auto;
+}
+
+.snsTiktok {
+  background: url("images/icon_tiktok.png") no-repeat;
+  background-size: 100% auto;
+}
+
+.snsFb {
+  background: url("images/icon_fb.png") no-repeat;
+  background-size: 100% auto;
+}
+
+.snsTwitter {
+  background: url("images/icon_tw.png") no-repeat;
+  background-size: 100% auto;
 }
