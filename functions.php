@@ -218,38 +218,10 @@ add_filter( 'wpp_custom_html', 'my_wpp_custom_html', 10, 2 );
 
 
 
-
-
 remove_filter( 'pre_term_description', 'wp_filter_kses' );
 //カテゴリのdescription
 
 
-//閲覧数の表示
-if(function_exists('wpp_get_views')){
-        
-  add_filter('manage_posts_columns', function($columns){
-          $columns['view'] = "View";
-          return $columns;
-  });
-      
-  add_action('manage_posts_custom_column',function($column_name, $post_id){
-      if($column_name == 'view'){
-      echo wpp_get_views($post_id, 'today', true).'｜'.wpp_get_views($post_id, 'all', true);
-      }
-  },10,2);
-      
-}
-
-
-// 管理画面にてphp書き込み
-function my_php_Include($params = array()) {
-  extract(shortcode_atts(array('file' => 'default'), $params));
-  ob_start();
-  include(STYLESHEETPATH . "/template_parts/$file.php");
-  return ob_get_clean();
-  }
-add_shortcode('call_php', 'my_php_Include');
-  
 
 //ページネーション
 add_action( 'parse_query', 'my_parse_query' );
@@ -387,3 +359,64 @@ function custom_feed_content_type($content_type, $type){
   }
   return $content_type;
 }
+
+
+//サムネイルカラム追加
+function custom_columns( $columns ) {
+  $columns = array_merge( $columns, array( 'featured_image' => 'Image'));
+  return $columns;
+}
+add_filter('manage_posts_columns' , 'custom_columns');
+
+function custom_columns_data( $column, $post_id ) {
+  switch ( $column ) {
+  case 'featured_image':
+      the_post_thumbnail( array( 100, 100 ));
+      break;
+  }
+}
+add_action( 'manage_posts_custom_column' , 'custom_columns_data', 10, 2 );
+
+add_action('admin_head', 'column_width');
+function column_width() {
+echo '<style type="text/css">
+      .column-title { text-align: left; width:200px !important; overflow:hidden }
+      .column-author { text-align: left; width:80px !important; overflow:hidden }       
+      .column-categories { text-align: left; width:80px !important; overflow:hidden }        
+      .column-tags { text-align: left; width:70px !important; overflow:hidden }    
+      .column-featured_image {
+               text-align: left;
+               width:100px !important;
+　　　　　　　　　 overflow:hidden
+      }
+  </style>';
+}
+
+
+//閲覧数の表示
+if(function_exists('wpp_get_views')){
+        
+  add_filter('manage_posts_columns', function($columns){
+          $columns['view'] = "View";
+          return $columns;
+  });
+      
+  add_action('manage_posts_custom_column',function($column_name, $post_id){
+      if($column_name == 'view'){
+      echo wpp_get_views($post_id, 'today', true).'｜'.wpp_get_views($post_id, 'all', true);
+      }
+  },10,2);
+      
+}
+
+
+// 管理画面にてphp書き込み
+function my_php_Include($params = array()) {
+  extract(shortcode_atts(array('file' => 'default'), $params));
+  ob_start();
+  include(STYLESHEETPATH . "/template_parts/$file.php");
+  return ob_get_clean();
+  }
+  
+add_shortcode('call_php', 'my_php_Include');
+  

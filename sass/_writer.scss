@@ -1,0 +1,596 @@
+//お悩み募集
+#wrecruit {
+    padding-bottom: 50px;
+    padding-top: 290px;
+    background: url('https://femtech.tv/wp-content/uploads/2022/06/bg_wrecruit2.png') no-repeat 0 0;
+    background-size: 100% auto;
+    input[type=submit] {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+
+    input[type=text] {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+
+    .wrecruit__top {
+        &--ttl {
+            span {
+                white-space: nowrap;
+                text-indent: -9999px;
+                background: url('images/img_consal.png') no-repeat;
+                background-size: 100% auto;
+                width: 413px;
+                height: 291px;
+                margin: 48px auto;
+                display: block;
+            }
+
+        }
+
+        &--subttl {
+            span {
+                white-space: nowrap;
+                text-indent: -9999px;
+                background: url('images/subttl_consaltation.png') no-repeat;
+                background-size: 100% auto;
+                width: 345px;
+                height: 22px;
+                margin: 0 auto 33px;
+                display: block;
+            }
+        }
+
+        &--txt {
+            font-size: 13px;
+            line-height: 1.65;
+            margin: 0 75px 30px;
+            letter-spacing: -0.05em;
+        }
+    }
+
+    .wrecruit__btm {
+        padding: 0 80px;
+
+        &--list {
+            display: flex;
+            margin: 0 0 26px;
+
+            li {
+                width: 100%;
+                margin-right: 22px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        &--blc {
+            margin: 0 0 20px;
+            &.url{
+
+                textarea {
+                    padding: 8px 10px;
+                    width: 100%;
+                    border: solid 1px #404040;
+                    border-radius: 5px;
+                    height: 124px;
+                    line-height: 1.5;
+        
+                    &::placeholder {
+                        color: #b2b2b2;
+                        font-size: 13px;
+                        font-weight: normal;
+                        line-height: 1.5;
+                    }
+                }
+            }
+            &.requirement{
+
+                textarea {
+                    padding: 8px 10px;
+                    width: 100%;
+                    border: solid 1px #404040;
+                    border-radius: 5px;
+                    height: 60px;
+                    line-height: 1.5;
+        
+                    &::placeholder {
+                        color: #b2b2b2;
+                        font-size: 13px;
+                        font-weight: normal;
+                        line-height: 1.5;
+                    }
+                }
+            }
+        }
+
+        &--ttl {
+            font-size: 14px;
+        }
+
+
+        input {
+            border-radius: 5px;
+            padding: 8px 10px;
+            width: 100%;
+            border: solid 1px #404040;
+            height: 36px;
+            &::placeholder {
+                color: #b2b2b2;
+                font-size: 13px;
+            }
+        }
+
+
+
+        &--btn {
+            input {
+                background: #ec6b87;
+                border: #ec6b87;
+                color: #FFF;
+                letter-spacing: 0.1em;
+                font-size: 13px;
+            }
+        }
+
+        span {
+            font-size: 12px;
+            display: block;
+            padding: 5px 0;
+            margin-bottom: 0!important;
+
+        }
+
+        select {
+            /* styling */
+            padding: 8px 10px;
+            height: 36px;
+            width: 100%;
+            border: thin solid #404040;
+            border-radius: 5px;
+            margin: 0;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-image:
+                linear-gradient(45deg, transparent 0%, #FFF 0%),
+                linear-gradient(135deg, #FFF 0%, transparent 0%),
+                linear-gradient(to right, #ec6b87, #ec6b87);
+            background-position:
+                calc(100% - 18px) calc(1em + 4px),
+                calc(100% - 18px) calc(1em + 4px),
+                100% 0;
+            background-size:
+                0 0,
+                0 0,
+                36px 50px;
+            background-repeat: no-repeat;
+            font-size: 13px;
+            background-color: #FFF;
+        }
+    }
+
+    select.is-empty {
+        color: #b2b2b2;
+    }
+
+    select:invalid {
+        color: #b2b2b2;
+    }
+    input[type="number"]::-webkit-outer-spin-button, 
+    input[type="number"]::-webkit-inner-spin-button { 
+      -webkit-appearance: none; 
+      margin: 0; 
+    } 
+    input[type="number"] { 
+        -moz-appearance:textfield; 
+    }
+    @media screen and (max-width: $BP){
+        background: url('https://femtech.tv/wp-content/uploads/2022/06/bg_wrecruit_sp.jpg') no-repeat 0 0;
+        background-size: 100% auto;
+        padding-top: 72.2vw;
+        padding-bottom: 17.33vw;
+
+
+    }
+
+}
+
+//確認ページ
+#cwrecruit{
+    .cwrecruit__list{
+        border: solid 1px #b2b2b2;
+        margin: 10px 0 30px;
+        &--ttl{
+            background: #ec6b87;
+            display: inline-block;
+            width: 200px;
+            white-space: nowrap;
+            padding: 10px;
+            color: #FFF;
+            border-bottom: solid 1px #FFF;
+            &+ p{
+                padding: 10px;
+                border-bottom: solid 1px #b2b2b2;
+                display: block;
+                width: calc(100% - 200px);
+            }
+        }
+        li{
+            display: flex;
+            align-items: stretch;
+            width: 100%;
+            &:last-child{
+                .cwrecruit__list--ttl{
+                    border-bottom: none;
+                    &+ p{
+                        border-bottom: none;        
+                    }
+                }
+            }
+        }
+        &--btn{
+            display: flex;
+            align-items: flex-end;
+            input {
+
+                appearance: none;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                padding: 8px 10px;
+                border-radius: 5px;
+                font-size: 13px;
+                line-height: 1.1;
+
+            }
+            .wpcf7-submit{
+
+            }
+            p{
+            }
+        }
+        &--btnpre{
+            line-height: 1.1;
+
+            input{
+                border: solid 1px #b2b2b2;
+                width: 120px;
+            }
+            margin: 0 10px 0 0;
+        }
+        &--btnsubmit{
+            line-height: 1.1;
+            input{
+                background: #ec6b87;
+                border: #ec6b87 1px solid;
+                color: #FFF;
+                width: 300px;
+                letter-spacing: 0.1em;
+            }
+        }
+
+    }
+}
+ 
+.wpcf7-form-control-wrap {
+    position: relative;
+}
+
+.wpcf7-form-control-wrap:after {
+    content: "";
+    position: absolute;
+    right: 14px;
+    top: 20px;
+    width: 9px;
+    height: 9px;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    transform: translateY(-50%) rotate(-135deg);
+    font-size: 20px;
+    pointer-events: none;
+}
+
+.wpcf7-response-output {
+    padding: 10px 20px;
+    margin: 0 80px !important;
+    font-size: 14px;
+    border: none;
+    margin: 0;
+    color: #444;
+    border: solid 2px #dc3232;
+    background: #FFF;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2.confirm{
+    font-weight: normal;
+    display: block;
+    margin: 30px 0 0;
+    font-size: 18px;
+}
+.thanks__ttl{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.thanks__txt1{
+    text-align: center;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+.thanks__txt2{
+    margin-top: 20px;
+    text-align: center;
+    line-height: 1.5;
+}
+@media screen and (max-width: $BP) {
+    body.wrecruit{
+        #page{
+            margin-bottom: 0;
+        }
+    }
+    h2.confirm{
+        margin: 30px 5% 0;
+    }
+    .thanks__ttl{
+        font-size: 18px;
+        margin: 30px 0;
+    }
+    .thanks__txt1{
+        margin: 20px 0;
+        text-align-last: left;
+    }
+    .thanks__txt2{
+        margin-top: 20px;
+        text-align-last: left;
+        line-height: 1.5;
+    }
+    //お悩み募集
+    #wrecruit {
+
+        .wrecruit__top {
+            &--ttl {
+                margin: 7.2% 5.4% 0 6%;
+
+                span {
+                    width: 100%;
+                    padding: 76.4% 0 0;
+                    height: 0;
+                    margin: 0 0 6%;
+                }
+            }
+
+            &--subttl {
+                margin: 0 12.6% 4.8%;
+
+                span {
+                    width: 100%;
+                    height: 0;
+                    padding-top: 6.4%;
+                    margin: 0;
+                }
+            }
+
+            &--txt {
+                font-size: 10px;
+                line-height: 1.65;
+                margin: 0 4.8% 13%;
+                letter-spacing: 0em;
+            }
+        }
+
+        .wrecruit__btm {
+            padding: 0 5%;
+
+            &--list {
+                display: block;
+
+                li {
+                    width: 100%;
+                    margin-right: 0;
+                    margin: 0 0 4.4%;
+
+                }
+            }
+
+            &--blc {
+                margin: 0 0 4.4%;
+            }
+
+            &--ttl {
+                font-size: 13px;
+            }
+
+            textarea {
+                padding: 8px 10px;
+                width: 100%;
+
+                height: 130px;
+
+                &::placeholder {
+                    color: #b2b2b2;
+                    font-size: 13px;
+                    font-weight: normal;
+                }
+            }
+
+            input {
+                border-radius: 5px;
+                padding: 8px 10px;
+                width: 100%;
+                border: solid 1px #404040;
+
+                &::placeholder {
+                    color: #b2b2b2;
+                    font-size: 13px;
+                }
+            }
+
+            &--btn {
+                input {
+                    background: #ec6b87;
+                    border: #ec6b87;
+                    color: #FFF;
+                    letter-spacing: 0.1em;
+                    font-size: 13px;
+                }
+            }
+
+            span {
+                font-size: 12px;
+                display: block;
+                padding: 5px 0;
+            }
+
+            select {
+                /* styling */
+                width: 100%;
+                border: thin solid #404040;
+                border-radius: 5px;
+                padding: 8px 10px;
+
+
+                margin: 0;
+                appearance: none;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+
+                background-image:
+                    linear-gradient(45deg, transparent 0%, #FFF 0%),
+                    linear-gradient(135deg, #FFF 0%, transparent 0%),
+                    linear-gradient(to right, #ec6b87, #ec6b87);
+                background-position:
+                    calc(100% - 20px) calc(1em + 2px),
+                    calc(100% - 15px) calc(1em + 2px),
+                    100% 0;
+                background-size:
+                    0 0,
+                    0 0,
+                    36px 50px;
+                background-repeat: no-repeat;
+                font-size: 13px;
+                background-color: #FFF;
+                line-height: 1;
+
+            }
+
+
+        }
+
+        select.is-empty {
+            color: #b2b2b2;
+        }
+
+        select:invalid {
+            color: #b2b2b2;
+        }
+
+    }
+    #cwrecruit{
+        .cwrecruit__list{
+            border: none;
+            margin: 10px 5% 20px;
+            &--ttl{
+                width: 100%;
+                white-space: wrap;
+                padding: 10px;
+                color: #FFF!important;
+
+                &+ p{
+                    padding: 10px;
+                    width: 100%;
+                    border: none;
+
+                }
+            }
+            li{
+                display: block;
+                width: 100%;
+                margin: 0 0 10px;
+                border: solid 1px #b2b2b2;
+                &:last-child{
+                    .cwrecruit__list--ttl{
+                        border-bottom: none;
+                        color: #FFF;
+                        &+ p{
+                            border-bottom: none;  
+
+                        }
+                    }
+                }
+            }
+            &--btn{
+                justify-content: space-between;
+                align-items: flex-start;
+                margin: 0 5%;   
+                input {
+    
+                    appearance: none;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    padding: 8px 10px;
+                    border-radius: 5px;
+                    font-size: 13px;
+                    line-height: 1.1;
+    
+                }
+                .wpcf7-submit{
+    
+                }
+                p{
+                }
+            }
+            &--btnpre{
+                width: 35%;
+
+                line-height: 1.1;
+    
+                input{
+                    width: 100%;
+                    
+                }
+                margin: 0  0 0;
+            }
+            &--btnsubmit{
+                width: 60%;
+
+                input{
+                    width: 100%;
+
+                }
+            }
+    
+        }
+    }
+    .wpcf7-form-control-wrap {
+        position: relative;
+    }
+
+    .wpcf7-form-control-wrap:after {
+        content: "";
+        position: absolute;
+        right: 14px;
+        top: 21px;
+        width: 9px;
+        height: 9px;
+        border-top: 1px solid #fff;
+        border-left: 1px solid #fff;
+        transform: translateY(-50%) rotate(-135deg);
+        font-size: 20px;
+        pointer-events: none;
+    }
+
+    .wpcf7-response-output {
+        padding: 10px 20px;
+        margin: 0 !important;
+        font-size: 14px;
+        margin: 0;
+    }
+
+}

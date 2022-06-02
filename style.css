@@ -4738,6 +4738,484 @@ h2.confirm {
     margin: 0 0 30px;
   }
 }
+#wrecruit {
+  padding-bottom: 50px;
+  padding-top: 290px;
+  background: url("https://femtech.tv/wp-content/uploads/2022/06/bg_wrecruit2.png") no-repeat 0 0;
+  background-size: 100% auto;
+}
+#wrecruit input[type=submit] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+#wrecruit input[type=text] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+#wrecruit .wrecruit__top--ttl span {
+  white-space: nowrap;
+  text-indent: -9999px;
+  background: url("images/img_consal.png") no-repeat;
+  background-size: 100% auto;
+  width: 413px;
+  height: 291px;
+  margin: 48px auto;
+  display: block;
+}
+#wrecruit .wrecruit__top--subttl span {
+  white-space: nowrap;
+  text-indent: -9999px;
+  background: url("images/subttl_consaltation.png") no-repeat;
+  background-size: 100% auto;
+  width: 345px;
+  height: 22px;
+  margin: 0 auto 33px;
+  display: block;
+}
+#wrecruit .wrecruit__top--txt {
+  font-size: 13px;
+  line-height: 1.65;
+  margin: 0 75px 30px;
+  letter-spacing: -0.05em;
+}
+#wrecruit .wrecruit__btm {
+  padding: 0 80px;
+}
+#wrecruit .wrecruit__btm--list {
+  display: flex;
+  margin: 0 0 26px;
+}
+#wrecruit .wrecruit__btm--list li {
+  width: 100%;
+  margin-right: 22px;
+}
+#wrecruit .wrecruit__btm--list li:last-child {
+  margin-right: 0;
+}
+#wrecruit .wrecruit__btm--blc {
+  margin: 0 0 20px;
+}
+#wrecruit .wrecruit__btm--blc.url textarea {
+  padding: 8px 10px;
+  width: 100%;
+  border: solid 1px #404040;
+  border-radius: 5px;
+  height: 124px;
+  line-height: 1.5;
+}
+#wrecruit .wrecruit__btm--blc.url textarea::placeholder {
+  color: #b2b2b2;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.5;
+}
+#wrecruit .wrecruit__btm--blc.requirement textarea {
+  padding: 8px 10px;
+  width: 100%;
+  border: solid 1px #404040;
+  border-radius: 5px;
+  height: 60px;
+  line-height: 1.5;
+}
+#wrecruit .wrecruit__btm--blc.requirement textarea::placeholder {
+  color: #b2b2b2;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.5;
+}
+#wrecruit .wrecruit__btm--ttl {
+  font-size: 14px;
+}
+#wrecruit .wrecruit__btm input {
+  border-radius: 5px;
+  padding: 8px 10px;
+  width: 100%;
+  border: solid 1px #404040;
+  height: 36px;
+}
+#wrecruit .wrecruit__btm input::placeholder {
+  color: #b2b2b2;
+  font-size: 13px;
+}
+#wrecruit .wrecruit__btm--btn input {
+  background: #ec6b87;
+  border: #ec6b87;
+  color: #FFF;
+  letter-spacing: 0.1em;
+  font-size: 13px;
+}
+#wrecruit .wrecruit__btm span {
+  font-size: 12px;
+  display: block;
+  padding: 5px 0;
+  margin-bottom: 0 !important;
+}
+#wrecruit .wrecruit__btm select {
+  /* styling */
+  padding: 8px 10px;
+  height: 36px;
+  width: 100%;
+  border: thin solid #404040;
+  border-radius: 5px;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: linear-gradient(45deg, transparent 0%, #FFF 0%), linear-gradient(135deg, #FFF 0%, transparent 0%), linear-gradient(to right, #ec6b87, #ec6b87);
+  background-position: calc(100% - 18px) calc(1em + 4px), calc(100% - 18px) calc(1em + 4px), 100% 0;
+  background-size: 0 0, 0 0, 36px 50px;
+  background-repeat: no-repeat;
+  font-size: 13px;
+  background-color: #FFF;
+}
+#wrecruit select.is-empty {
+  color: #b2b2b2;
+}
+#wrecruit select:invalid {
+  color: #b2b2b2;
+}
+#wrecruit input[type=number]::-webkit-outer-spin-button,
+#wrecruit input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#wrecruit input[type=number] {
+  -moz-appearance: textfield;
+}
+@media screen and (max-width: 749px) {
+  #wrecruit {
+    background: url("https://femtech.tv/wp-content/uploads/2022/06/bg_wrecruit_sp.jpg") no-repeat 0 0;
+    background-size: 100% auto;
+    padding-top: 72.2vw;
+    padding-bottom: 17.33vw;
+  }
+}
+
+#cwrecruit .cwrecruit__list {
+  border: solid 1px #b2b2b2;
+  margin: 10px 0 30px;
+}
+#cwrecruit .cwrecruit__list--ttl {
+  background: #ec6b87;
+  display: inline-block;
+  width: 200px;
+  white-space: nowrap;
+  padding: 10px;
+  color: #FFF;
+  border-bottom: solid 1px #FFF;
+}
+#cwrecruit .cwrecruit__list--ttl + p {
+  padding: 10px;
+  border-bottom: solid 1px #b2b2b2;
+  display: block;
+  width: calc(100% - 200px);
+}
+#cwrecruit .cwrecruit__list li {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+}
+#cwrecruit .cwrecruit__list li:last-child .cwrecruit__list--ttl {
+  border-bottom: none;
+}
+#cwrecruit .cwrecruit__list li:last-child .cwrecruit__list--ttl + p {
+  border-bottom: none;
+}
+#cwrecruit .cwrecruit__list--btn {
+  display: flex;
+  align-items: flex-end;
+}
+#cwrecruit .cwrecruit__list--btn input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 8px 10px;
+  border-radius: 5px;
+  font-size: 13px;
+  line-height: 1.1;
+}
+#cwrecruit .cwrecruit__list--btnpre {
+  line-height: 1.1;
+  margin: 0 10px 0 0;
+}
+#cwrecruit .cwrecruit__list--btnpre input {
+  border: solid 1px #b2b2b2;
+  width: 120px;
+}
+#cwrecruit .cwrecruit__list--btnsubmit {
+  line-height: 1.1;
+}
+#cwrecruit .cwrecruit__list--btnsubmit input {
+  background: #ec6b87;
+  border: #ec6b87 1px solid;
+  color: #FFF;
+  width: 300px;
+  letter-spacing: 0.1em;
+}
+
+.wpcf7-form-control-wrap {
+  position: relative;
+}
+
+.wpcf7-form-control-wrap:after {
+  content: "";
+  position: absolute;
+  right: 14px;
+  top: 20px;
+  width: 9px;
+  height: 9px;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  transform: translateY(-50%) rotate(-135deg);
+  font-size: 20px;
+  pointer-events: none;
+}
+
+.wpcf7-response-output {
+  padding: 10px 20px;
+  margin: 0 80px !important;
+  font-size: 14px;
+  border: none;
+  margin: 0;
+  color: #444;
+  border: solid 2px #dc3232;
+  background: #FFF;
+  font-weight: bold;
+  text-align: center;
+}
+
+h2.confirm {
+  font-weight: normal;
+  display: block;
+  margin: 30px 0 0;
+  font-size: 18px;
+}
+
+.thanks__ttl {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.thanks__txt1 {
+  text-align: center;
+  line-height: 1.5;
+  margin: 20px 0;
+}
+
+.thanks__txt2 {
+  margin-top: 20px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 749px) {
+  body.wrecruit #page {
+    margin-bottom: 0;
+  }
+
+  h2.confirm {
+    margin: 30px 5% 0;
+  }
+
+  .thanks__ttl {
+    font-size: 18px;
+    margin: 30px 0;
+  }
+
+  .thanks__txt1 {
+    margin: 20px 0;
+    text-align-last: left;
+  }
+
+  .thanks__txt2 {
+    margin-top: 20px;
+    text-align-last: left;
+    line-height: 1.5;
+  }
+
+  #wrecruit .wrecruit__top--ttl {
+    margin: 7.2% 5.4% 0 6%;
+  }
+  #wrecruit .wrecruit__top--ttl span {
+    width: 100%;
+    padding: 76.4% 0 0;
+    height: 0;
+    margin: 0 0 6%;
+  }
+  #wrecruit .wrecruit__top--subttl {
+    margin: 0 12.6% 4.8%;
+  }
+  #wrecruit .wrecruit__top--subttl span {
+    width: 100%;
+    height: 0;
+    padding-top: 6.4%;
+    margin: 0;
+  }
+  #wrecruit .wrecruit__top--txt {
+    font-size: 10px;
+    line-height: 1.65;
+    margin: 0 4.8% 13%;
+    letter-spacing: 0em;
+  }
+  #wrecruit .wrecruit__btm {
+    padding: 0 5%;
+  }
+  #wrecruit .wrecruit__btm--list {
+    display: block;
+  }
+  #wrecruit .wrecruit__btm--list li {
+    width: 100%;
+    margin-right: 0;
+    margin: 0 0 4.4%;
+  }
+  #wrecruit .wrecruit__btm--blc {
+    margin: 0 0 4.4%;
+  }
+  #wrecruit .wrecruit__btm--ttl {
+    font-size: 13px;
+  }
+  #wrecruit .wrecruit__btm textarea {
+    padding: 8px 10px;
+    width: 100%;
+    height: 130px;
+  }
+  #wrecruit .wrecruit__btm textarea::placeholder {
+    color: #b2b2b2;
+    font-size: 13px;
+    font-weight: normal;
+  }
+  #wrecruit .wrecruit__btm input {
+    border-radius: 5px;
+    padding: 8px 10px;
+    width: 100%;
+    border: solid 1px #404040;
+  }
+  #wrecruit .wrecruit__btm input::placeholder {
+    color: #b2b2b2;
+    font-size: 13px;
+  }
+  #wrecruit .wrecruit__btm--btn input {
+    background: #ec6b87;
+    border: #ec6b87;
+    color: #FFF;
+    letter-spacing: 0.1em;
+    font-size: 13px;
+  }
+  #wrecruit .wrecruit__btm span {
+    font-size: 12px;
+    display: block;
+    padding: 5px 0;
+  }
+  #wrecruit .wrecruit__btm select {
+    /* styling */
+    width: 100%;
+    border: thin solid #404040;
+    border-radius: 5px;
+    padding: 8px 10px;
+    margin: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: linear-gradient(45deg, transparent 0%, #FFF 0%), linear-gradient(135deg, #FFF 0%, transparent 0%), linear-gradient(to right, #ec6b87, #ec6b87);
+    background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), 100% 0;
+    background-size: 0 0, 0 0, 36px 50px;
+    background-repeat: no-repeat;
+    font-size: 13px;
+    background-color: #FFF;
+    line-height: 1;
+  }
+  #wrecruit select.is-empty {
+    color: #b2b2b2;
+  }
+  #wrecruit select:invalid {
+    color: #b2b2b2;
+  }
+
+  #cwrecruit .cwrecruit__list {
+    border: none;
+    margin: 10px 5% 20px;
+  }
+  #cwrecruit .cwrecruit__list--ttl {
+    width: 100%;
+    white-space: wrap;
+    padding: 10px;
+    color: #FFF !important;
+  }
+  #cwrecruit .cwrecruit__list--ttl + p {
+    padding: 10px;
+    width: 100%;
+    border: none;
+  }
+  #cwrecruit .cwrecruit__list li {
+    display: block;
+    width: 100%;
+    margin: 0 0 10px;
+    border: solid 1px #b2b2b2;
+  }
+  #cwrecruit .cwrecruit__list li:last-child .cwrecruit__list--ttl {
+    border-bottom: none;
+    color: #FFF;
+  }
+  #cwrecruit .cwrecruit__list li:last-child .cwrecruit__list--ttl + p {
+    border-bottom: none;
+  }
+  #cwrecruit .cwrecruit__list--btn {
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 5%;
+  }
+  #cwrecruit .cwrecruit__list--btn input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    line-height: 1.1;
+  }
+  #cwrecruit .cwrecruit__list--btnpre {
+    width: 35%;
+    line-height: 1.1;
+    margin: 0 0 0;
+  }
+  #cwrecruit .cwrecruit__list--btnpre input {
+    width: 100%;
+  }
+  #cwrecruit .cwrecruit__list--btnsubmit {
+    width: 60%;
+  }
+  #cwrecruit .cwrecruit__list--btnsubmit input {
+    width: 100%;
+  }
+
+  .wpcf7-form-control-wrap {
+    position: relative;
+  }
+
+  .wpcf7-form-control-wrap:after {
+    content: "";
+    position: absolute;
+    right: 14px;
+    top: 21px;
+    width: 9px;
+    height: 9px;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    transform: translateY(-50%) rotate(-135deg);
+    font-size: 20px;
+    pointer-events: none;
+  }
+
+  .wpcf7-response-output {
+    padding: 10px 20px;
+    margin: 0 !important;
+    font-size: 14px;
+    margin: 0;
+  }
+}
 /* 共通サイズ */
 body {
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
