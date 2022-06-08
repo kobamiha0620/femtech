@@ -10,72 +10,83 @@
     <p class="page__luna--seiza">
       <img src="https://femtech.tv/wp-content/uploads/2022/01/aries.png" alt="牡羊座">
     </p>
-
+    <h3 class="page__luna--month"><span><b>6</b>月</span>の運勢</h3>
     <?php elseif (is_page('horoscope/taurus')): ?>
     <!-- 牡牛座 -->
     <p class="page__luna--seiza">
       <img src="https://femtech.tv/wp-content/uploads/2022/01/taurus.png" alt="牡牛座">
     </p>
+    <h3 class="page__luna--month"><span><b>6</b>月</span>の運勢</h3>
 
     <?php elseif (is_page('horoscope/gemini')): ?>
     <!-- 双子座 -->
     <p class="page__luna--seiza">
       <img src="https://femtech.tv/wp-content/uploads/2022/01/genimi.png" alt="双子座">
     </p>
+    <h3 class="page__luna--month"><span><b>6</b>月</span>の運勢</h3>
 
     <?php elseif (is_page('horoscope/cancer')): ?>
     <!-- かに座 -->
     <p class="page__luna--seiza">
       <img src="https://femtech.tv/wp-content/uploads/2022/01/cancer.png" alt="かに座">
     </p>
+    <h3 class="page__luna--month"><span><b>6</b>月</span>の運勢</h3>
 
     <?php elseif (is_page('horoscope/leo')): ?>
     <!-- しし座 -->
     <p class="page__luna--seiza">
       <img src="https://femtech.tv/wp-content/uploads/2022/01/leo.png" alt="しし座">
     </p>
+    <h3 class="page__luna--month"><span><b>6</b>月</span>の運勢</h3>
 
     <?php elseif (is_page('horoscope/virgo')): ?>
     <!-- おとめ座 -->
     <p class="page__luna--seiza">
       <img src="https://femtech.tv/wp-content/uploads/2022/01/virgo.png" alt="おとめ座">
     </p>
+    <h3 class="page__luna--month"><span><b>6</b>月</span>の運勢</h3>
 
     <?php elseif (is_page('horoscope/libra')): ?>
     <!-- てんびん座 -->
     <p class="page__luna--seiza">
       <img src="https://femtech.tv/wp-content/uploads/2022/01/libra.png" alt="てんびん座">
     </p>
+    <h3 class="page__luna--month"><span><b>6</b>月</span>の運勢</h3>
 
     <?php elseif (is_page('horoscope/scorpio')): ?> 
     <!-- 蠍座 -->
     <p class="page__luna--seiza">
       <img src="https://femtech.tv/wp-content/uploads/2022/01/scorpio.png" alt="蠍座">
     </p>
+    <h3 class="page__luna--month"><span><b>6</b>月</span>の運勢</h3>
 
     <?php elseif (is_page('horoscope/sagittarius')): ?> 
     <!-- いて座 -->
     <p class="page__luna--seiza">
       <img src="https://femtech.tv/wp-content/uploads/2022/01/sagittarius.png" alt="いて座">
     </p>
+    <h3 class="page__luna--month"><span><b>6</b>月</span>の運勢</h3>
 
     <?php elseif (is_page('horoscope/capricorn')): ?> 
     <!-- やぎ座 -->
     <p class="page__luna--seiza">
       <img src="https://femtech.tv/wp-content/uploads/2022/01/capricorn.png" alt="やぎ座">
     </p>
+    <h3 class="page__luna--month"><span><b>6</b>月</span>の運勢</h3>
 
     <?php elseif (is_page('horoscope/aquarius')): ?> 
     <!-- みずがめ座 -->
     <p class="page__luna--seiza">
       <img src="https://femtech.tv/wp-content/uploads/2022/01/aquarius.png" alt="みずがめ座">
     </p>
+    <h3 class="page__luna--month"><span><b>6</b>月</span>の運勢</h3>
 
     <?php elseif (is_page('horoscope/pisces')): ?> 
     <!-- うお座 -->
     <p class="page__luna--seiza">
       <img src="https://femtech.tv/wp-content/uploads/2022/01/pisces.png" alt="うお座">
     </p>
+    <h3 class="page__luna--month"><span><b>6</b>月</span>の運勢</h3>
 
     <?php else: ?>
     <section class="page__fv">

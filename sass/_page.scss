@@ -305,6 +305,7 @@
     margin-bottom: 30px;
   }
   &__luna {
+
     &--keisan {
       padding: 0 20%;
     }
@@ -761,4 +762,26 @@ div#toc_container {
 
 #reply-title {
   display: none !important;
+}
+
+.pageTtl{
+  text-align: center;
+}
+
+.page__luna--month{
+  text-align: center;
+  font-weight: bold;
+  font-size: 34px;
+  margin: 50px 0 24px;
+  span{
+    color: $SP;
+  }
+}
+
+/* SP 画面サイズ*/
+@media screen and (max-width: $BP) {
+  .page__luna--month{
+    font-size: 22px;
+    margin: 6.66vw 0 4.2vw;
+  }
 }

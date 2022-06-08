@@ -905,6 +905,27 @@ div#toc_container .toc_list ul li a::before {
   display: none !important;
 }
 
+.pageTtl {
+  text-align: center;
+}
+
+.page__luna--month {
+  text-align: center;
+  font-weight: bold;
+  font-size: 34px;
+  margin: 50px 0 24px;
+}
+.page__luna--month span {
+  color: #d295f4;
+}
+
+/* SP 画面サイズ*/
+@media screen and (max-width: 749px) {
+  .page__luna--month {
+    font-size: 22px;
+    margin: 6.66vw 0 4.2vw;
+  }
+}
 #search .search__ttl {
   font-size: 24px;
   font-weight: normal;
@@ -4684,11 +4705,11 @@ h2.confirm {
 .horointro__ttl {
   text-align: center;
   font-size: 24px;
-  margin: 0 auto 30px;
+  margin: 0 auto 40px;
   color: #444;
 }
 .horointro__c {
-  color: #DFA7A7;
+  color: #d295f4;
 }
 .horointro__subttl {
   text-align: center;
@@ -4698,16 +4719,16 @@ h2.confirm {
   font-size: 18px;
   line-height: 1;
   font-weight: normal;
-  background: #DFA7A7;
+  background: #d295f4;
   padding: 10px;
   letter-spacing: 0.2em;
   border-radius: 3px;
 }
 .horointro__txt {
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 17px;
+  line-height: 1.8;
   color: #444;
-  margin: 0 0 10px;
+  margin: 0 0 1em;
 }
 .horointro__inner {
   margin: 0 0 30px;
@@ -4716,7 +4737,7 @@ h2.confirm {
 /* SP 画面サイズ*/
 @media screen and (max-width: 749px) {
   .horointro {
-    padding: 8vw 0 0;
+    padding: 11vw 0 0;
     margin: 8vw 0;
   }
   .horointro__ttl {
@@ -4736,6 +4757,77 @@ h2.confirm {
   }
   .horointro__inner {
     margin: 0 0 30px;
+  }
+}
+/*タブ切り替え全体のスタイル*/
+.horotabs {
+  width: 100%;
+  margin: 0 auto;
+  /*タブのスタイル*/
+}
+.horotabs_item {
+  max-width: calc(50% - 5px);
+  width: 100%;
+  height: 46px;
+  border: 2px solid #d295f4;
+  border-bottom: none;
+  background-color: #FFF;
+  line-height: 46px;
+  font-size: 18px;
+  text-align: center;
+  color: #d295f4;
+  display: block;
+  float: left;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+.horotabs_item.right {
+  float: right;
+}
+
+/*ラジオボタンを全て消す*/
+input[name=horotabs_item] {
+  display: none;
+}
+
+/*タブ切り替えの中身のスタイル*/
+.horotabs_content {
+  display: none;
+  padding: 40px 30px;
+  clear: both;
+  overflow: hidden;
+  border: 2px solid #d295f4;
+}
+
+/*選択されているタブのコンテンツのみを表示*/
+#all:checked ~ #all_content,
+#programming:checked ~ #programming_content {
+  display: block;
+}
+
+/*選択されているタブのスタイルを変える*/
+.horotabs input:checked + .horotabs_item {
+  background-color: #d295f4;
+  color: #fff;
+}
+
+@media screen and (max-width: 749px) {
+  .horotabs_item {
+    font-size: 12px;
+    border: 1px solid #d295f4;
+    border-bottom: none;
+    height: 6.6vw;
+    line-height: 6.6vw;
+  }
+  .horotabs_content {
+    padding: 5.33vw 4.8vw 0;
+    border: 1px solid #d295f4;
+  }
+
+  .horointro__txt {
+    font-size: 13px !important;
+    padding: 0;
   }
 }
 #wrecruit {
