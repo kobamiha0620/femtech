@@ -188,6 +188,9 @@
     &.cate-serial {
       display: none !important;
     }
+    &.cate-moon{
+      display: none !important;
+    }
   }
 }
 
@@ -426,7 +429,7 @@ div#toc_container {
     flex-shrink: 0;
     width: 186px;
     display: inline-block;
-    margin-right: 32px;
+    margin-right: 32px!important;
   }
   &__blc {
   }
@@ -730,7 +733,7 @@ div#toc_container {
     padding: 5vw 5.3vw;
     img {
       width: 24.5vw;
-      margin-right: 2.6vw;
+      margin-right: 2.6vw!important;
     }
     &__wrapper {
       padding: 0 4.2vw;

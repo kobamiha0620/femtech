@@ -113,7 +113,7 @@
 
         <ul class="articles__list">
             <!-- //EditorsPickを除外 -->
-            <?php query_posts('post_type=post&posts_per_page=5&cat=-278'); ?>
+            <?php query_posts('post_type=post&posts_per_page=5&cat=-278, -430'); ?>
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             
             <?php get_template_part('template_parts/newestArticle'); ?>

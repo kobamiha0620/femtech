@@ -12,12 +12,6 @@ $no_image_url = 'https://femtech.tv/wp-content/uploads/2022/06/noneImg.png';
 $tracking_id = 'UA-191433876-3';
 $site_domain = 'femtech.tv';
 
-// //入力例
-// $logo_url = 'https://im-cocoon.net/wp-content/uploads/nelog-logo.png';
-// $no_image_url = 'https://im-cocoon.net/wp-content/uploads/no-image.jpeg';
-// $tracking_id = 'UA-775245XXX';
-// $site_domain = 'nelog.jp';
-
 header( 'Content-Type: ' . feed_content_type( 'rss2' ) . '; charset=' . get_option( 'blog_charset' ), true );
 $more = 1;
 
@@ -118,7 +112,28 @@ xmlns:snf="http://www.smartnews.be/snf"
     <?php endif; ?>
     <pubDate><?php echo mysql2date( 'D, d M Y H:i:s +0000', get_post_time( 'Y-m-d H:i:s', true ), false ); ?></pubDate>
     <dc:creator><![CDATA[<?php the_author(); ?>]]></dc:creator>
-    <?php the_category_rss( 'rss2' ); ?>
+
+    <category>
+    <?php
+      
+    $categories = get_the_category();
+    if ( $categories ) {
+      foreach( $categories as $category ) {
+          echo $category->name . ', ';
+      }
+    }
+
+    $posttags = get_the_tags();
+if ($posttags) {
+foreach($posttags as $tag) {
+echo $tag->name . ', ';
+}
+}
+    ?>
+
+    </category>
+
+
 
     <guid isPermaLink="false"><?php the_guid(); ?></guid>
 

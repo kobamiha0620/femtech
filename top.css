@@ -154,6 +154,9 @@ li {
 .cat-data.cate-pick {
   background-color: #737373;
 }
+.cat-data.cate-leo, .cat-data.cate-horoscope, .cat-data.cate-aries, .cat-data.cate-taurus, .cat-data.cate-moon, .cat-data.cate-gemini, .cat-data.cate-cancer, .cat-data.cate-virgo, .cat-data.cate-libra, .cat-data.cate-scorpio, .cat-data.cate-sagittarius, .cat-data.cate-capricorn, .cat-data.cate-aquarius, .cat-data.cate-pisces {
+  background-color: #d295f4;
+}
 
 .cate__date {
   font-size: 13px;
@@ -168,6 +171,9 @@ li {
 }
 
 .articles__blc .cate-serial {
+  display: none;
+}
+.articles__blc .cate-moon {
   display: none;
 }
 .articles__blc .cate-echoice {
@@ -203,6 +209,9 @@ li {
   display: none;
 }
 .slide__cate .cate-rssout {
+  display: none;
+}
+.slide__cate .cate-moon {
   display: none;
 }
 

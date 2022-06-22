@@ -301,9 +301,6 @@ function page_is_ancestor_of($slug){
 
 
 
-
-
-
 //タイトルとナンバリングの設定。フィルタリング。
 add_filter( 'wp_link_pages_args', 'wp_link_pages_args_add_next_and_number' );
 function wp_link_pages_args_add_next_and_number( $args ) {
@@ -446,3 +443,14 @@ function my_php_Include($params = array()) {
   
 add_shortcode('call_php', 'my_php_Include');
   
+
+//月星座占いのテンプレート
+function template_include_change($template) {
+	if( is_single() && in_category('moon') ) {
+	  $template = dirname(__FILE__) . '/single-moon.php';
+	}else if( is_single() && in_category('horoscope') ) {
+	  $template = dirname(__FILE__) . '/single-horoscope.php';
+  }
+	return $template;
+  }
+  add_filter('template_include', 'template_include_change', 999);

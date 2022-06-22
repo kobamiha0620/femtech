@@ -99,6 +99,11 @@ li{
         //EditorsPick
         background-color: #737373;
     }
+    &.cate-leo, &.cate-horoscope, &.cate-aries, &.cate-taurus, &.cate-moon,
+    &.cate-gemini, &.cate-cancer, &.cate-virgo, &.cate-libra,
+    &.cate-scorpio, &.cate-sagittarius, &.cate-capricorn, &.cate-aquarius, &.cate-pisces{
+        background-color: #d295f4;
+    }
   }
 .cate{
     &__date{
@@ -115,6 +120,9 @@ li{
 }
 .articles__blc{
     .cate-serial{
+        display: none;
+    }
+    .cate-moon{
         display: none;
     }
     .cate-echoice{
@@ -152,6 +160,9 @@ li{
         display: none;
     }
     .cate-rssout{
+        display: none;
+    }
+    .cate-moon{
         display: none;
     }
 }
