@@ -15,7 +15,7 @@
         'post_status' => 'publish', //公開済みのページのみ取得
         'orderby' => 'rand', // 表示順の基準
         'posts_per_page' => 5, // 表示件数の指定
-        'cat' => -278, //EditorsPickを除外 -278へ変更
+        'cat' => '-278, -430', //EditorsPickを除外 -278へ変更
         'date_query' => array(
           'after' => $duration,
           // 'after' => '2021-9-1',
