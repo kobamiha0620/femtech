@@ -148,7 +148,144 @@ echo $tag->name . ', ';
     $content = preg_replace('{<a [^>]+?>}i', '', $content);
     $content = str_replace('</a>', '', $content);
      ?>
-    <content:encoded><![CDATA[<?php echo $content; ?>]]></content:encoded>
+    <content:encoded>
+    <?php //アイキャッチの取得
+    $image_id = get_post_thumbnail_id();
+    $image_url = wp_get_attachment_image_src($image_id, true);
+    if (isset($image_url[0])) {
+      $thumbnail = $image_url[0];
+    } else {
+      $thumbnail = $no_image_url;
+    }
+?>
+
+    <?php if (in_category('horoscope')): ?>
+      <![CDATA[
+        <img src="<?php echo $thumbnail; ?>" alt="" width="100%">
+      ]]>
+    
+      <?php elseif (in_category('aries')): ?>
+        <![CDATA[
+        <p class="luna__seiza">
+          <img src="https://femtech.tv/wp-content/uploads/2022/01/aries.png" alt="牡羊座" width="100%">
+        </p>
+        ]]>
+        <?php elseif (in_category('taurus')): ?>
+          <![CDATA[
+        <p class="luna__seiza">
+          <img src="https://femtech.tv/wp-content/uploads/2022/01/taurus.png" alt="牡牛座" width="100%">
+        </p>
+
+        ]]>
+
+        <?php elseif (in_category('gemini')): ?>
+          <![CDATA[
+        <p class="luna__seiza">
+          <img src="https://femtech.tv/wp-content/uploads/2022/01/genimi.png" alt="双子座" width="100%">
+        </p>
+        ]]>
+
+        <?php elseif (in_category('cancer')): ?>
+          <![CDATA[
+        <p class="luna__seiza">
+          <img src="https://femtech.tv/wp-content/uploads/2022/01/cancer.png" alt="かに座" width="100%">
+        </p>
+        ]]>
+
+        <?php elseif (in_category('leo')): ?>
+          <![CDATA[
+        <p class="luna__seiza">
+          <img src="https://femtech.tv/wp-content/uploads/2022/01/leo.png" alt="しし座" width="100%">
+        </p>
+        ]]>
+
+        <?php elseif (in_category('virgo')): ?>
+          <![CDATA[
+        <p class="luna__seiza">
+          <img src="https://femtech.tv/wp-content/uploads/2022/01/virgo.png" alt="おとめ座" width="100%">
+        </p>
+        ]]>
+
+        <?php elseif (in_category('libra')): ?>
+          <![CDATA[
+        <p class="luna__seiza">
+          <img src="https://femtech.tv/wp-content/uploads/2022/01/libra.png" alt="てんびん座" width="100%">
+        </p>
+        ]]>
+
+        <?php elseif (in_category('scorpio')): ?>
+          <![CDATA[
+        <p class="luna__seiza">
+          <img src="https://femtech.tv/wp-content/uploads/2022/01/scorpio.png" alt="蠍座" width="100%">
+        </p>
+        ]]>
+
+        <?php elseif (in_category('sagittarius')): ?>
+          <![CDATA[
+        <p class="luna__seiza">
+          <img src="https://femtech.tv/wp-content/uploads/2022/01/sagittarius.png" alt="いて座" width="100%">
+        </p>
+        ]]>
+
+        <?php elseif (in_category('capricorn')): ?>
+          <![CDATA[
+        <p class="luna__seiza">
+          <img src="https://femtech.tv/wp-content/uploads/2022/01/capricorn.png" alt="やぎ座" width="100%">
+        </p>
+        ]]>
+
+        <?php elseif (in_category('aquarius')): ?>
+          <![CDATA[
+        <p class="luna__seiza">
+          <img src="https://femtech.tv/wp-content/uploads/2022/01/aquarius.png" alt="みずがめ座" width="100%">
+        </p>
+
+        ]]>
+        <?php elseif (in_category('pisces')): ?>
+          <![CDATA[
+        <p class="luna__seiza">
+          <img src="https://femtech.tv/wp-content/uploads/2022/01/pisces.png" alt="うお座" width="100%">
+        </p>
+        ]]>
+        <?php endif; ?>
+
+
+        <?php if (in_category('moon')): ?>
+      <![CDATA[
+        <h3 class="luna__month"><span>
+            <b><?php
+              $field_name = get_field('horo_month');
+              if($field_name){
+                echo $field_name;
+              }
+            ?></b>月</span>の運勢</h3>
+
+        <p class="luna__subttl"><?php echo get_field('horo_feature'); ?></p>
+      ]]>
+      <?php endif; ?>
+
+    <![CDATA[<?php echo $content; ?>]]>
+    
+    <?php if (in_category('moon')): ?>
+      <![CDATA[
+        <p class="luna__action"><?php
+              $field_name = get_field('horo_month');
+              if($field_name){
+                echo $field_name;
+              }
+            ?>月の開運アクション</p>
+        <p class="luna__luckyaction"><?php
+              $field_name = get_field('horo_action');
+              if($field_name){
+                echo $field_name;
+              }
+            ?></p>
+      ]]>
+      <?php endif; ?>
+
+
+    
+    </content:encoded>
 
     <?php if ( get_comments_number() || comments_open() ) : ?>
     <wfw:commentRss><?php echo esc_url( get_post_comments_feed_link( null, 'rss2' ) ); ?></wfw:commentRss>

@@ -165,7 +165,7 @@ function my_wpp_custom_html( $mostpopular, $instance ){
     '<div class="sideConlist__blc">'. 
     '<div class="sideConlist__blc pageblc">';
     for($i = 0; count($get_the_category) > $i; $i++){
-      if( $get_the_category[$i]->slug != 'rssout' && $get_the_category[$i]->slug != 'uncategorized') { //表示したくないカテゴリ
+      if( $get_the_category[$i]->slug != 'rssout' && $get_the_category[$i]->slug != 'uncategorized' && $get_the_category[$i]->slug != 'horoscope') { //表示したくないカテゴリ
           $output .= '<span class="cat-data cate-'. $get_the_category[$i]->slug .' categoryw">' . esc_html( $get_the_category[$i]->name) . '</span>' ;
       }
     }
