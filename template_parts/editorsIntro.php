@@ -27,7 +27,7 @@
             </li>
             <li>
                 <img src="https://femtech.tv/wp-content/uploads/2022/03/icon_masako.png" alt="Masako">
-                <p class="editorsIntro__list--name">Masako</p>
+                <p class="editorsIntro__list--name">Masako<br><span>産休中</span></p>
             </li>
         </ul>
         <p class="editorsIntro__txt">《毎日をイキイキと、自分らしく過ごす》ため、信頼されるサイト構築を目指しています。女性の体について一緒に学んで、健やかな毎日を手に入れましょう♪</p>

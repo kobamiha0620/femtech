@@ -349,6 +349,32 @@ jQuery(function ($) {
 
 
 
-
-
 });
+
+
+
+//JSの追加 ＋ 月星座のリンク自動更新
+window.onload = function () {
+	let now = new Date();
+	let setDate = new Date();
+
+	setDate.setHours(now.getHours() + 9);
+	const year = setDate.getFullYear();
+	const month = setDate.getMonth() + 1;
+
+	let monthNum = ('00' + month).slice(-2);
+	let splitYear1 =  ('0000' + year).slice(-2);
+	let splitYear2 =  ('0000' + year).slice(-1);
+	
+	let splitYear1a = Math.floor(splitYear1 / 10);
+
+	let linkNum = '/horoscope' + splitYear1a + splitYear2  + monthNum;
+
+	const bnrHoroscope = document.getElementById('js-bnrhoroLink');
+	const menuHoroscope = document.getElementsByClassName('js-luna');
+	const linkLuna = menuHoroscope.children;
+	bnrHoroscope.setAttribute('href', linkNum);
+	// linkLuna.setAttribute('href', linkNum);
+	const alinkTag = $('.js-luna a');
+	alinkTag.attr("href", linkNum);
+}

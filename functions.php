@@ -375,7 +375,7 @@ add_filter( 'feed_content_type', function ( $content_type, $type ) {
 //特定カテゴリ除外
 function rssfilter($query) {
   if ($query->is_feed) {
-  $query->set('cat','-385 -1 -278');
+  $query->set('cat','-385 -1 -278 -431');
   }
   return $query;
   }
@@ -454,3 +454,15 @@ function template_include_change($template) {
 	return $template;
   }
   add_filter('template_include', 'template_include_change', 999);
+
+//Pタグ削除
+
+  add_action('init', function() {
+    remove_filter('the_excerpt', 'wpautop');
+    remove_filter('the_content', 'wpautop');
+    });
+    add_filter('tiny_mce_before_init', function($init) {
+    $init['wpautop'] = false;
+    $init['apply_source_formatting'] = ture;
+    return $init;
+    });

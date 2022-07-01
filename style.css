@@ -2108,6 +2108,10 @@ div#toc_container .toc_list ul li a::before {
   }
 }
 
+.toc_list > span {
+  display: none;
+}
+
 .catephp__disc {
   margin: 0 0 90px;
 }
@@ -3656,9 +3660,12 @@ body.page-resarch #newHeader__cate .ttlResearch a {
 .editorsIntro__list--name {
   text-align: center;
   font-size: 13px;
-  line-height: 1.6;
+  line-height: 1;
   color: #262626;
-  margin: 0 0;
+  margin: 5px 0 0;
+}
+.editorsIntro__list--name span {
+  font-size: 10px;
 }
 .editorsIntro__listbtm {
   display: flex;
@@ -4097,6 +4104,9 @@ li {
   }
   .editorsIntro__list--name {
     font-size: 10px;
+  }
+  .editorsIntro__list--name span {
+    font-size: 8px;
   }
   .editorsIntro__txt {
     margin: 5.6vw 0 0;

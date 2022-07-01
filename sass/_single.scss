@@ -1287,3 +1287,10 @@ div#toc_container {
         }
     }
 }
+
+//改ページの見出し削除
+.toc_list{
+    > span{
+        display: none;
+    }
+}
