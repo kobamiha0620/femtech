@@ -372,10 +372,10 @@ add_filter( 'feed_content_type', function ( $content_type, $type ) {
 	return $content_type;
 }, 10, 2 );
 
-//特定カテゴリ除外
+//RSS特定カテゴリ除外
 function rssfilter($query) {
   if ($query->is_feed) {
-  $query->set('cat','-385 -1 -278 -431');
+    $query->set('cat','-385 -1 -278 -431');
   }
   return $query;
   }

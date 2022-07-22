@@ -154,6 +154,9 @@ li {
 .cat-data.cate-pick {
   background-color: #737373;
 }
+.cat-data.cate-beauty {
+  background-color: #fdccd0;
+}
 .cat-data.cate-leo, .cat-data.cate-horoscope, .cat-data.cate-aries, .cat-data.cate-taurus, .cat-data.cate-moon, .cat-data.cate-gemini, .cat-data.cate-cancer, .cat-data.cate-virgo, .cat-data.cate-libra, .cat-data.cate-scorpio, .cat-data.cate-sagittarius, .cat-data.cate-capricorn, .cat-data.cate-aquarius, .cat-data.cate-pisces {
   background-color: #d295f4;
 }
