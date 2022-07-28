@@ -619,7 +619,7 @@ div#toc_container .toc_list ul li a::before {
 }
 
 .fortuneteller {
-  margin: 70px 0 0;
+  margin: 70px 0;
   border: solid 2px #c7c7c7;
   padding: 27px 19px 27px 25px;
   display: flex;
@@ -889,7 +889,7 @@ div#toc_container .toc_list ul li a::before {
   }
 
   .fortuneteller {
-    margin: 10.6vw 0 0;
+    margin: 10.6vw 0;
     border: solid 1px #c7c7c7;
     padding: 5vw 5.3vw;
   }
@@ -2114,6 +2114,55 @@ div#toc_container .toc_list ul li a::before {
 
 .toc_list > span {
   display: none;
+}
+
+.single__sns {
+  margin: -18px 0 30px 0;
+}
+.single__sns li {
+  float: right;
+}
+@media screen and (max-width: 749px) {
+  .single__sns {
+    margin: -8px 0 16px 0;
+  }
+}
+
+.single__horoscope--snswrapper {
+  padding: 20px 0 0;
+}
+.single__horoscope--snswrapper .single__sns {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 749px) {
+  .single__horoscope--snswrapper {
+    padding: 0;
+    margin-bottom: -20px;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .single__moon--snswrapper {
+    margin-top: -7vw;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .page__luna--intro {
+    padding: 0 5%;
+  }
+  .page__luna--intro .page__luna--intro-ttl {
+    font-size: 14px;
+  }
+
+  .page__luna--ttl {
+    font-size: 14px !important;
+  }
+}
+@media screen and (max-width: 749px) {
+  .page__luna--intro-ttl {
+    padding-top: 10vw;
+  }
 }
 
 .catephp__disc {
@@ -4115,6 +4164,19 @@ li {
   .editorsIntro__txt {
     margin: 5.6vw 0 0;
     font-size: 10px;
+  }
+}
+@media screen and (max-width: 749px) {
+  .side__series--blc {
+    margin: 0 0 13vw;
+  }
+
+  .side__series--img, .side__series--img02 {
+    margin: 0 0 4vw;
+  }
+
+  .side__series--link {
+    margin: 0 0 10px;
   }
 }
 #consultation {

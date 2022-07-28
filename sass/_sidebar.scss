@@ -1092,3 +1092,18 @@ li {
     }
   }
 }
+
+
+//追記 TOPページの連載の間隔を変更
+@media screen and (max-width: $BP) {
+
+.side__series--blc{
+  margin: 0 0 13vw;
+}
+.side__series--img, .side__series--img02{
+  margin: 0 0 4vw;
+}
+.side__series--link{
+  margin: 0 0 10px;
+}
+}

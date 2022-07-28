@@ -2,6 +2,7 @@
 <div class="container">
 
 
+
   <?php if(have_posts()): the_post(); ?>
 
   <article <?php post_class( 'article-content' ); ?>>
@@ -19,6 +20,11 @@
 
         <div class="page__luna--intro">
     <p class="page__luna--intro-ttl">まずは自分の月星座を調べてみましょう。<br>「月星座」で検索すると簡単に調べられるので、試してみて。</p>
+    </div>
+    <div class="single__horoscope--snswrapper">
+      <!-- sns共有 -->
+      <?php get_template_part('/template_parts/sharesns'); ?>
+      <!-- sns共有 -->
     </div>
         <?php the_content(); ?>
 
@@ -38,10 +44,6 @@
     <div class="single__contents">
 
 
-        <!-- sns共有 -->
-        <?php get_template_part('/template_parts/sharesns'); ?>
-        <!-- sns共有 -->
-
 
 
         <!-- 著者紹介 -->
@@ -49,14 +51,17 @@
         <!-- 著者紹介 -->
 
 
-        <!-- EDITOR'S PICK ------------------------------------------------->
-        <div class="single__epick">
-          <?php get_template_part('/template_parts/epick'); ?>
-        </div>
-        <!-- EDITOR'S PICK ------------------------------------------------->
 
+  <!-- EDITOR'S PICK ------------------------------------------------->
+<!-- 
+  <div class="single__epick">
+  <?php
+    
+    #get_template_part('/template_parts/epick'); ?>
+  </div> -->
 
-        <div style="height: 50px;"></div>
+  <!-- EDITOR'S PICK ------------------------------------------------->
+
 
 
 

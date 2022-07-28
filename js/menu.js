@@ -368,13 +368,12 @@ window.onload = function () {
 	
 	let splitYear1a = Math.floor(splitYear1 / 10);
 
-	let linkNum = '/horoscope' + splitYear1a + splitYear2  + monthNum;
+	var linkNum = '/horoscope' + splitYear1a + splitYear2  + monthNum;
 
-	const bnrHoroscope = document.getElementById('js-bnrhoroLink');
 	const menuHoroscope = document.getElementsByClassName('js-luna');
 	const linkLuna = menuHoroscope.children;
-	bnrHoroscope.setAttribute('href', linkNum);
 	// linkLuna.setAttribute('href', linkNum);
 	const alinkTag = $('.js-luna a');
 	alinkTag.attr("href", linkNum);
+
 }

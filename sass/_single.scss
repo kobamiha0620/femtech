@@ -1293,3 +1293,51 @@ div#toc_container {
         display: none;
     }
 }
+
+//SNSアイコン
+.single__sns{
+    margin: -18px 0 30px 0; 
+    li{
+        float: right;
+    }
+    @media screen and (max-width: $BP) {
+        margin: -8px 0 16px 0; 
+
+    }
+}
+//全体のホロスコープページ
+.single__horoscope--snswrapper{
+    padding: 20px 0 0;  
+    .single__sns{
+        margin-bottom: 0;
+    }
+    @media screen and (max-width: $BP) {
+        padding: 0;
+        margin-bottom: -20px;
+    }
+}
+//個々の星占いのページ
+.single__moon--snswrapper{
+    @media screen and (max-width: $BP) {
+
+    margin-top: -7vw;
+    }
+}
+@media screen and (max-width: $BP) {
+
+.page__luna--intro{
+    padding: 0 5%;
+    .page__luna--intro-ttl{
+        font-size: 14px;
+    }
+}
+.page__luna--ttl{
+
+        font-size: 14px!important;
+    }
+}
+.page__luna--intro-ttl{
+    @media screen and (max-width: $BP) {
+        padding-top: 10vw;
+    }
+}

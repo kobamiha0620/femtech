@@ -2,6 +2,8 @@
 <div class="container">
 
 
+
+
   <?php if(have_posts()): the_post(); ?>
 
   <article <?php post_class( 'article-content' ); ?>>
@@ -93,6 +95,14 @@
           <img src="https://femtech.tv/wp-content/uploads/2022/01/pisces.png" alt="うお座">
         </p>
         <?php endif; ?>
+
+
+        <div class="single__moon--snswrapper">
+      <!-- sns共有 -->
+      <?php get_template_part('/template_parts/sharesns'); ?>
+      <!-- sns共有 -->
+    </div>
+      
         <h3 class="luna__month"><span>
             <b><?php
               $field_name = get_field('horo_month');
@@ -122,9 +132,6 @@
             ?></p>
 
 
-        <!-- sns共有 -->
-        <?php get_template_part('/template_parts/sharesns'); ?>
-        <!-- sns共有 -->
 
         <?php if (in_category('aries')): ?>
           <?php get_template_part('template_parts/horoscope/introaries'); ?>
@@ -138,14 +145,16 @@
         <!-- 著者紹介 -->
 
 
-        <!-- EDITOR'S PICK ------------------------------------------------->
-        <div class="single__epick">
-          <?php get_template_part('/template_parts/epick'); ?>
-        </div>
-        <!-- EDITOR'S PICK ------------------------------------------------->
 
+  <!-- EDITOR'S PICK ------------------------------------------------->
+<!-- 
+  <div class="single__epick">
+  <?php
+    
+    #get_template_part('/template_parts/epick'); ?>
+  </div> -->
 
-        <div style="height: 50px;"></div>
+  <!-- EDITOR'S PICK ------------------------------------------------->
 
 
 
