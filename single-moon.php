@@ -135,6 +135,10 @@
 
         <?php if (in_category('aries')): ?>
           <?php get_template_part('template_parts/horoscope/introaries'); ?>
+        
+        <?php elseif (in_category('taurus')): ?>
+          <?php get_template_part('template_parts/horoscope/introtaurus'); ?>
+
 
         <?php endif; ?>
 

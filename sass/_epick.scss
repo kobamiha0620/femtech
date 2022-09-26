@@ -155,6 +155,24 @@
                 object-fit: cover;
             }
         }
+        .slick-dots{
+            display: flex;
+            margin: 10px 0 0;
+            justify-content: center;
+            li{
+                margin: 0 6px;
+                width: 12px!important;
+                height: 12px!important;
+                white-space: nowrap;
+                text-indent: -9999px;
+                background: #cccccc;
+                border-radius: 20px;
+                &.slick-active{
+                    background: #E4BEE8;
+
+                }
+            }
+        }
         .slick-dots li button:before{
             color: #cccccc;
             opacity: 1;

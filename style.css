@@ -4770,6 +4770,23 @@ h2.confirm {
   height: 242px;
   object-fit: cover;
 }
+.epicShop__list .slick-dots {
+  display: flex;
+  margin: 10px 0 0;
+  justify-content: center;
+}
+.epicShop__list .slick-dots li {
+  margin: 0 6px;
+  width: 12px !important;
+  height: 12px !important;
+  white-space: nowrap;
+  text-indent: -9999px;
+  background: #cccccc;
+  border-radius: 20px;
+}
+.epicShop__list .slick-dots li.slick-active {
+  background: #E4BEE8;
+}
 .epicShop__list .slick-dots li button:before {
   color: #cccccc;
   opacity: 1;
